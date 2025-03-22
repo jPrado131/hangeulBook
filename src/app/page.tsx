@@ -58,6 +58,7 @@ export default function Home() {
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [transition, setTransition] = useState<boolean>(false);
   const [isModalOpenHangul, setIsModalOpenHangul] = useState<boolean>(false);
+  const [countWrongAnswers, setCountWrongAnswers] = useState<number>(0);
   const NumberOfChoices = 4;
 
   useEffect(() => {
@@ -123,6 +124,7 @@ export default function Home() {
       }, 2000);
     } else {
       setIsCorrect(false);
+      setCountWrongAnswers((prev) => prev + 1);
       if (wrongSound) {
         wrongSound.currentTime = 0;
       }
@@ -136,6 +138,7 @@ export default function Home() {
     setCategory(newCategory);
     setData(shuffleArray(categories[newCategory]));
     setCurrentQuestion(0);
+    setCountWrongAnswers(0);
   };
 
   return (
@@ -181,6 +184,9 @@ export default function Home() {
             </div>
           </div>
         )}
+        <div className="flex flex-row justify-center items-center">
+          <span className="text-white">Wrong Answers: {countWrongAnswers}</span>
+        </div>
 
         <Modal isOpen={isModalOpenHangul} onClose={() => setIsModalOpenHangul(false)}>
           <Hangul />
