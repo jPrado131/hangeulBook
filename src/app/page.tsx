@@ -60,6 +60,7 @@ export default function Home() {
   const [isModalOpenHangul, setIsModalOpenHangul] = useState<boolean>(false);
   const [countWrongAnswers, setCountWrongAnswers] = useState<number>(0);
   const [viewKreading, setViewKreading] = useState<boolean>(false);
+  const [isReverse, setIsReverse] = useState<boolean>(false);
   const NumberOfChoices = 4;
 
   useEffect(() => {
@@ -143,6 +144,10 @@ export default function Home() {
     setCountWrongAnswers(0);
   };
 
+  const handleReverseChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setIsReverse(event.target.checked);
+  };
+
   return (
     <div className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-black`}>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -169,14 +174,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
+      
         {currentQuestion < data.length && (
           <div key={data[currentQuestion].id} className={`flex flex-col gap-4 items-center transition-opacity duration-500 ${transition ? 'opacity-0' : 'opacity-100'} mt-vw-20`}>
             <div className="flex flex-col gap-4 items-center">
               <a className={`text-[16vw] max-lg:text-[20vw] max-md:text-[18vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-[16vw] mt-[4vw]`}
-              title={data[currentQuestion].kreading}> {data[currentQuestion].kword}</a>
+              title={data[currentQuestion].kreading}> {isReverse ? data[currentQuestion].eword : data[currentQuestion].kword}</a>
               
-              {viewKreading && (
+              {viewKreading && !isReverse && (
                 <a className={`text-[4vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-yellow-500'}`} 
                 >{data[currentQuestion].kreading}</a>
               )}
@@ -187,13 +192,27 @@ export default function Home() {
                 data={data}
                 selectedAnswer={selectedAnswer}
                 isCorrect={isCorrect}
+                isReverse={isReverse}
                 checkAnswer={checkAnswer}
+                
               />
             </div>
           </div>
         )}
+
+        <div className="flex flex-row gap-2 items-center">
+          <input
+            type="checkbox"
+            id="reverse"
+            checked={isReverse}
+            onChange={handleReverseChange}
+            className="w-4 h-4"
+          />
+          <label htmlFor="reverse" className="text-white">Reverse Questions and Answers</label>
+        </div>
+
         <div className="flex flex-row justify-center items-center">
-          {!viewKreading && (
+          {!viewKreading && !isReverse && (
             <a onClick={()=> setViewKreading(true)} className="text-yellow-100 text-vw-12 border rounded-md p-2 self-start animate-pulse mr-2 capitalize font-bold">hint</a>
           )}
           <span className="text-white">Wrong Answers: {countWrongAnswers}</span>

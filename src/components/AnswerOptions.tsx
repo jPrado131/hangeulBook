@@ -6,10 +6,11 @@ interface AnswerOptionsProps {
   data: { id: number; kword: string; kreading: string; eword: string }[];
   selectedAnswer: number | null;
   isCorrect: boolean | null;
+  isReverse: boolean | null;
   checkAnswer: (selected: number, correct: number) => void;
 }
 
-const AnswerOptions: React.FC<AnswerOptionsProps> = ({ randomNumbers, currentQuestion, data, selectedAnswer, isCorrect, checkAnswer }) => {
+const AnswerOptions: React.FC<AnswerOptionsProps> = ({ randomNumbers, currentQuestion, data, selectedAnswer, isCorrect, isReverse, checkAnswer }) => {
   return (
     <div className="relative p-2">
       {isCorrect === true ? (<div className="bg-transparent opacity-25 absolute top-0 left-0 right-0 h-full w-full"></div>) : null}
@@ -28,7 +29,7 @@ const AnswerOptions: React.FC<AnswerOptionsProps> = ({ randomNumbers, currentQue
                 } max-md:w-[80vw]`}
               onClick={() => checkAnswer(randomNumber, currentQuestion)}
             >
-              <span className="text-vw-16 capitalize">{data[randomNumber].eword}</span>
+              <span className="text-vw-16 capitalize">{isReverse ? data[randomNumber].kword : data[randomNumber].eword}</span>
             </div>
           )
         ))}
