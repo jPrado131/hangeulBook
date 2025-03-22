@@ -189,7 +189,7 @@ export default function Home() {
             <div className="flex flex-row gap-4 items-center">
               <strong className="max-md:hidden">Category: </strong>
               <select
-                className="text-black capitalize px-4 py-2 rounded-md border border-gray-300 bg-white max-md:w-[80vw]"
+                className="text-black capitalize px-4 py-2 rounded-md border border-gray-300 bg-white"
                 value={category}
                 onChange={handleCategoryChange}
               >
@@ -199,10 +199,13 @@ export default function Home() {
                   </option>
                 ))}
               </select>
-            </div>
-            <div className="flex flex-row gap-4 items-center">
-              <span className="text-white">{currentQuestion+1} / {data.length}</span>
               <a className="text-white bg-transparent border p-2 rounded-md block ml-1" onClick={() => setIsModalOpenHangul(true)}>Hangul</a>
+            </div>
+            <div className="flex flex-row gap-4 items-center w-full justify-center">
+              <span className="flex text-white self-start">
+                { category === "question-answer" ? "Question & Answer" : category === "image_identification" ? "Identify The Photo" : "Translate The Word" }
+              </span>
+              <span className="flex text-white self-end">{currentQuestion+1} / {data.length}</span>
             </div>
           </div>
         </div>
@@ -216,7 +219,7 @@ export default function Home() {
                 > {data[currentQuestion].kword}</div>
               ) : isImageIdentification ?  (
                 <div className={`flex flex-col items-center border-transparent overflow-hidden max-w-[350px] ${isCorrect === true ? ' border-green-500' : ""}`}>
-                  <Image className="w-full max-h-[350px]" src={data[currentQuestion]?.image} alt={data[currentQuestion].eword} width={350} height={350} />
+                  <Image className="w-full max-h-[350px]" src={data[currentQuestion]?.image} alt={data[currentQuestion].eword} width={350} height={350} placeholder="blur" blurDataURL="/images/placeholder.png" />
                 </div>
               )
               : ( 
