@@ -59,6 +59,7 @@ export default function Home() {
   const [transition, setTransition] = useState<boolean>(false);
   const [isModalOpenHangul, setIsModalOpenHangul] = useState<boolean>(false);
   const [countWrongAnswers, setCountWrongAnswers] = useState<number>(0);
+  const [viewKreading, setViewKreading] = useState<boolean>(false);
   const NumberOfChoices = 4;
 
   useEffect(() => {
@@ -119,6 +120,7 @@ export default function Home() {
           setCurrentQuestion((prev) => (prev + 1) % data.length);
           setSelectedAnswer(null);
           setIsCorrect(null);
+          setViewKreading(false)  
           setTransition(false);
         }, 500);
       }, 2000);
@@ -171,8 +173,19 @@ export default function Home() {
         {currentQuestion < data.length && (
           <div key={data[currentQuestion].id} className={`flex flex-col gap-4 items-center transition-opacity duration-500 ${transition ? 'opacity-0' : 'opacity-100'} mt-vw-20`}>
             <div className="flex flex-col gap-4 items-center">
-              <a className={`text-[16vw] max-lg:text-[20vw] max-md:text-[18vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'}`} 
-              title={data[currentQuestion].kreading}>{data[currentQuestion].kword}</a>
+              <a className={`text-[16vw] max-lg:text-[20vw] max-md:text-[18vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-[17vw]`}
+              title={data[currentQuestion].kreading}> {data[currentQuestion].kword}</a>
+              
+              {viewKreading ? (
+                <a className={`text-[4vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-yellow-500'}`} 
+                >{data[currentQuestion].kreading}</a>
+              ) : (
+                <a onClick={()=> setViewKreading(true)} className="text-yellow-100 text-vw-10 border rounded-md p-2 self-start animate-pulse">Pronunciations</a>
+              )
+              }
+              
+
+              
               <AnswerOptions
                 randomNumbers={randomNumbers[currentQuestion]}
                 currentQuestion={currentQuestion}
