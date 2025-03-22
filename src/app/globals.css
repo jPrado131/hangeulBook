@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-@config "../../tailwind.config.js";
 
 /* 390 viewport */
 :root {
@@ -1139,6 +1138,7 @@
   --text-vw-10 : var(--vw-10);
   --text-vw-8 : var(--vw-8);
 }
+
 
 
 @media (prefers-color-scheme: dark) {

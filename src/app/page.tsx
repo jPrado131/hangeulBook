@@ -138,38 +138,42 @@ export default function Home() {
   };
 
   return (
-    <div className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}>
+    <div className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-black`}>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         
-        <div className="fixed top-0 left-0 right-0 z-10 p-4 shadow-md items-center justify-center">
-          <div className="flex flex-row gap-4 items-center justify-center">
-            <strong>Category: </strong>
-            <select
-              className="text-black capitalize px-4 py-2 rounded-md border border-gray-300 bg-white"
-              value={category}
-              onChange={handleCategoryChange}
-            >
-              {Object.keys(categories).map((cat) => (
-                <option key={cat} value={cat}>
-                  {cat.replace("-", " & ").replace("_", " ")} ({categories[cat].length})
-                </option>
-              ))}
-            </select>
-            <span>{currentQuestion+1} / {data.length}</span>
-            <a className="text-white bg-transparent border p-2 rounded-md block ml-1" onClick={() => setIsModalOpenHangul(true)}>Hangul</a>
+        <div className="fixed top-0 left-0 right-0 z-10 p-4 shadow-md items-center justify-center bg-black">
+          <div className="flex flex-row gap-4 items-center justify-center max-md:flex-col max-md:gap-2">
+            <div className="flex flex-row gap-4 items-center">
+              <strong>Category: </strong>
+              <select
+                className="text-black capitalize px-4 py-2 rounded-md border border-gray-300 bg-white"
+                value={category}
+                onChange={handleCategoryChange}
+              >
+                {Object.keys(categories).map((cat) => (
+                  <option key={cat} value={cat}>
+                    {cat.replace("-", " & ").replace("_", " ")} ({categories[cat].length})
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="flex flex-row gap-4 items-center">
+              <span>{currentQuestion+1} / {data.length}</span>
+              <a className="text-white bg-transparent border p-2 rounded-md block ml-1" onClick={() => setIsModalOpenHangul(true)}>Hangul</a>
+            </div>
           </div>
         </div>
         
         {currentQuestion < data.length && (
-          <div key={data[currentQuestion].id} className={`flex flex-col gap-4 items-center transition-opacity duration-500 ${transition ? 'opacity-0' : 'opacity-100'}`}>
+          <div key={data[currentQuestion].id} className={`flex flex-col gap-4 items-center transition-opacity duration-500 ${transition ? 'opacity-0' : 'opacity-100'} mt-vw-20`}>
             <div className="flex flex-col gap-4 items-center">
-              <a className={`text-[20vh] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'}`} 
+              <a className={`text-[16vw] max-lg:text-[20vw] max-md:text-[18vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'}`} 
               title={data[currentQuestion].kreading}>{data[currentQuestion].kword}</a>
               
-              <div className="relative">
-                {isCorrect === true ? (<div className=" bg-transparent opacity-25 absolute top-0 left-0 right-0 h-full w-full"></div>): null}
+              <div className="relative p-2">
+                {isCorrect === true ? (<div className="bg-transparent opacity-25 absolute top-0 left-0 right-0 h-full w-full"></div>) : null}
                 
-                <div className="flex flex-row gap-4 items-center">
+                <div className="flex flex-row gap-4 items-center  max-md:flex-col max-md:gap-2">
                   {randomNumbers[currentQuestion]?.map((randomNumber: number, idx: number) => (
                     randomNumber < data.length && (
                       <div
@@ -181,7 +185,7 @@ export default function Home() {
                                 ? "border-green-500 text-green-500"
                                 : "border-red-500 text-red-500" 
                               : "border-gray-300 text-gray-300"
-                          }`}
+                          } max-md:w-full max-md:text-yellow-200`}
                         onClick={() => checkAnswer(randomNumber, currentQuestion)}
                       >
                         <span className="text-vw-16 capitalize">{data[randomNumber].eword}</span>
