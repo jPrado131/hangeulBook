@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const hangulLetters = [
   { letter: "ㄱ", name: "Giyeok", sound: "g/k" },
   { letter: "ㄴ", name: "Nieun", sound: "n" },

@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import confetti from "canvas-confetti";
 import dataAnimals from "../data/animals.json";
 import dataFoods from "../data/food.json";
@@ -20,13 +20,10 @@ import dataShapes from "../data/shapes.json";
 import dataBodyParts from "../data/body-parts.json";
 import dataClothes from "../data/clothes.json";
 import dataTransport from "../data/transport.json";
-import Link from "next/link";
-
-import Image from "next/image";
 import Modal from "../components/Modal"; // Import the Modal component
 import Hangul from "./hangul"; // Import the Hangul component
 
-const categories = {
+const categories: Record<string, { id: number; kword: string; kreading: string; eword: string }[]> = {
   "fruits-and-vegitables": dataFruitsAndVegitables,
   "animals": dataAnimals,
   "foods": dataFoods,
@@ -47,11 +44,11 @@ const categories = {
   "clothes": dataClothes,
   "transport": dataTransport,
   "random": [...dataFruitsAndVegitables, ...dataAnimals, ...dataFoods],
-} as any;
+};
 
 export default function Home() {
   const [category, setCategory] = useState<string>("fruits-and-vegitables");
-  const [data, setData] = useState<any[]>(categories[category]);
+  const [data, setData] = useState<{ id: number; kword: string; kreading: string; eword: string }[]>(categories[category]);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [randomNumbers, setRandomNumbers] = useState<number[][]>([]);
@@ -75,15 +72,15 @@ export default function Home() {
     }
   }, [isModalOpenHangul]);
 
-  const shuffleArray = (array: number[]) => {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-  };
+  const shuffleArray = <T,>(array: T[]): T[] => {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    };
 
-  const getRandomNumber = (exclude: number, max: number) => {
+  const getRandomNumber = useCallback((exclude: number, max: number): number[] => {
     const randomNumbers = [exclude];
     while (randomNumbers.length < max + 1) {
       const randomNumber = Math.floor(Math.random() * data.length);
@@ -92,12 +89,12 @@ export default function Home() {
       }
     }
     return shuffleArray(randomNumbers);
-  };
+  }, [data]);
 
   useEffect(() => {
     const numbers = data.map((_, index) => getRandomNumber(index, NumberOfChoices-1));
     setRandomNumbers(numbers);
-  }, [currentQuestion, data]);
+  }, [currentQuestion, data, getRandomNumber]);
 
   const checkAnswer = (selected: number, correct: number) => {
     
