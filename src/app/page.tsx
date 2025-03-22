@@ -194,7 +194,7 @@ export default function Home() {
         )}
         <div className="flex flex-row justify-center items-center">
           {!viewKreading && (
-            <a onClick={()=> setViewKreading(true)} className="text-yellow-100 text-vw-10 border rounded-md p-2 self-start animate-pulse mr-2">Pronunciations</a>
+            <a onClick={()=> setViewKreading(true)} className="text-yellow-100 text-vw-12 border rounded-md p-2 self-start animate-pulse mr-2 capitalize font-bold">hint</a>
           )}
           <span className="text-white">Wrong Answers: {countWrongAnswers}</span>
         </div>
