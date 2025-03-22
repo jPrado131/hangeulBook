@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect, useCallback } from "react";
 import confetti from "canvas-confetti";
+import Image from "next/image";
 import dataAnimals from "../data/animals.json";
 import dataFoods from "../data/food.json";
 import dataFruitsAndVegitables from "../data/fruits-and-vegitables.json";
@@ -25,7 +26,6 @@ import dataSports from "../data/sports.json";
 import dataTaste from "../data/taste.json";
 import dataFeelings from "../data/feelings.json";
 import dataSimpleQuestions from "../data/simple-questions.json";
-import dataImageIdentification from "../data/image-identification.json";
 import Modal from "../components/Modal"; // Import the Modal component
 import Hangul from "./hangul"; // Import the Hangul component
 import AnswerOptions from "../components/AnswerOptions"; // Import the AnswerOptions component
@@ -216,7 +216,7 @@ export default function Home() {
                 > {data[currentQuestion].kword}</div>
               ) : isImageIdentification ?  (
                 <div className={`flex flex-col items-center border-transparent overflow-hidden max-w-[350px] ${isCorrect === true ? ' border-green-500' : ""}`}>
-                  <img className="w-full max-h-[350px]" src={data[currentQuestion]?.image} alt={data[currentQuestion].eword}  />
+                  <Image className="w-full max-h-[350px]" src={data[currentQuestion]?.image} alt={data[currentQuestion].eword} width={350} height={350} />
                 </div>
               )
               : ( 
