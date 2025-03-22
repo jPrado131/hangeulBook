@@ -31,7 +31,7 @@ import Hangul from "./hangul"; // Import the Hangul component
 import AnswerOptions from "../components/AnswerOptions"; // Import the AnswerOptions component
 
 const categories: Record<string, { id: number; kword: string; kreading: string; eword: string; image: string | "" }[]> = {
-  "fruits-and-vegitables": dataFruitsAndVegitables.map(item => ({ ...item, image: "" })),
+  "fruits-vegitables": dataFruitsAndVegitables.map(item => ({ ...item, image: "" })),
   "animals": dataAnimals.map(item => ({ ...item, image: "" })),
   "foods": dataFoods.map(item => ({ ...item, image: "" })),
   "numbers": dataNumbers.map(item => ({ ...item, image: "" })),
@@ -130,6 +130,7 @@ export default function Home() {
         correctSound.currentTime = 0;
       }
       correctSound?.play();
+      setViewKreading(true); 
       confetti({
         particleCount: 100,
         spread: 70,
