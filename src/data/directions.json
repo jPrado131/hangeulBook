@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "eword": "left",
+    "kword": "왼쪽",
+    "kreading": "oenjjok",
+    "image": "/images/directions/left.png"
+  },
+  {
+    "id": 2,
+    "eword": "right",
+    "kword": "오른쪽",
+    "kreading": "oreunjjok",
+    "image": "/images/directions/right.png"
+  },
+  {
+    "id": 3,
+    "eword": "up",
+    "kword": "위",
+    "kreading": "wi",
+    "image": "/images/directions/up.png"
+  },
+  {
+    "id": 4,
+    "eword": "down",
+    "kword": "아래",
+    "kreading": "arae",
+    "image": "/images/directions/down.png"
+  },
+  {
+    "id": 5,
+    "eword": "forward",
+    "kword": "앞으로",
+    "kreading": "apeuro",
+    "image": "/images/directions/forward.png"
+  },
+  {
+    "id": 6,
+    "eword": "backward",
+    "kword": "뒤로",
+    "kreading": "dwiro",
+    "image": "/images/directions/backward.png"
+  },
+  {
+    "id": 7,
+    "eword": "north",
+    "kword": "북쪽",
+    "kreading": "bukjjok",
+    "image": "/images/directions/north.png"
+  },
+  {
+    "id": 8,
+    "eword": "south",
+    "kword": "남쪽",
+    "kreading": "namjjok",
+    "image": "/images/directions/south.png"
+  },
+  {
+    "id": 9,
+    "eword": "east",
+    "kword": "동쪽",
+    "kreading": "dongjjok",
+    "image": "/images/directions/east.png"
+  },
+  {
+    "id": 10,
+    "eword": "west",
+    "kword": "서쪽",
+    "kreading": "seojjok",
+    "image": "/images/directions/west.png"
+  }
+]

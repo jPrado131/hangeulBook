@@ -20,36 +20,54 @@ import dataShapes from "../data/shapes.json";
 import dataBodyParts from "../data/body-parts.json";
 import dataClothes from "../data/clothes.json";
 import dataTransport from "../data/transport.json";
+import dataDirections from "../data/directions.json";
+import dataSports from "../data/sports.json";
+import dataTaste from "../data/taste.json";
+import dataFeelings from "../data/feelings.json";
+import dataSimpleQuestions from "../data/simple-questions.json";
+import dataImageIdentification from "../data/image-identification.json";
 import Modal from "../components/Modal"; // Import the Modal component
 import Hangul from "./hangul"; // Import the Hangul component
 import AnswerOptions from "../components/AnswerOptions"; // Import the AnswerOptions component
 
-const categories: Record<string, { id: number; kword: string; kreading: string; eword: string }[]> = {
-  "fruits-and-vegitables": dataFruitsAndVegitables,
-  "animals": dataAnimals,
-  "foods": dataFoods,
-  "numbers": dataNumbers,
-  "sino_numbers": dataSinoNumbers,
-  "time": dataTime,
-  "weather-seasons": dataWeather,
-  "tools": dataTools,
-  "occupations": dataOccupations,
-  "family": dataFamily,
-  "verbs": dataVerbs,
-  "adjectives": dataAdjectives,
-  "things": dataThings,
-  "places": dataPlaces,
-  "colors": dataColors,
-  "shapes": dataShapes,
-  "body-parts": dataBodyParts,
-  "clothes": dataClothes,
-  "transport": dataTransport,
-  "random": [...dataFruitsAndVegitables, ...dataAnimals, ...dataFoods],
+const categories: Record<string, { id: number; kword: string; kreading: string; eword: string; image: string | "" }[]> = {
+  "fruits-and-vegitables": dataFruitsAndVegitables.map(item => ({ ...item, image: "" })),
+  "animals": dataAnimals.map(item => ({ ...item, image: "" })),
+  "foods": dataFoods.map(item => ({ ...item, image: "" })),
+  "numbers": dataNumbers.map(item => ({ ...item, image: "" })),
+  "sino_numbers": dataSinoNumbers.map(item => ({ ...item, image: "" })),
+  "time": dataTime.map(item => ({ ...item, image: "" })),
+  "weather-seasons": dataWeather.map(item => ({ ...item, image: "" })),
+  "tools": dataTools.map(item => ({ ...item, image: "" })),
+  "occupations": dataOccupations.map(item => ({ ...item, image: "" })),
+  "family": dataFamily.map(item => ({ ...item, image: "" })),
+  "verbs": dataVerbs.map(item => ({ ...item, image: "" })),
+  "adjectives": dataAdjectives.map(item => ({ ...item, image: "" })),
+  "things": dataThings.map(item => ({ ...item, image: "" })),
+  "places": dataPlaces.map(item => ({ ...item, image: "" })),
+  "colors": dataColors.map(item => ({ ...item, image: "" })),
+  "shapes": dataShapes.map(item => ({ ...item, image: "" })),
+  "body-parts": dataBodyParts.map(item => ({ ...item, image: "" })),
+  "clothes": dataClothes.map(item => ({ ...item, image: "" })),
+  "transport": dataTransport.map(item => ({ ...item, image: "" })),
+  "directions": dataDirections,
+  "sports": dataSports,
+  "taste": dataTaste,
+  "feelings": dataFeelings,
+  "random": [...dataFruitsAndVegitables, ...dataAnimals, ...dataFoods].map(item => ({ ...item, image: "" })),
+  "question-answer" : dataSimpleQuestions.map(item => ({
+    id: item.id,
+    kword: item.question,
+    kreading: item.question_en, // Add appropriate value if available
+    eword: item.answer,
+    image: ""
+  })),
+  "image_identification" : dataSports
 };
 
 export default function Home() {
   const [category, setCategory] = useState<string>("fruits-and-vegitables");
-  const [data, setData] = useState<{ id: number; kword: string; kreading: string; eword: string }[]>(categories[category]);
+  const [data, setData] = useState<{ id: number; kword: string; kreading: string; eword: string; image: string | ""}[]>(categories[category]);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [randomNumbers, setRandomNumbers] = useState<number[][]>([]);
@@ -61,6 +79,8 @@ export default function Home() {
   const [countWrongAnswers, setCountWrongAnswers] = useState<number>(0);
   const [viewKreading, setViewKreading] = useState<boolean>(false);
   const [isReverse, setIsReverse] = useState<boolean>(false);
+  const [isQuestionAnswer, setIsQuestionAnswer] = useState<boolean>(false);
+  const [isImageIdentification, setIsImageIdentification] = useState<boolean>(false);
   const NumberOfChoices = 4;
   const EnableReverse = true;
 
@@ -143,6 +163,17 @@ export default function Home() {
     setData(shuffleArray(categories[newCategory]));
     setCurrentQuestion(0);
     setCountWrongAnswers(0);
+    setViewKreading(false);  
+    setIsQuestionAnswer(false);
+    setIsImageIdentification(false);
+
+    if(newCategory === "question-answer") {
+      setIsQuestionAnswer(true);
+      setIsReverse(false); 
+    }else if(newCategory === "image_identification") {
+      setIsImageIdentification(true);
+    }
+    
   };
 
   const handleReverseChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -179,11 +210,22 @@ export default function Home() {
         {currentQuestion < data.length && (
           <div key={data[currentQuestion].id} className={`flex flex-col gap-4 items-center transition-opacity duration-500 ${transition ? 'opacity-0' : 'opacity-100'} mt-vw-20`}>
             <div className="flex flex-col gap-4 items-center">
-              <a className={`text-[16vw] max-lg:text-[20vw] max-md:text-[18vw] max-sm:text-[12vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-[16vw] mt-[4vw]`}
-              title={data[currentQuestion].kreading}> {isReverse ? data[currentQuestion].eword : data[currentQuestion].kword}</a>
               
-              {viewKreading && !isReverse && (
-                <a className={`text-[4vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-yellow-500'}`} 
+              {isQuestionAnswer ? (
+                <div className={`text-[6vw] lg:text-[42px] max-sm:text-[7vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-normal mt-[4vw]`}
+                > {data[currentQuestion].kword}</div>
+              ) : isImageIdentification ?  (
+                <div className={`flex flex-col items-center border-transparent overflow-hidden max-w-[350px] ${isCorrect === true ? ' border-green-500' : ""}`}>
+                  <img className="w-full max-h-[350px]" src={data[currentQuestion]?.image} alt={data[currentQuestion].eword}  />
+                </div>
+              )
+              : ( 
+                <a className={`text-[12vw] md:text-[60px] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-normal`}
+                title={data[currentQuestion].kreading}> {isReverse ? data[currentQuestion].eword : data[currentQuestion].kword}</a>      
+              )}
+
+              {viewKreading && !isReverse && !isImageIdentification &&(
+                <a className={`text-[4vw] lg:text-[28px] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-yellow-500'}`} 
                 >{data[currentQuestion].kreading}</a>
               )}
 
@@ -194,6 +236,8 @@ export default function Home() {
                 selectedAnswer={selectedAnswer}
                 isCorrect={isCorrect}
                 isReverse={isReverse}
+                isQuestionAnswer={isQuestionAnswer}
+                isImageIdentification={isImageIdentification}
                 checkAnswer={checkAnswer}
                 
               />
@@ -201,7 +245,7 @@ export default function Home() {
           </div>
         )}
 
-        {EnableReverse && (
+        {EnableReverse && !isQuestionAnswer && !isImageIdentification &&(
           <div className="flex flex-row gap-2 items-center">
             <input
               type="checkbox"
@@ -215,7 +259,7 @@ export default function Home() {
         )}
 
         <div className="flex flex-row justify-center items-center">
-          {!viewKreading && !isReverse && (
+          {!viewKreading && !isReverse && !isImageIdentification && (
             <a onClick={()=> setViewKreading(true)} className="text-yellow-100 text-vw-12 border rounded-md p-2 self-start animate-pulse mr-2 capitalize font-bold">hint</a>
           )}
           <span className="text-white">Wrong Answers: {countWrongAnswers}</span>

@@ -698,5 +698,187 @@
     "answer": "미끄럼틀",
     "question_en": "What can we slide down from a high place?",
     "answer_en": "Slide"
+    },
+    {
+    "id": 101,
+    "question": "한국의 수도는 어디인가요?",
+    "answer": "서울",
+    "question_en": "What is the capital of South Korea?",
+    "answer_en": "Seoul"
+    },
+    {
+    "id": 102,
+    "question": "한국의 국기는 무엇인가요?",
+    "answer": "태극기",
+    "question_en": "What is the national flag of South Korea?",
+    "answer_en": "Taegeukgi"
+    },
+    {
+    "id": 103,
+    "question": "한국의 전통 의상은 무엇인가요?",
+    "answer": "한복",
+    "question_en": "What is the traditional dress of Korea?",
+    "answer_en": "Hanbok"
+    },
+    {
+    "id": 104,
+    "question": "한국의 대표적인 음식은 무엇인가요?",
+    "answer": "김치",
+    "question_en": "What is a representative food of Korea?",
+    "answer_en": "Kimchi"
+    },
+    {
+    "id": 105,
+    "question": "한국의 화폐 단위는 무엇인가요?",
+    "answer": "원",
+    "question_en": "What is the currency unit of South Korea?",
+    "answer_en": "Won"
+    },
+    {
+    "id": 106,
+    "question": "한국의 대표적인 전통 음악은 무엇인가요?",
+    "answer": "판소리",
+    "question_en": "What is a representative traditional music of Korea?",
+    "answer_en": "Pansori"
+    },
+    {
+    "id": 107,
+    "question": "한국의 대표적인 전통 놀이 중 하나는 무엇인가요?",
+    "answer": "윷놀이",
+    "question_en": "What is one of the representative traditional games of Korea?",
+    "answer_en": "Yutnori"
+    },
+    {
+    "id": 108,
+    "question": "한국의 대표적인 전통 무용은 무엇인가요?",
+    "answer": "탈춤",
+    "question_en": "What is a representative traditional dance of Korea?",
+    "answer_en": "Talchum"
+    },
+    {
+    "id": 109,
+    "question": "한국의 대표적인 전통 주택은 무엇인가요?",
+    "answer": "한옥",
+    "question_en": "What is a representative traditional house of Korea?",
+    "answer_en": "Hanok"
+    },
+    {
+    "id": 100,
+    "question": "한국의 대표적인 전통 차는 무엇인가요?",
+    "answer": "녹차",
+    "question_en": "What is a representative traditional tea of Korea?",
+    "answer_en": "Green tea"
+    },
+    {
+    "id": 111,
+    "question": "한국의 대표적인 전통 악기는 무엇인가요?",
+    "answer": "가야금",
+    "question_en": "What is a representative traditional instrument of Korea?",
+    "answer_en": "Gayageum"
+    },
+    {
+    "id": 112,
+    "question": "한국의 대표적인 전통 명절은 무엇인가요?",
+    "answer": "설날",
+    "question_en": "What is a representative traditional holiday of Korea?",
+    "answer_en": "Seollal"
+    },
+    {
+    "id": 113,
+    "question": "한국의 대표적인 전통 음식 중 하나는 무엇인가요?",
+    "answer": "비빔밥",
+    "question_en": "What is one of the representative traditional foods of Korea?",
+    "answer_en": "Bibimbap"
+    },
+    {
+    "id": 114,
+    "question": "한국의 대표적인 전통 놀이 중 하나는 무엇인가요?",
+    "answer": "제기차기",
+    "question_en": "What is one of the representative traditional games of Korea?",
+    "answer_en": "Jegichagi"
+    },
+    {
+    "id": 115,
+    "question": "한국의 대표적인 전통 무용 중 하나는 무엇인가요?",
+    "answer": "강강술래",
+    "question_en": "What is one of the representative traditional dances of Korea?",
+    "answer_en": "Ganggangsullae"
+    },
+    {
+    "id": 116,
+    "question": "한국의 대표적인 전통 주택 중 하나는 무엇인가요?",
+    "answer": "초가집",
+    "question_en": "What is one of the representative traditional houses of Korea?",
+    "answer_en": "Chogajip"
+    },
+    {
+    "id": 117,
+    "question": "한국의 대표적인 전통 차 중 하나는 무엇인가요?",
+    "answer": "보리차",
+    "question_en": "What is one of the representative traditional teas of Korea?",
+    "answer_en": "Barley tea"
+    },
+    {
+    "id": 118,
+    "question": "한국의 대표적인 전통 악기 중 하나는 무엇인가요?",
+    "answer": "장구",
+    "question_en": "What is one of the representative traditional instruments of Korea?",
+    "answer_en": "Janggu"
+    },
+    {
+    "id": 119,
+    "question": "한국의 대표적인 전통 명절 중 하나는 무엇인가요?",
+    "answer": "추석",
+    "question_en": "What is one of the representative traditional holidays of Korea?",
+    "answer_en": "Chuseok"
+    },
+    {
+    "id": 120,
+    "question": "한국의 대표적인 전통 음식 중 하나는 무엇인가요?",
+    "answer": "떡국",
+    "question_en": "What is one of the representative traditional foods of Korea?",
+    "answer_en": "Tteokguk"
+    },
+    {
+    "id": 121,
+    "question": "한국의 대표적인 전통 놀이 중 하나는 무엇인가요?",
+    "answer": "널뛰기",
+    "question_en": "What is one of the representative traditional games of Korea?",
+    "answer_en": "Neolttwigi"
+    },
+    {
+    "id": 122,
+    "question": "한국의 대표적인 전통 무용 중 하나는 무엇인가요?",
+    "answer": "부채춤",
+    "question_en": "What is one of the representative traditional dances of Korea?",
+    "answer_en": "Buchaechum"
+    },
+    {
+    "id": 123,
+    "question": "한국의 대표적인 전통 주택 중 하나는 무엇인가요?",
+    "answer": "기와집",
+    "question_en": "What is one of the representative traditional houses of Korea?",
+    "answer_en": "Giwajip"
+    },
+    {
+    "id": 124,
+    "question": "한국의 대표적인 전통 차 중 하나는 무엇인가요?",
+    "answer": "대추차",
+    "question_en": "What is one of the representative traditional teas of Korea?",
+    "answer_en": "Jujube tea"
+    },
+    {
+    "id": 125,
+    "question": "한국의 대표적인 전통 악기 중 하나는 무엇인가요?",
+    "answer": "해금",
+    "question_en": "What is one of the representative traditional instruments of Korea?",
+    "answer_en": "Haegeum"
+    },
+    {
+    "id": 126,
+    "question": "한국의 대표적인 전통 명절 중 하나는 무엇인가요?",
+    "answer": "단오",
+    "question_en": "What is one of the representative traditional holidays of Korea?",
+    "answer_en": "Dano"
     }
 ]
