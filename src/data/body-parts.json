@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "eword": "head",
+    "kword": "머리",
+    "kreading": "meori"
+  },
+  {
+    "id": 2,
+    "eword": "face",
+    "kword": "얼굴",
+    "kreading": "eolgul"
+  },
+  {
+    "id": 3,
+    "eword": "hair",
+    "kword": "머리카락",
+    "kreading": "meorikarak"
+  },
+  {
+    "id": 4,
+    "eword": "eye",
+    "kword": "눈",
+    "kreading": "nun"
+  },
+  {
+    "id": 5,
+    "eword": "ear",
+    "kword": "귀",
+    "kreading": "gwi"
+  },
+  {
+    "id": 6,
+    "eword": "nose",
+    "kword": "코",
+    "kreading": "ko"
+  },
+  {
+    "id": 7,
+    "eword": "mouth",
+    "kword": "입",
+    "kreading": "ip"
+  },
+  {
+    "id": 8,
+    "eword": "tooth",
+    "kword": "이",
+    "kreading": "i"
+  },
+  {
+    "id": 9,
+    "eword": "tongue",
+    "kword": "혀",
+    "kreading": "hyeo"
+  },
+  {
+    "id": 10,
+    "eword": "neck",
+    "kword": "목",
+    "kreading": "mok"
+  },
+  {
+    "id": 11,
+    "eword": "shoulder",
+    "kword": "어깨",
+    "kreading": "eokkae"
+  },
+  {
+    "id": 12,
+    "eword": "arm",
+    "kword": "팔",
+    "kreading": "pal"
+  },
+  {
+    "id": 13,
+    "eword": "elbow",
+    "kword": "팔꿈치",
+    "kreading": "palkkumchi"
+  },
+  {
+    "id": 14,
+    "eword": "hand",
+    "kword": "손",
+    "kreading": "son"
+  },
+  {
+    "id": 15,
+    "eword": "finger",
+    "kword": "손가락",
+    "kreading": "sonkarak"
+  },
+  {
+    "id": 16,
+    "eword": "thumb",
+    "kword": "엄지손가락",
+    "kreading": "eomjisonkarak"
+  },
+  {
+    "id": 17,
+    "eword": "chest",
+    "kword": "가슴",
+    "kreading": "gaseum"
+  },
+  {
+    "id": 18,
+    "eword": "stomach",
+    "kword": "배",
+    "kreading": "bae"
+  },
+  {
+    "id": 19,
+    "eword": "waist",
+    "kword": "허리",
+    "kreading": "heori"
+  },
+  {
+    "id": 20,
+    "eword": "leg",
+    "kword": "다리",
+    "kreading": "dari"
+  },
+  {
+    "id": 21,
+    "eword": "knee",
+    "kword": "무릎",
+    "kreading": "mureup"
+  },
+  {
+    "id": 22,
+    "eword": "foot",
+    "kword": "발",
+    "kreading": "bal"
+  },
+  {
+    "id": 23,
+    "eword": "toe",
+    "kword": "발가락",
+    "kreading": "balkarak"
+  },
+  {
+    "id": 24,
+    "eword": "heel",
+    "kword": "발뒤꿈치",
+    "kreading": "balduikkumchi"
+  },
+  {
+    "id": 25,
+    "eword": "back",
+    "kword": "등",
+    "kreading": "deung"
+  },
+  {
+    "id": 26,
+    "eword": "skin",
+    "kword": "피부",
+    "kreading": "pibu"
+  },
+  {
+    "id": 27,
+    "eword": "bone",
+    "kword": "뼈",
+    "kreading": "ppyeo"
+  },
+  {
+    "id": 28,
+    "eword": "muscle",
+    "kword": "근육",
+    "kreading": "geunyuk"
+  },
+  {
+    "id": 29,
+    "eword": "heart",
+    "kword": "심장",
+    "kreading": "simjang"
+  },
+  {
+    "id": 30,
+    "eword": "brain",
+    "kword": "뇌",
+    "kreading": "noe"
+  }
+]

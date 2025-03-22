@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "eword": "apple",
+    "kword": "사과",
+    "kreading": "sa-gwa"
+  },
+  {
+    "id": 2,
+    "eword": "banana",
+    "kword": "바나나",
+    "kreading": "ba-na-na"
+  },
+  {
+    "id": 3,
+    "eword": "carrot",
+    "kword": "당근",
+    "kreading": "dang-geun"
+  },
+  {
+    "id": 4,
+    "eword": "watermelon",
+    "kword": "수박",
+    "kreading": "su-bak"
+  },
+  {
+    "id": 5,
+    "eword": "guava",
+    "kword": "구아바",
+    "kreading": "gu-a-ba"
+  },
+  {
+    "id": 6,
+    "eword": "cabbage",
+    "kword": "양배추",
+    "kreading": "yang-bae-chu"
+  },
+  {
+    "id": 7,
+    "eword": "strawberry",
+    "kword": "딸기",
+    "kreading": "ddal-gi"
+  },
+  {
+    "id": 8,
+    "eword": "grape",
+    "kword": "포도",
+    "kreading": "po-do"
+  },
+  {
+    "id": 9,
+    "eword": "pineapple",
+    "kword": "파인애플",
+    "kreading": "pa-in-ae-peul"
+  },
+  {
+    "id": 10,
+    "eword": "mango",
+    "kword": "망고",
+    "kreading": "mang-go"
+  },
+  {
+    "id": 11,
+    "eword": "peach",
+    "kword": "복숭아",
+    "kreading": "bok-sung-a"
+  },
+  {
+    "id": 12,
+    "eword": "pear",
+    "kword": "배",
+    "kreading": "bae"
+  },
+  {
+    "id": 13,
+    "eword": "plum",
+    "kword": "자두",
+    "kreading": "ja-du"
+  },
+  {
+    "id": 14,
+    "eword": "kiwi",
+    "kword": "키위",
+    "kreading": "ki-wi"
+  },
+  {
+    "id": 15,
+    "eword": "lemon",
+    "kword": "레몬",
+    "kreading": "le-mon"
+  },
+  {
+    "id": 16,
+    "eword": "lime",
+    "kword": "라임",
+    "kreading": "la-im"
+  },
+  {
+    "id": 17,
+    "eword": "orange",
+    "kword": "오렌지",
+    "kreading": "o-ren-ji"
+  },
+  {
+    "id": 18,
+    "eword": "papaya",
+    "kword": "파파야",
+    "kreading": "pa-pa-ya"
+  },
+  {
+    "id": 19,
+    "eword": "blueberry",
+    "kword": "블루베리",
+    "kreading": "beul-lu-be-ri"
+  },
+  {
+    "id": 20,
+    "eword": "raspberry",
+    "kword": "라즈베리",
+    "kreading": "la-jeu-be-ri"
+  },
+  {
+    "id": 21,
+    "eword": "blackberry",
+    "kword": "블랙베리",
+    "kreading": "beul-laek-be-ri"
+  },
+  {
+    "id": 22,
+    "eword": "cherry",
+    "kword": "체리",
+    "kreading": "che-ri"
+  },
+  {
+    "id": 23,
+    "eword": "fig",
+    "kword": "무화과",
+    "kreading": "mu-hwa-gwa"
+  },
+  {
+    "id": 24,
+    "eword": "pomegranate",
+    "kword": "석류",
+    "kreading": "seok-ryu"
+  },
+  {
+    "id": 25,
+    "eword": "apricot",
+    "kword": "살구",
+    "kreading": "sal-gu"
+  },
+  {
+    "id": 26,
+    "eword": "coconut",
+    "kword": "코코넛",
+    "kreading": "ko-ko-neot"
+  },
+  {
+    "id": 27,
+    "eword": "date",
+    "kword": "대추",
+    "kreading": "dae-chu"
+  },
+  {
+    "id": 28,
+    "eword": "dragonfruit",
+    "kword": "용과",
+    "kreading": "yong-gwa"
+  },
+  {
+    "id": 29,
+    "eword": "durian",
+    "kword": "두리안",
+    "kreading": "du-ri-an"
+  },
+  {
+    "id": 30,
+    "eword": "elderberry",
+    "kword": "엘더베리",
+    "kreading": "el-deo-be-ri"
+  },
+  {
+    "id": 31,
+    "eword": "gooseberry",
+    "kword": "구스베리",
+    "kreading": "gu-seu-be-ri"
+  },
+  {
+    "id": 32,
+    "eword": "jackfruit",
+    "kword": "잭프루트",
+    "kreading": "jaek-peu-ru-teu"
+  },
+  {
+    "id": 33,
+    "eword": "lychee",
+    "kword": "리치",
+    "kreading": "ri-chi"
+  },
+  {
+    "id": 34,
+    "eword": "nectarine",
+    "kword": "넥타린",
+    "kreading": "nek-ta-rin"
+  },
+  {
+    "id": 35,
+    "eword": "passionfruit",
+    "kword": "패션프루트",
+    "kreading": "pae-syeon-peu-ru-teu"
+  },
+  {
+    "id": 36,
+    "eword": "persimmon",
+    "kword": "감",
+    "kreading": "gam"
+  },
+  {
+    "id": 37,
+    "eword": "quince",
+    "kword": "모과",
+    "kreading": "mo-gwa"
+  },
+  {
+    "id": 38,
+    "eword": "rambutan",
+    "kword": "람부탄",
+    "kreading": "ram-bu-tan"
+  },
+  {
+    "id": 39,
+    "eword": "starfruit",
+    "kword": "스타프루트",
+    "kreading": "seu-ta-peu-ru-teu"
+  },
+  {
+    "id": 40,
+    "eword": "tamarind",
+    "kword": "타마린드",
+    "kreading": "ta-ma-rin-deu"
+  },
+  {
+    "id": 41,
+    "eword": "ugli fruit",
+    "kword": "우글리프루트",
+    "kreading": "u-geul-li-peu-ru-teu"
+  },
+  {
+    "id": 42,
+    "eword": "yuzu",
+    "kword": "유자",
+    "kreading": "yu-ja"
+  },
+  {
+    "id": 43,
+    "eword": "zucchini",
+    "kword": "주키니",
+    "kreading": "ju-ki-ni"
+  },
+  {
+    "id": 44,
+    "eword": "artichoke",
+    "kword": "아티초크",
+    "kreading": "a-ti-cho-keu"
+  },
+  {
+    "id": 45,
+    "eword": "asparagus",
+    "kword": "아스파라거스",
+    "kreading": "a-seu-pa-ra-geo-seu"
+  },
+  {
+    "id": 46,
+    "eword": "beet",
+    "kword": "비트",
+    "kreading": "bi-teu"
+  },
+  {
+    "id": 47,
+    "eword": "broccoli",
+    "kword": "브로콜리",
+    "kreading": "beu-ro-kol-li"
+  },
+  {
+    "id": 48,
+    "eword": "brussels sprouts",
+    "kword": "브뤼셀 스프라우트",
+    "kreading": "beu-ryu-sel seu-peu-ra-u-teu"
+  },
+  {
+    "id": 49,
+    "eword": "cauliflower",
+    "kword": "콜리플라워",
+    "kreading": "kol-li-peul-la-weo"
+  },
+  {
+    "id": 50,
+    "eword": "celery",
+    "kword": "셀러리",
+    "kreading": "sel-leo-ri"
+  }
+]

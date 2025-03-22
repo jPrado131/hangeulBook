@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "eword": "red",
+    "kword": "빨간색",
+    "kreading": "ppalgansaek"
+  },
+  {
+    "id": 2,
+    "eword": "blue",
+    "kword": "파란색",
+    "kreading": "paransaek"
+  },
+  {
+    "id": 3,
+    "eword": "green",
+    "kword": "초록색",
+    "kreading": "choroksaek"
+  },
+  {
+    "id": 4,
+    "eword": "yellow",
+    "kword": "노란색",
+    "kreading": "noransaek"
+  },
+  {
+    "id": 5,
+    "eword": "black",
+    "kword": "검은색",
+    "kreading": "geomeunsaek"
+  },
+  {
+    "id": 6,
+    "eword": "white",
+    "kword": "흰색",
+    "kreading": "huinsaek"
+  },
+  {
+    "id": 7,
+    "eword": "orange",
+    "kword": "주황색",
+    "kreading": "juhwangsaek"
+  },
+  {
+    "id": 8,
+    "eword": "purple",
+    "kword": "보라색",
+    "kreading": "borasaek"
+  },
+  {
+    "id": 9,
+    "eword": "pink",
+    "kword": "분홍색",
+    "kreading": "bunhongsaek"
+  },
+  {
+    "id": 10,
+    "eword": "brown",
+    "kword": "갈색",
+    "kreading": "galsaek"
+  },
+  {
+    "id": 11,
+    "eword": "gray",
+    "kword": "회색",
+    "kreading": "hoesaek"
+  },
+  {
+    "id": 12,
+    "eword": "light blue",
+    "kword": "하늘색",
+    "kreading": "haneulsaek"
+  },
+  {
+    "id": 13,
+    "eword": "dark blue",
+    "kword": "남색",
+    "kreading": "namsaek"
+  },
+  {
+    "id": 14,
+    "eword": "gold",
+    "kword": "금색",
+    "kreading": "geumsaek"
+  },
+  {
+    "id": 15,
+    "eword": "silver",
+    "kword": "은색",
+    "kreading": "eunsaek"
+  }
+]

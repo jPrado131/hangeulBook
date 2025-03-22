@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "eword": "sunny",
+    "kword": "맑음",
+    "kreading": "malgeum"
+  },
+  {
+    "id": 2,
+    "eword": "cloudy",
+    "kword": "흐림",
+    "kreading": "heurim"
+  },
+  {
+    "id": 3,
+    "eword": "rainy",
+    "kword": "비",
+    "kreading": "bi"
+  },
+  {
+    "id": 4,
+    "eword": "snowy",
+    "kword": "눈",
+    "kreading": "nun"
+  },
+  {
+    "id": 5,
+    "eword": "windy",
+    "kword": "바람",
+    "kreading": "baram"
+  },
+  {
+    "id": 6,
+    "eword": "stormy",
+    "kword": "폭풍",
+    "kreading": "pokpung"
+  },
+  {
+    "id": 7,
+    "eword": "foggy",
+    "kword": "안개",
+    "kreading": "angae"
+  },
+  {
+    "id": 8,
+    "eword": "hot",
+    "kword": "더운",
+    "kreading": "deoun"
+  },
+  {
+    "id": 9,
+    "eword": "cold",
+    "kword": "추운",
+    "kreading": "chuun"
+  },
+  {
+    "id": 10,
+    "eword": "humid",
+    "kword": "습한",
+    "kreading": "seupan"
+  },  {
+    "id": 11,
+    "eword": "spring",
+    "kword": "봄",
+    "kreading": "bom"
+  },
+  {
+    "id": 12,
+    "eword": "summer",
+    "kword": "여름",
+    "kreading": "yeoreum"
+  },
+  {
+    "id": 13,
+    "eword": "autumn",
+    "kword": "가을",
+    "kreading": "gaeul"
+  },
+  {
+    "id": 14,
+    "eword": "winter",
+    "kword": "겨울",
+    "kreading": "gyeoul"
+  }
+
+]

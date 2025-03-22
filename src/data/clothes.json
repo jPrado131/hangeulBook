@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "eword": "shirt",
+    "kword": "셔츠",
+    "kreading": "syeocheu"
+  },
+  {
+    "id": 2,
+    "eword": "pants",
+    "kword": "바지",
+    "kreading": "baji"
+  },
+  {
+    "id": 3,
+    "eword": "jacket",
+    "kword": "재킷",
+    "kreading": "jaekit"
+  },
+  {
+    "id": 4,
+    "eword": "coat",
+    "kword": "코트",
+    "kreading": "koteu"
+  },
+  {
+    "id": 5,
+    "eword": "dress",
+    "kword": "드레스",
+    "kreading": "deureseu"
+  },
+  {
+    "id": 6,
+    "eword": "skirt",
+    "kword": "치마",
+    "kreading": "chima"
+  },
+  {
+    "id": 7,
+    "eword": "hat",
+    "kword": "모자",
+    "kreading": "moja"
+  },
+  {
+    "id": 8,
+    "eword": "shoes",
+    "kword": "신발",
+    "kreading": "sinbal"
+  },
+  {
+    "id": 9,
+    "eword": "socks",
+    "kword": "양말",
+    "kreading": "yangmal"
+  },
+  {
+    "id": 10,
+    "eword": "gloves",
+    "kword": "장갑",
+    "kreading": "janggap"
+  },
+  {
+    "id": 11,
+    "eword": "scarf",
+    "kword": "목도리",
+    "kreading": "mokdori"
+  },
+  {
+    "id": 12,
+    "eword": "belt",
+    "kword": "벨트",
+    "kreading": "belteu"
+  },
+  {
+    "id": 13,
+    "eword": "tie",
+    "kword": "넥타이",
+    "kreading": "nektai"
+  },
+  {
+    "id": 14,
+    "eword": "suit",
+    "kword": "정장",
+    "kreading": "jeongjang"
+  },
+  {
+    "id": 15,
+    "eword": "blouse",
+    "kword": "블라우스",
+    "kreading": "beulauseu"
+  },
+  {
+    "id": 16,
+    "eword": "jeans",
+    "kword": "청바지",
+    "kreading": "cheongbaji"
+  },
+  {
+    "id": 17,
+    "eword": "shorts",
+    "kword": "반바지",
+    "kreading": "banbaji"
+  },
+  {
+    "id": 18,
+    "eword": "sweater",
+    "kword": "스웨터",
+    "kreading": "seuweteo"
+  },
+  {
+    "id": 19,
+    "eword": "hoodie",
+    "kword": "후드티",
+    "kreading": "hudeuti"
+  },
+  {
+    "id": 20,
+    "eword": "t-shirt",
+    "kword": "티셔츠",
+    "kreading": "tisyeocheu"
+  },
+  {
+    "id": 21,
+    "eword": "pajamas",
+    "kword": "잠옷",
+    "kreading": "jamot"
+  },
+  {
+    "id": 22,
+    "eword": "swimsuit",
+    "kword": "수영복",
+    "kreading": "suyeongbok"
+  },
+  {
+    "id": 23,
+    "eword": "raincoat",
+    "kword": "비옷",
+    "kreading": "biot"
+  },
+  {
+    "id": 24,
+    "eword": "underwear",
+    "kword": "속옷",
+    "kreading": "sokot"
+  },
+  {
+    "id": 25,
+    "eword": "bra",
+    "kword": "브래지어",
+    "kreading": "beuraejieo"
+  },
+  {
+    "id": 26,
+    "eword": "panties",
+    "kword": "팬티",
+    "kreading": "paenti"
+  },
+  {
+    "id": 27,
+    "eword": "boxers",
+    "kword": "트렁크",
+    "kreading": "teureongkeu"
+  },
+  {
+    "id": 28,
+    "eword": "leggings",
+    "kword": "레깅스",
+    "kreading": "regingseu"
+  },
+  {
+    "id": 29,
+    "eword": "sneakers",
+    "kword": "운동화",
+    "kreading": "undonghwa"
+  },
+  {
+    "id": 30,
+    "eword": "boots",
+    "kword": "부츠",
+    "kreading": "bucheu"
+  }
+]

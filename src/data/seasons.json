@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "eword": "spring",
+    "kword": "봄",
+    "kreading": "bom"
+  },
+  {
+    "id": 2,
+    "eword": "summer",
+    "kword": "여름",
+    "kreading": "yeoreum"
+  },
+  {
+    "id": 3,
+    "eword": "autumn",
+    "kword": "가을",
+    "kreading": "gaeul"
+  },
+  {
+    "id": 4,
+    "eword": "winter",
+    "kword": "겨울",
+    "kreading": "gyeoul"
+  }
+]

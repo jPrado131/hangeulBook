@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "eword": "doctor",
+    "kword": "의사",
+    "kreading": "uisa"
+  },
+  {
+    "id": 2,
+    "eword": "nurse",
+    "kword": "간호사",
+    "kreading": "ganhosa"
+  },
+  {
+    "id": 3,
+    "eword": "teacher",
+    "kword": "선생님",
+    "kreading": "seonsaengnim"
+  },
+  {
+    "id": 4,
+    "eword": "engineer",
+    "kword": "엔지니어",
+    "kreading": "enjinieo"
+  },
+  {
+    "id": 5,
+    "eword": "police officer",
+    "kword": "경찰관",
+    "kreading": "gyeongchalgwan"
+  },
+  {
+    "id": 6,
+    "eword": "firefighter",
+    "kword": "소방관",
+    "kreading": "sobanggwan"
+  },
+  {
+    "id": 7,
+    "eword": "chef",
+    "kword": "요리사",
+    "kreading": "yorisa"
+  },
+  {
+    "id": 8,
+    "eword": "artist",
+    "kword": "예술가",
+    "kreading": "yesulga"
+  },
+  {
+    "id": 9,
+    "eword": "musician",
+    "kword": "음악가",
+    "kreading": "eumagga"
+  },
+  {
+    "id": 10,
+    "eword": "actor",
+    "kword": "배우",
+    "kreading": "baeu"
+  },
+  {
+    "id": 11,
+    "eword": "writer",
+    "kword": "작가",
+    "kreading": "jakga"
+  },
+  {
+    "id": 12,
+    "eword": "journalist",
+    "kword": "기자",
+    "kreading": "gija"
+  },
+  {
+    "id": 13,
+    "eword": "lawyer",
+    "kword": "변호사",
+    "kreading": "byeonhosa"
+  },
+  {
+    "id": 14,
+    "eword": "judge",
+    "kword": "판사",
+    "kreading": "pansa"
+  },
+  {
+    "id": 15,
+    "eword": "scientist",
+    "kword": "과학자",
+    "kreading": "gwahakja"
+  },
+  {
+    "id": 16,
+    "eword": "pharmacist",
+    "kword": "약사",
+    "kreading": "yaksa"
+  },
+  {
+    "id": 17,
+    "eword": "dentist",
+    "kword": "치과의사",
+    "kreading": "chigwa-uisa"
+  },
+  {
+    "id": 18,
+    "eword": "architect",
+    "kword": "건축가",
+    "kreading": "geonchukga"
+  },
+  {
+    "id": 19,
+    "eword": "pilot",
+    "kword": "조종사",
+    "kreading": "jojongsa"
+  },
+  {
+    "id": 20,
+    "eword": "flight attendant",
+    "kword": "승무원",
+    "kreading": "seungmuwon"
+  },
+  {
+    "id": 21,
+    "eword": "mechanic",
+    "kword": "정비사",
+    "kreading": "jeongbisa"
+  },
+  {
+    "id": 22,
+    "eword": "electrician",
+    "kword": "전기기사",
+    "kreading": "jeongigisa"
+  },
+  {
+    "id": 23,
+    "eword": "plumber",
+    "kword": "배관공",
+    "kreading": "baegwangong"
+  },
+  {
+    "id": 24,
+    "eword": "carpenter",
+    "kword": "목수",
+    "kreading": "moksu"
+  },
+  {
+    "id": 25,
+    "eword": "farmer",
+    "kword": "농부",
+    "kreading": "nongbu"
+  },
+  {
+    "id": 26,
+    "eword": "fisherman",
+    "kword": "어부",
+    "kreading": "eobu"
+  },
+  {
+    "id": 27,
+    "eword": "gardener",
+    "kword": "정원사",
+    "kreading": "jeongwonsa"
+  },
+  {
+    "id": 28,
+    "eword": "driver",
+    "kword": "운전사",
+    "kreading": "unjeonsa"
+  },
+  {
+    "id": 29,
+    "eword": "bus driver",
+    "kword": "버스 운전사",
+    "kreading": "beoseu unjeonsa"
+  },
+  {
+    "id": 30,
+    "eword": "taxi driver",
+    "kword": "택시 운전사",
+    "kreading": "taeksi unjeonsa"
+  },
+  {
+    "id": 31,
+    "eword": "delivery person",
+    "kword": "배달원",
+    "kreading": "baedalwon"
+  },
+  {
+    "id": 32,
+    "eword": "shop assistant",
+    "kword": "점원",
+    "kreading": "jeomwon"
+  },
+  {
+    "id": 33,
+    "eword": "cashier",
+    "kword": "계산원",
+    "kreading": "gyesanwon"
+  },
+  {
+    "id": 34,
+    "eword": "waiter",
+    "kword": "웨이터",
+    "kreading": "weiteo"
+  },
+  {
+    "id": 35,
+    "eword": "waitress",
+    "kword": "웨이트리스",
+    "kreading": "weiteuriseu"
+  },
+  {
+    "id": 36,
+    "eword": "barista",
+    "kword": "바리스타",
+    "kreading": "bariseuta"
+  },
+  {
+    "id": 37,
+    "eword": "bartender",
+    "kword": "바텐더",
+    "kreading": "batendeo"
+  },
+  {
+    "id": 38,
+    "eword": "cleaner",
+    "kword": "청소부",
+    "kreading": "cheongsobu"
+  },
+  {
+    "id": 39,
+    "eword": "security guard",
+    "kword": "경비원",
+    "kreading": "gyeongbiwon"
+  },
+  {
+    "id": 40,
+    "eword": "soldier",
+    "kword": "군인",
+    "kreading": "gunin"
+  },
+  {
+    "id": 41,
+    "eword": "sailor",
+    "kword": "선원",
+    "kreading": "seonwon"
+  },
+  {
+    "id": 42,
+    "eword": "scientist",
+    "kword": "과학자",
+    "kreading": "gwahakja"
+  },
+  {
+    "id": 43,
+    "eword": "researcher",
+    "kword": "연구원",
+    "kreading": "yeonguwon"
+  },
+  {
+    "id": 44,
+    "eword": "pharmacist",
+    "kword": "약사",
+    "kreading": "yaksa"
+  },
+  {
+    "id": 45,
+    "eword": "dentist",
+    "kword": "치과의사",
+    "kreading": "chigwa-uisa"
+  },
+  {
+    "id": 46,
+    "eword": "veterinarian",
+    "kword": "수의사",
+    "kreading": "su-uisa"
+  },
+  {
+    "id": 47,
+    "eword": "optician",
+    "kword": "안경사",
+    "kreading": "angyeongsa"
+  },
+  {
+    "id": 48,
+    "eword": "physiotherapist",
+    "kword": "물리치료사",
+    "kreading": "mullichiryosa"
+  },
+  {
+    "id": 49,
+    "eword": "psychologist",
+    "kword": "심리학자",
+    "kreading": "simnihakja"
+  },
+  {
+    "id": 50,
+    "eword": "social worker",
+    "kword": "사회복지사",
+    "kreading": "sahoebokjisa"
+  }
+]

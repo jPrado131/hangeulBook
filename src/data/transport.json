@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "eword": "car",
+    "kword": "자동차",
+    "kreading": "jadongcha"
+  },
+  {
+    "id": 2,
+    "eword": "bus",
+    "kword": "버스",
+    "kreading": "beoseu"
+  },
+  {
+    "id": 3,
+    "eword": "train",
+    "kword": "기차",
+    "kreading": "gicha"
+  },
+  {
+    "id": 4,
+    "eword": "subway",
+    "kword": "지하철",
+    "kreading": "jihacheol"
+  },
+  {
+    "id": 5,
+    "eword": "bicycle",
+    "kword": "자전거",
+    "kreading": "jajeongeo"
+  },
+  {
+    "id": 6,
+    "eword": "motorcycle",
+    "kword": "오토바이",
+    "kreading": "otobai"
+  },
+  {
+    "id": 7,
+    "eword": "airplane",
+    "kword": "비행기",
+    "kreading": "bihaenggi"
+  },
+  {
+    "id": 8,
+    "eword": "helicopter",
+    "kword": "헬리콥터",
+    "kreading": "hellikopteo"
+  },
+  {
+    "id": 9,
+    "eword": "boat",
+    "kword": "배",
+    "kreading": "bae"
+  },
+  {
+    "id": 10,
+    "eword": "ship",
+    "kword": "선박",
+    "kreading": "seonbak"
+  },
+  {
+    "id": 11,
+    "eword": "ferry",
+    "kword": "페리",
+    "kreading": "peri"
+  },
+  {
+    "id": 12,
+    "eword": "taxi",
+    "kword": "택시",
+    "kreading": "taeksi"
+  },
+  {
+    "id": 13,
+    "eword": "truck",
+    "kword": "트럭",
+    "kreading": "teureok"
+  },
+  {
+    "id": 14,
+    "eword": "van",
+    "kword": "밴",
+    "kreading": "baen"
+  },
+  {
+    "id": 15,
+    "eword": "scooter",
+    "kword": "스쿠터",
+    "kreading": "seukuteo"
+  },
+  {
+    "id": 16,
+    "eword": "tram",
+    "kword": "트램",
+    "kreading": "teuraem"
+  },
+  {
+    "id": 17,
+    "eword": "subway",
+    "kword": "지하철",
+    "kreading": "jihacheol"
+  },
+  {
+    "id": 18,
+    "eword": "monorail",
+    "kword": "모노레일",
+    "kreading": "monoreil"
+  },
+  {
+    "id": 19,
+    "eword": "cable car",
+    "kword": "케이블카",
+    "kreading": "keibeulka"
+  },
+  {
+    "id": 20,
+    "eword": "gondola",
+    "kword": "곤돌라",
+    "kreading": "gondolla"
+  },
+  {
+    "id": 21,
+    "eword": "hovercraft",
+    "kword": "호버크래프트",
+    "kreading": "hobeokeuraepeuteu"
+  },
+  {
+    "id": 22,
+    "eword": "jet ski",
+    "kword": "제트스키",
+    "kreading": "jetseuski"
+  },
+  {
+    "id": 23,
+    "eword": "yacht",
+    "kword": "요트",
+    "kreading": "yoteu"
+  },
+  {
+    "id": 24,
+    "eword": "sailboat",
+    "kword": "돛단배",
+    "kreading": "dottanbae"
+  },
+  {
+    "id": 25,
+    "eword": "canoe",
+    "kword": "카누",
+    "kreading": "kanu"
+  },
+  {
+    "id": 26,
+    "eword": "kayak",
+    "kword": "카약",
+    "kreading": "kayak"
+  },
+  {
+    "id": 27,
+    "eword": "rowboat",
+    "kword": "노젓는 배",
+    "kreading": "nojeonneun bae"
+  },
+  {
+    "id": 28,
+    "eword": "cruise ship",
+    "kword": "크루즈선",
+    "kreading": "keurujeuseon"
+  },
+  {
+    "id": 29,
+    "eword": "fishing boat",
+    "kword": "낚싯배",
+    "kreading": "naksitbae"
+  },
+  {
+    "id": 30,
+    "eword": "submarine",
+    "kword": "잠수함",
+    "kreading": "jamsuham"
+  }
+]

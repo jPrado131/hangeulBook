@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "eword": "home",
+    "kword": "집",
+    "kreading": "jip"
+  },
+  {
+    "id": 2,
+    "eword": "school",
+    "kword": "학교",
+    "kreading": "hakgyo"
+  },
+  {
+    "id": 3,
+    "eword": "office",
+    "kword": "사무실",
+    "kreading": "samusil"
+  },
+  {
+    "id": 4,
+    "eword": "hospital",
+    "kword": "병원",
+    "kreading": "byeongwon"
+  },
+  {
+    "id": 5,
+    "eword": "restaurant",
+    "kword": "식당",
+    "kreading": "sikdang"
+  },
+  {
+    "id": 6,
+    "eword": "store",
+    "kword": "가게",
+    "kreading": "gage"
+  },
+  {
+    "id": 7,
+    "eword": "market",
+    "kword": "시장",
+    "kreading": "sijang"
+  },
+  {
+    "id": 8,
+    "eword": "park",
+    "kword": "공원",
+    "kreading": "gongwon"
+  },
+  {
+    "id": 9,
+    "eword": "library",
+    "kword": "도서관",
+    "kreading": "doseogwan"
+  },
+  {
+    "id": 10,
+    "eword": "bank",
+    "kword": "은행",
+    "kreading": "eunhaeng"
+  },
+  {
+    "id": 11,
+    "eword": "post office",
+    "kword": "우체국",
+    "kreading": "ucheguk"
+  },
+  {
+    "id": 12,
+    "eword": "hotel",
+    "kword": "호텔",
+    "kreading": "hotel"
+  },
+  {
+    "id": 13,
+    "eword": "airport",
+    "kword": "공항",
+    "kreading": "gonghang"
+  },
+  {
+    "id": 14,
+    "eword": "station",
+    "kword": "역",
+    "kreading": "yeok"
+  },
+  {
+    "id": 15,
+    "eword": "bus stop",
+    "kword": "버스 정류장",
+    "kreading": "beoseu jeongnyujang"
+  },
+  {
+    "id": 16,
+    "eword": "train station",
+    "kword": "기차역",
+    "kreading": "gichayeok"
+  },
+  {
+    "id": 17,
+    "eword": "subway station",
+    "kword": "지하철역",
+    "kreading": "jihacheolyeok"
+  },
+  {
+    "id": 18,
+    "eword": "museum",
+    "kword": "박물관",
+    "kreading": "bangmulgwan"
+  },
+  {
+    "id": 19,
+    "eword": "cinema",
+    "kword": "영화관",
+    "kreading": "yeonghwagwan"
+  },
+  {
+    "id": 20,
+    "eword": "theater",
+    "kword": "극장",
+    "kreading": "geukjang"
+  },
+  {
+    "id": 21,
+    "eword": "zoo",
+    "kword": "동물원",
+    "kreading": "dongmulwon"
+  },
+  {
+    "id": 22,
+    "eword": "aquarium",
+    "kword": "수족관",
+    "kreading": "sujokgwan"
+  },
+  {
+    "id": 23,
+    "eword": "gym",
+    "kword": "체육관",
+    "kreading": "cheyukgwan"
+  },
+  {
+    "id": 24,
+    "eword": "stadium",
+    "kword": "경기장",
+    "kreading": "gyeonggijang"
+  },
+  {
+    "id": 25,
+    "eword": "church",
+    "kword": "교회",
+    "kreading": "gyohoe"
+  },
+  {
+    "id": 26,
+    "eword": "temple",
+    "kword": "사원",
+    "kreading": "sawon"
+  },
+  {
+    "id": 27,
+    "eword": "mosque",
+    "kword": "모스크",
+    "kreading": "moseukeu"
+  },
+  {
+    "id": 28,
+    "eword": "beach",
+    "kword": "해변",
+    "kreading": "haebyeon"
+  },
+  {
+    "id": 29,
+    "eword": "mountain",
+    "kword": "산",
+    "kreading": "san"
+  },
+  {
+    "id": 30,
+    "eword": "forest",
+    "kword": "숲",
+    "kreading": "sup"
+  },
+  {
+    "id": 31,
+    "eword": "river",
+    "kword": "강",
+    "kreading": "gang"
+  },
+  {
+    "id": 32,
+    "eword": "lake",
+    "kword": "호수",
+    "kreading": "hosu"
+  },
+  {
+    "id": 33,
+    "eword": "sea",
+    "kword": "바다",
+    "kreading": "bada"
+  },
+  {
+    "id": 34,
+    "eword": "island",
+    "kword": "섬",
+    "kreading": "seom"
+  },
+  {
+    "id": 35,
+    "eword": "desert",
+    "kword": "사막",
+    "kreading": "samak"
+  },
+  {
+    "id": 36,
+    "eword": "farm",
+    "kword": "농장",
+    "kreading": "nongjang"
+  },
+  {
+    "id": 37,
+    "eword": "factory",
+    "kword": "공장",
+    "kreading": "gongjang"
+  },
+  {
+    "id": 38,
+    "eword": "warehouse",
+    "kword": "창고",
+    "kreading": "changgo"
+  },
+  {
+    "id": 39,
+    "eword": "workshop",
+    "kword": "작업장",
+    "kreading": "jageobjang"
+  },
+  {
+    "id": 40,
+    "eword": "construction site",
+    "kword": "건설 현장",
+    "kreading": "geonseol hyeonjang"
+  },
+  {
+    "id": 41,
+    "eword": "laboratory",
+    "kword": "실험실",
+    "kreading": "silheomsil"
+  },
+  {
+    "id": 42,
+    "eword": "studio",
+    "kword": "스튜디오",
+    "kreading": "seutyudio"
+  },
+  {
+    "id": 43,
+    "eword": "gallery",
+    "kword": "갤러리",
+    "kreading": "gaelleori"
+  },
+  {
+    "id": 44,
+    "eword": "bakery",
+    "kword": "빵집",
+    "kreading": "ppangjip"
+  },
+  {
+    "id": 45,
+    "eword": "bar",
+    "kword": "바",
+    "kreading": "ba"
+  },
+  {
+    "id": 46,
+    "eword": "cafe",
+    "kword": "카페",
+    "kreading": "kape"
+  },
+  {
+    "id": 47,
+    "eword": "pharmacy",
+    "kword": "약국",
+    "kreading": "yakguk"
+  },
+  {
+    "id": 48,
+    "eword": "clinic",
+    "kword": "진료소",
+    "kreading": "jillyoso"
+  },
+  {
+    "id": 49,
+    "eword": "dentist",
+    "kword": "치과",
+    "kreading": "chigwa"
+  },
+  {
+    "id": 50,
+    "eword": "veterinary clinic",
+    "kword": "동물병원",
+    "kreading": "dongmulbyeongwon"
+  }
+]

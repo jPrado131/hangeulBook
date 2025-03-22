@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "eword": "second",
+    "kword": "초",
+    "kreading": "cho"
+  },
+  {
+    "id": 2,
+    "eword": "minute",
+    "kword": "분",
+    "kreading": "bun"
+  },
+  {
+    "id": 3,
+    "eword": "hour",
+    "kword": "시간",
+    "kreading": "sigan"
+  },
+  {
+    "id": 4,
+    "eword": "day",
+    "kword": "일",
+    "kreading": "il"
+  },
+  {
+    "id": 5,
+    "eword": "week",
+    "kword": "주",
+    "kreading": "ju"
+  },
+  {
+    "id": 6,
+    "eword": "month",
+    "kword": "월",
+    "kreading": "wol"
+  },
+  {
+    "id": 7,
+    "eword": "year",
+    "kword": "년",
+    "kreading": "nyeon"
+  },
+  {
+    "id": 8,
+    "eword": "morning",
+    "kword": "아침",
+    "kreading": "achim"
+  },
+  {
+    "id": 9,
+    "eword": "afternoon",
+    "kword": "오후",
+    "kreading": "ohu"
+  },
+  {
+    "id": 10,
+    "eword": "evening",
+    "kword": "저녁",
+    "kreading": "jeonyeok"
+  },
+  {
+    "id": 11,
+    "eword": "night",
+    "kword": "밤",
+    "kreading": "bam"
+  },
+  {
+    "id": 12,
+    "eword": "midnight",
+    "kword": "자정",
+    "kreading": "jajeong"
+  },
+  {
+    "id": 13,
+    "eword": "sunrise",
+    "kword": "일출",
+    "kreading": "ilchul"
+  },
+  {
+    "id": 14,
+    "eword": "sunset",
+    "kword": "일몰",
+    "kreading": "ilmol"
+  },
+  {
+    "id": 15,
+    "eword": "today",
+    "kword": "오늘",
+    "kreading": "oneul"
+  },
+  {
+    "id": 16,
+    "eword": "tomorrow",
+    "kword": "내일",
+    "kreading": "naeil"
+  },
+  {
+    "id": 17,
+    "eword": "yesterday",
+    "kword": "어제",
+    "kreading": "eoje"
+  },
+  {
+    "id": 18,
+    "eword": "day before yesterday",
+    "kword": "그저께",
+    "kreading": "geujeokke"
+  },
+  {
+    "id": 19,
+    "eword": "day after tomorrow",
+    "kword": "모레",
+    "kreading": "more"
+  },
+  {
+    "id": 20,
+    "eword": "weekend",
+    "kword": "주말",
+    "kreading": "jumal"
+  },
+  {
+    "id": 21,
+    "eword": "weekday",
+    "kword": "평일",
+    "kreading": "pyeongil"
+  },
+  {
+    "id": 22,
+    "eword": "Monday",
+    "kword": "월요일",
+    "kreading": "woryoil"
+  },
+  {
+    "id": 23,
+    "eword": "Tuesday",
+    "kword": "화요일",
+    "kreading": "hwayoil"
+  },
+  {
+    "id": 24,
+    "eword": "Wednesday",
+    "kword": "수요일",
+    "kreading": "suyoil"
+  },
+  {
+    "id": 25,
+    "eword": "Thursday",
+    "kword": "목요일",
+    "kreading": "mogyoil"
+  },
+  {
+    "id": 26,
+    "eword": "Friday",
+    "kword": "금요일",
+    "kreading": "geumyoil"
+  },
+  {
+    "id": 27,
+    "eword": "Saturday",
+    "kword": "토요일",
+    "kreading": "toyoil"
+  },
+  {
+    "id": 28,
+    "eword": "Sunday",
+    "kword": "일요일",
+    "kreading": "iryoil"
+  },
+  {
+    "id": 29,
+    "eword": "January",
+    "kword": "1월",
+    "kreading": "irwol"
+  },
+  {
+    "id": 30,
+    "eword": "February",
+    "kword": "2월",
+    "kreading": "iwol"
+  },
+  {
+    "id": 31,
+    "eword": "March",
+    "kword": "3월",
+    "kreading": "samwol"
+  },
+  {
+    "id": 32,
+    "eword": "April",
+    "kword": "4월",
+    "kreading": "sawol"
+  },
+  {
+    "id": 33,
+    "eword": "May",
+    "kword": "5월",
+    "kreading": "owol"
+  },
+  {
+    "id": 34,
+    "eword": "June",
+    "kword": "6월",
+    "kreading": "yuwol"
+  },
+  {
+    "id": 35,
+    "eword": "July",
+    "kword": "7월",
+    "kreading": "chirwol"
+  },
+  {
+    "id": 36,
+    "eword": "August",
+    "kword": "8월",
+    "kreading": "parwol"
+  },
+  {
+    "id": 37,
+    "eword": "September",
+    "kword": "9월",
+    "kreading": "guwol"
+  },
+  {
+    "id": 38,
+    "eword": "October",
+    "kword": "10월",
+    "kreading": "siwol"
+  },
+  {
+    "id": 39,
+    "eword": "November",
+    "kword": "11월",
+    "kreading": "sibirwol"
+  },
+  {
+    "id": 40,
+    "eword": "December",
+    "kword": "12월",
+    "kreading": "sibiwol"
+  }
+]
