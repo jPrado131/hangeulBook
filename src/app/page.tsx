@@ -173,7 +173,7 @@ export default function Home() {
         {currentQuestion < data.length && (
           <div key={data[currentQuestion].id} className={`flex flex-col gap-4 items-center transition-opacity duration-500 ${transition ? 'opacity-0' : 'opacity-100'} mt-vw-20`}>
             <div className="flex flex-col gap-4 items-center">
-              <a className={`text-[16vw] max-lg:text-[20vw] max-md:text-[18vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-[16vw] mt-[2vw]`}
+              <a className={`text-[16vw] max-lg:text-[20vw] max-md:text-[18vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-[16vw] mt-[4vw]`}
               title={data[currentQuestion].kreading}> {data[currentQuestion].kword}</a>
               
               {viewKreading && (
