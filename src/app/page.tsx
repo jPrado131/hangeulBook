@@ -144,7 +144,7 @@ export default function Home() {
         <div className="fixed top-0 left-0 right-0 z-10 p-4 shadow-md items-center justify-center bg-black">
           <div className="flex flex-row gap-4 items-center justify-center max-md:flex-col max-md:gap-2">
             <div className="flex flex-row gap-4 items-center">
-              <strong>Category: </strong>
+              <strong className="max-md:hidden">Category: </strong>
               <select
                 className="text-black capitalize px-4 py-2 rounded-md border border-gray-300 bg-white"
                 value={category}
@@ -158,7 +158,7 @@ export default function Home() {
               </select>
             </div>
             <div className="flex flex-row gap-4 items-center">
-              <span>{currentQuestion+1} / {data.length}</span>
+              <span className="text-white">{currentQuestion+1} / {data.length}</span>
               <a className="text-white bg-transparent border p-2 rounded-md block ml-1" onClick={() => setIsModalOpenHangul(true)}>Hangul</a>
             </div>
           </div>
