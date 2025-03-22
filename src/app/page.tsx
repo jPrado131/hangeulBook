@@ -22,6 +22,7 @@ import dataClothes from "../data/clothes.json";
 import dataTransport from "../data/transport.json";
 import Modal from "../components/Modal"; // Import the Modal component
 import Hangul from "./hangul"; // Import the Hangul component
+import AnswerOptions from "../components/AnswerOptions"; // Import the AnswerOptions component
 
 const categories: Record<string, { id: number; kword: string; kreading: string; eword: string }[]> = {
   "fruits-and-vegitables": dataFruitsAndVegitables,
@@ -119,7 +120,7 @@ export default function Home() {
           setIsCorrect(null);
           setTransition(false);
         }, 500);
-      }, 1500);
+      }, 2000);
     } else {
       setIsCorrect(false);
       if (wrongSound) {
@@ -146,7 +147,7 @@ export default function Home() {
             <div className="flex flex-row gap-4 items-center">
               <strong className="max-md:hidden">Category: </strong>
               <select
-                className="text-black capitalize px-4 py-2 rounded-md border border-gray-300 bg-white"
+                className="text-black capitalize px-4 py-2 rounded-md border border-gray-300 bg-white max-md:w-[80vw]"
                 value={category}
                 onChange={handleCategoryChange}
               >
@@ -169,31 +170,14 @@ export default function Home() {
             <div className="flex flex-col gap-4 items-center">
               <a className={`text-[16vw] max-lg:text-[20vw] max-md:text-[18vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'}`} 
               title={data[currentQuestion].kreading}>{data[currentQuestion].kword}</a>
-              
-              <div className="relative p-2">
-                {isCorrect === true ? (<div className="bg-transparent opacity-25 absolute top-0 left-0 right-0 h-full w-full"></div>) : null}
-                
-                <div className="flex flex-row gap-4 items-center  max-md:flex-col max-md:gap-2">
-                  {randomNumbers[currentQuestion]?.map((randomNumber: number, idx: number) => (
-                    randomNumber < data.length && (
-                      <div
-                        key={idx}
-                        className={`flex flex-col gap-2 items-center cursor-pointer p-4 rounded-md border 
-                          ${
-                            selectedAnswer === randomNumber
-                              ? randomNumber === currentQuestion
-                                ? "border-green-500 text-green-500"
-                                : "border-red-500 text-red-500" 
-                              : "border-gray-300 text-gray-300"
-                          } max-md:w-full max-md:text-yellow-200`}
-                        onClick={() => checkAnswer(randomNumber, currentQuestion)}
-                      >
-                        <span className="text-vw-16 capitalize">{data[randomNumber].eword}</span>
-                      </div>
-                    )
-                  ))}
-                </div>
-              </div>
+              <AnswerOptions
+                randomNumbers={randomNumbers[currentQuestion]}
+                currentQuestion={currentQuestion}
+                data={data}
+                selectedAnswer={selectedAnswer}
+                isCorrect={isCorrect}
+                checkAnswer={checkAnswer}
+              />
             </div>
           </div>
         )}
