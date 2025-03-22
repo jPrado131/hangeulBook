@@ -62,6 +62,7 @@ export default function Home() {
   const [viewKreading, setViewKreading] = useState<boolean>(false);
   const [isReverse, setIsReverse] = useState<boolean>(false);
   const NumberOfChoices = 4;
+  const EnableReverse = true;
 
   useEffect(() => {
     setCorrectSound(new Audio("/sounds/correct.mp3"));
@@ -200,16 +201,18 @@ export default function Home() {
           </div>
         )}
 
-        <div className="flex flex-row gap-2 items-center">
-          <input
-            type="checkbox"
-            id="reverse"
-            checked={isReverse}
-            onChange={handleReverseChange}
-            className="w-4 h-4"
-          />
-          <label htmlFor="reverse" className="text-white">Reverse Questions and Answers</label>
-        </div>
+        {EnableReverse && (
+          <div className="flex flex-row gap-2 items-center">
+            <input
+              type="checkbox"
+              id="reverse"
+              checked={isReverse}
+              onChange={handleReverseChange}
+              className="w-4 h-4"
+            />
+            <label htmlFor="reverse" className="text-white">Reverse Questions and Answers</label>
+          </div>
+        )}
 
         <div className="flex flex-row justify-center items-center">
           {!viewKreading && !isReverse && (
