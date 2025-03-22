@@ -173,19 +173,14 @@ export default function Home() {
         {currentQuestion < data.length && (
           <div key={data[currentQuestion].id} className={`flex flex-col gap-4 items-center transition-opacity duration-500 ${transition ? 'opacity-0' : 'opacity-100'} mt-vw-20`}>
             <div className="flex flex-col gap-4 items-center">
-              <a className={`text-[16vw] max-lg:text-[20vw] max-md:text-[18vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-[17vw]`}
+              <a className={`text-[16vw] max-lg:text-[20vw] max-md:text-[18vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-[16vw]`}
               title={data[currentQuestion].kreading}> {data[currentQuestion].kword}</a>
               
-              {viewKreading ? (
+              {viewKreading && (
                 <a className={`text-[4vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-yellow-500'}`} 
                 >{data[currentQuestion].kreading}</a>
-              ) : (
-                <a onClick={()=> setViewKreading(true)} className="text-yellow-100 text-vw-10 border rounded-md p-2 self-start animate-pulse">Pronunciations</a>
-              )
-              }
-              
+              )}
 
-              
               <AnswerOptions
                 randomNumbers={randomNumbers[currentQuestion]}
                 currentQuestion={currentQuestion}
@@ -198,6 +193,9 @@ export default function Home() {
           </div>
         )}
         <div className="flex flex-row justify-center items-center">
+          {!viewKreading && (
+            <a onClick={()=> setViewKreading(true)} className="text-yellow-100 text-vw-10 border rounded-md p-2 self-start animate-pulse mr-2">Pronunciations</a>
+          )}
           <span className="text-white">Wrong Answers: {countWrongAnswers}</span>
         </div>
 
