@@ -1,0 +1,702 @@
+[
+    {
+    "id": 1,
+    "question": "하늘은 어떤 색인가요?",
+    "answer": "파란색",
+    "question_en": "What color is the sky?",
+    "answer_en": "Blue"
+    },
+    {
+    "id": 2,
+    "question": "태양은 언제 뜨나요?",
+    "answer": "아침",
+    "question_en": "When does the sun rise?",
+    "answer_en": "Morning"
+    },
+    {
+    "id": 3,
+    "question": "사과는 어떤 색일 수 있나요?",
+    "answer": "빨강, 초록, 노랑",
+    "question_en": "What colors can an apple be?",
+    "answer_en": "Red, green, yellow"
+    },
+    {
+    "id": 4,
+    "question": "우유는 어떤 동물에게서 나오나요?",
+    "answer": "소",
+    "question_en": "Which animal gives us milk?",
+    "answer_en": "A cow"
+    },
+    {
+    "id": 5,
+    "question": "강아지는 몇 개의 다리를 가지고 있나요?",
+    "answer": "네 개",
+    "question_en": "How many legs does a puppy have?",
+    "answer_en": "Four"
+    },
+    {
+    "id": 6,
+    "question": "사자는 어떤 소리를 내나요?",
+    "answer": "어흥!",
+    "question_en": "What sound does a lion make?",
+    "answer_en": "Roar!"
+    },
+    {
+    "id": 7,
+    "question": "우리는 무엇으로 듣나요?",
+    "answer": "귀",
+    "question_en": "What do we use to hear?",
+    "answer_en": "Ears"
+    },
+    {
+    "id": 8,
+    "question": "손을 씻을 때 무엇을 사용하나요?",
+    "answer": "비누와 물",
+    "question_en": "What do you use to wash your hands?",
+    "answer_en": "Soap and water"
+    },
+    {
+    "id": 9,
+    "question": "밤에 하늘에 빛나는 것은 무엇인가요?",
+    "answer": "별",
+    "question_en": "What shines in the sky at night?",
+    "answer_en": "Stars"
+    },
+    {
+    "id": 10,
+    "question": "비가 오면 무엇을 써야 할까요?",
+    "answer": "우산",
+    "question_en": "What should you use when it rains?",
+    "answer_en": "An umbrella"
+    },
+    {
+    "id": 11,
+    "question": "손가락은 몇 개 있나요?",
+    "answer": "열 개",
+    "question_en": "How many fingers do you have?",
+    "answer_en": "Ten"
+    },
+    {
+    "id": 12,
+    "question": "코끼리는 어디에서 물을 마시나요?",
+    "answer": "코",
+    "question_en": "What does an elephant use to drink water?",
+    "answer_en": "Trunk"
+    },
+    {
+    "id": 13,
+    "question": "우리는 무엇으로 냄새를 맡나요?",
+    "answer": "코",
+    "question_en": "What do we use to smell?",
+    "answer_en": "Nose"
+    },
+    {
+    "id": 14,
+    "question": "눈이 내릴 때 하늘에서 떨어지는 것은 무엇인가요?",
+    "answer": "눈송이",
+    "question_en": "What falls from the sky when it snows?",
+    "answer_en": "Snowflakes"
+    },
+    {
+    "id": 15,
+    "question": "아침에 먹는 식사는 무엇인가요?",
+    "answer": "아침밥",
+    "question_en": "What is the meal we eat in the morning?",
+    "answer_en": "Breakfast"
+    },
+    {
+    "id": 16,
+    "question": "기린은 목이 길까요, 짧을까요?",
+    "answer": "길어요",
+    "question_en": "Is a giraffe's neck long or short?",
+    "answer_en": "Long"
+    },
+    {
+    "id": 17,
+    "question": "개구리는 어떤 소리를 내나요?",
+    "answer": "개굴개굴",
+    "question_en": "What sound does a frog make?",
+    "answer_en": "Ribbit"
+    },
+    {
+    "id": 18,
+    "question": "우리 집에는 누가 살고 있나요?",
+    "answer": "가족",
+    "question_en": "Who lives in our home?",
+    "answer_en": "Family"
+    },
+    {
+    "id": 19,
+    "question": "생일에는 무엇을 불어요?",
+    "answer": "촛불",
+    "question_en": "What do we blow out on our birthday?",
+    "answer_en": "Candles"
+    },
+    {
+    "id": 20,
+    "question": "자동차는 무엇으로 움직이나요?",
+    "answer": "바퀴",
+    "question_en": "What makes a car move?",
+    "answer_en": "Wheels"
+    },
+    {
+    "id": 21,
+    "question": "사람이 걷는 데 필요한 것은 무엇인가요?",
+    "answer": "발",
+    "question_en": "What do people use to walk?",
+    "answer_en": "Feet"
+    },
+    {
+    "id": 22,
+    "question": "달은 언제 볼 수 있나요?",
+    "answer": "밤",
+    "question_en": "When can we see the moon?",
+    "answer_en": "At night"
+    },
+    {
+    "id": 23,
+    "question": "우리는 무엇으로 먹나요?",
+    "answer": "입",
+    "question_en": "What do we use to eat?",
+    "answer_en": "Mouth"
+    },
+    {
+    "id": 24,
+    "question": "토끼는 어떻게 이동하나요?",
+    "answer": "깡충깡충 뛰어요",
+    "question_en": "How does a rabbit move?",
+    "answer_en": "It hops"
+    },
+    {
+    "id": 25,
+    "question": "물고기는 어디에서 살까요?",
+    "answer": "물",
+    "question_en": "Where do fish live?",
+    "answer_en": "In water"
+    },
+    {
+    "id": 26,
+    "question": "곰은 겨울에 무엇을 하나요?",
+    "answer": "겨울잠을 자요",
+    "question_en": "What do bears do in winter?",
+    "answer_en": "They hibernate"
+    },
+    {
+    "id": 27,
+    "question": "우리는 무엇으로 글을 쓰나요?",
+    "answer": "연필",
+    "question_en": "What do we use to write?",
+    "answer_en": "A pencil"
+    },
+    {
+    "id": 28,
+    "question": "꽃은 어디에서 자라나요?",
+    "answer": "땅",
+    "question_en": "Where do flowers grow?",
+    "answer_en": "In the ground"
+    },
+    {
+    "id": 29,
+    "question": "바나나는 어떤 색인가요?",
+    "answer": "노란색",
+    "question_en": "What color is a banana?",
+    "answer_en": "Yellow"
+    },
+    {
+    "id": 30,
+    "question": "여름에는 어떤 과일을 먹을 수 있나요?",
+    "answer": "수박",
+    "question_en": "What fruit can we eat in summer?",
+    "answer_en": "Watermelon"
+    },
+    {
+    "id": 31,
+    "question": "토끼의 귀는 길까요, 짧을까요?",
+    "answer": "길어요",
+    "question_en": "Are a rabbit's ears long or short?",
+    "answer_en": "Long"
+    },
+    {
+    "id": 32,
+    "question": "강아지는 무엇을 좋아하나요?",
+    "answer": "뼈다귀",
+    "question_en": "What do puppies like?",
+    "answer_en": "Bones"
+    },
+    {
+    "id": 33,
+    "question": "물은 차가울 때 무엇으로 변하나요?",
+    "answer": "얼음",
+    "question_en": "What does water turn into when it gets cold?",
+    "answer_en": "Ice"
+    },
+    {
+    "id": 34,
+    "question": "우리는 무엇을 타고 학교에 가나요?",
+    "answer": "버스",
+    "question_en": "What do we ride to go to school?",
+    "answer_en": "A bus"
+    },
+    {
+    "id": 35,
+    "question": "나비는 무엇에서 태어나나요?",
+    "answer": "애벌레",
+    "question_en": "What do butterflies come from?",
+    "answer_en": "Caterpillars"
+    },
+    {
+    "id": 36,
+    "question": "하루는 몇 시간인가요?",
+    "answer": "24시간",
+    "question_en": "How many hours are in a day?",
+    "answer_en": "24 hours"
+    },
+    {
+    "id": 37,
+    "question": "닭은 무엇을 낳나요?",
+    "answer": "달걀",
+    "question_en": "What do chickens lay?",
+    "answer_en": "Eggs"
+    },
+    {
+    "id": 38,
+    "question": "우리 몸에서 심장은 어디에 있나요?",
+    "answer": "가슴",
+    "question_en": "Where is the heart in our body?",
+    "answer_en": "In the chest"
+    },
+    {
+    "id": 39,
+    "question": "물고기는 어떻게 숨을 쉬나요?",
+    "answer": "아가미",
+    "question_en": "How do fish breathe?",
+    "answer_en": "With gills"
+    },
+    {
+    "id": 40,
+    "question": "자전거는 몇 개의 바퀴를 가지고 있나요?",
+    "answer": "두 개",
+    "question_en": "How many wheels does a bicycle have?",
+    "answer_en": "Two"
+    },
+    {
+    "id": 41,
+    "question": "가을에 나무에서 떨어지는 것은 무엇인가요?",
+    "answer": "낙엽",
+    "question_en": "What falls from trees in autumn?",
+    "answer_en": "Leaves"
+    },
+    {
+    "id": 42,
+    "question": "손을 씻으면 어떤 이점이 있나요?",
+    "answer": "깨끗해져요",
+    "question_en": "Why do we wash our hands?",
+    "answer_en": "To stay clean"
+    },
+    {
+    "id": 43,
+    "question": "바람이 많이 불면 무엇이 흔들리나요?",
+    "answer": "나뭇가지",
+    "question_en": "What moves when the wind blows?",
+    "answer_en": "Tree branches"
+    },
+    {
+    "id": 44,
+    "question": "하늘에서 반짝이는 것은 무엇인가요?",
+    "answer": "별",
+    "question_en": "What twinkles in the sky?",
+    "answer_en": "Stars"
+    },
+    {
+    "id": 45,
+    "question": "여름에 시원하게 해주는 것은 무엇인가요?",
+    "answer": "선풍기",
+    "question_en": "What keeps us cool in summer?",
+    "answer_en": "A fan"
+    },
+    {
+    "id": 46,
+    "question": "우리는 무엇을 타고 바다에서 놀 수 있나요?",
+    "answer": "배",
+    "question_en": "What can we ride on the sea?",
+    "answer_en": "A boat"
+    },
+    {
+    "id": 47,
+    "question": "연필을 짧아지게 하는 것은 무엇인가요?",
+    "answer": "연필깎이",
+    "question_en": "What makes a pencil shorter?",
+    "answer_en": "A sharpener"
+    },
+    {
+    "id": 48,
+    "question": "거북이는 빠를까요, 느릴까요?",
+    "answer": "느려요",
+    "question_en": "Is a turtle fast or slow?",
+    "answer_en": "Slow"
+    },
+    {
+    "id": 49,
+    "question": "우리는 무엇을 타고 하늘을 날 수 있나요?",
+    "answer": "비행기",
+    "question_en": "What can we ride to fly in the sky?",
+    "answer_en": "An airplane"
+    },
+    {
+    "id": 50,
+    "question": "집에 들어갈 때 여는 것은 무엇인가요?",
+    "answer": "문",
+    "question_en": "What do we open to go inside a house?",
+    "answer_en": "A door"
+    },
+    {
+    "id": 51,
+    "question": "비가 올 때 하늘에서 떨어지는 것은 무엇인가요?",
+    "answer": "빗방울",
+    "question_en": "What falls from the sky when it rains?",
+    "answer_en": "Raindrops"
+    },
+    {
+    "id": 52,
+    "question": "손을 사용하여 그림을 그릴 때 필요한 것은 무엇인가요?",
+    "answer": "크레용",
+    "question_en": "What do you need to draw with your hands?",
+    "answer_en": "Crayons"
+    },
+    {
+    "id": 53,
+    "question": "코끼리는 어떤 소리를 내나요?",
+    "answer": "뿌우~",
+    "question_en": "What sound does an elephant make?",
+    "answer_en": "Trumpet"
+    },
+    {
+    "id": 54,
+    "question": "밤에 잘 때 몸을 덮는 것은 무엇인가요?",
+    "answer": "이불",
+    "question_en": "What do you use to cover yourself when sleeping?",
+    "answer_en": "A blanket"
+    },
+    {
+    "id": 55,
+    "question": "우리는 무엇을 타고 공원에서 놀 수 있나요?",
+    "answer": "그네",
+    "question_en": "What can we ride on at the park?",
+    "answer_en": "A swing"
+    },
+    {
+    "id": 56,
+    "question": "모자가 하는 역할은 무엇인가요?",
+    "answer": "머리를 보호해요",
+    "question_en": "What does a hat do?",
+    "answer_en": "It protects your head"
+    },
+    {
+    "id": 57,
+    "question": "우리는 무엇으로 냄새를 맡을 수 있나요?",
+    "answer": "코",
+    "question_en": "What do we use to smell?",
+    "answer_en": "Nose"
+    },
+    {
+    "id": 58,
+    "question": "나무에서 자라는 작은 빨간 과일은 무엇인가요?",
+    "answer": "체리",
+    "question_en": "What small red fruit grows on trees?",
+    "answer_en": "Cherries"
+    },
+    {
+    "id": 59,
+    "question": "새가 하늘을 날기 위해 사용하는 것은 무엇인가요?",
+    "answer": "날개",
+    "question_en": "What do birds use to fly?",
+    "answer_en": "Wings"
+    },
+    {
+    "id": 60,
+    "question": "우리는 몇 개의 눈을 가지고 있나요?",
+    "answer": "두 개",
+    "question_en": "How many eyes do we have?",
+    "answer_en": "Two"
+    },
+    {
+    "id": 61,
+    "question": "아이스크림은 차가울까요, 따뜻할까요?",
+    "answer": "차가워요",
+    "question_en": "Is ice cream cold or warm?",
+    "answer_en": "Cold"
+    },
+    {
+    "id": 62,
+    "question": "부엌에서 음식을 요리할 때 사용하는 것은 무엇인가요?",
+    "answer": "가스레인지",
+    "question_en": "What do we use to cook food in the kitchen?",
+    "answer_en": "A stove"
+    },
+    {
+    "id": 63,
+    "question": "사람이 살고 있는 곳은 무엇인가요?",
+    "answer": "집",
+    "question_en": "What is the place where people live?",
+    "answer_en": "A house"
+    },
+    {
+    "id": 64,
+    "question": "우리는 아침에 무엇을 마실 수 있나요?",
+    "answer": "우유",
+    "question_en": "What can we drink in the morning?",
+    "answer_en": "Milk"
+    },
+    {
+    "id": 65,
+    "question": "오렌지는 어떤 색인가요?",
+    "answer": "주황색",
+    "question_en": "What color is an orange?",
+    "answer_en": "Orange"
+    },
+    {
+    "id": 66,
+    "question": "우리가 먹는 단 음식은 무엇인가요?",
+    "answer": "사탕",
+    "question_en": "What is something sweet that we eat?",
+    "answer_en": "Candy"
+    },
+    {
+    "id": 67,
+    "question": "손을 깨끗하게 하기 위해 사용하는 것은 무엇인가요?",
+    "answer": "비누",
+    "question_en": "What do we use to keep our hands clean?",
+    "answer_en": "Soap"
+    },
+    {
+    "id": 68,
+    "question": "우리 얼굴에서 눈 아래에 있는 것은 무엇인가요?",
+    "answer": "코",
+    "question_en": "What is below our eyes on our face?",
+    "answer_en": "Nose"
+    },
+    {
+    "id": 69,
+    "question": "곰이 좋아하는 달콤한 음식은 무엇인가요?",
+    "answer": "꿀",
+    "question_en": "What sweet food do bears like?",
+    "answer_en": "Honey"
+    },
+    {
+    "id": 70,
+    "question": "우리는 무엇으로 물을 마시나요?",
+    "answer": "컵",
+    "question_en": "What do we use to drink water?",
+    "answer_en": "A cup"
+    },
+    {
+    "id": 71,
+    "question": "해는 언제 뜨나요?",
+    "answer": "아침",
+    "question_en": "When does the sun rise?",
+    "answer_en": "Morning"
+    },
+    {
+    "id": 72,
+    "question": "밤에 하늘에서 볼 수 있는 둥근 것은 무엇인가요?",
+    "answer": "달",
+    "question_en": "What round thing can we see in the sky at night?",
+    "answer_en": "The moon"
+    },
+    {
+    "id": 73,
+    "question": "우리는 춥지 않게 하기 위해 무엇을 입나요?",
+    "answer": "코트",
+    "question_en": "What do we wear to stay warm?",
+    "answer_en": "A coat"
+    },
+    {
+    "id": 74,
+    "question": "사람이 타고 다닐 수 있는 두 바퀴 탈것은 무엇인가요?",
+    "answer": "자전거",
+    "question_en": "What two-wheeled vehicle can people ride?",
+    "answer_en": "A bicycle"
+    },
+    {
+    "id": 75,
+    "question": "우리는 공부하기 위해 어디에 가나요?",
+    "answer": "학교",
+    "question_en": "Where do we go to learn?",
+    "answer_en": "School"
+    },
+    {
+    "id": 76,
+    "question": "우리는 아침에 일어나서 무엇을 하나요?",
+    "answer": "세수해요",
+    "question_en": "What do we do when we wake up in the morning?",
+    "answer_en": "Wash our face"
+    },
+    {
+    "id": 77,
+    "question": "여름에 더울 때 먹으면 시원한 것은 무엇인가요?",
+    "answer": "아이스크림",
+    "question_en": "What is something cold we eat in summer?",
+    "answer_en": "Ice cream"
+    },
+    {
+    "id": 78,
+    "question": "우리의 몸에서 듣는 역할을 하는 것은 무엇인가요?",
+    "answer": "귀",
+    "question_en": "What part of our body helps us hear?",
+    "answer_en": "Ears"
+    },
+    {
+    "id": 79,
+    "question": "사과는 나무에서 자라나요, 땅에서 자라나요?",
+    "answer": "나무",
+    "question_en": "Do apples grow on trees or in the ground?",
+    "answer_en": "On trees"
+    },
+    {
+    "id": 80,
+    "question": "바다에서 사는 동물은 무엇인가요?",
+    "answer": "물고기",
+    "question_en": "What animal lives in the sea?",
+    "answer_en": "Fish"
+    },
+    {
+    "id": 81,
+    "question": "손으로 할 수 있는 재미있는 활동은 무엇인가요?",
+    "answer": "그림 그리기",
+    "question_en": "What is a fun activity we can do with our hands?",
+    "answer_en": "Drawing"
+    },
+    {
+    "id": 82,
+    "question": "밤하늘에서 빛나는 것은 무엇인가요?",
+    "answer": "별",
+    "question_en": "What shines in the night sky?",
+    "answer_en": "Stars"
+    },
+    {
+    "id": 83,
+    "question": "배가 고플 때 우리는 무엇을 하나요?",
+    "answer": "음식을 먹어요",
+    "question_en": "What do we do when we are hungry?",
+    "answer_en": "Eat food"
+    },
+    {
+    "id": 84,
+    "question": "기린은 다리가 길까요, 짧을까요?",
+    "answer": "길어요",
+    "question_en": "Are a giraffe’s legs long or short?",
+    "answer_en": "Long"
+    },
+    {
+    "id": 85,
+    "question": "우리는 책을 어디에서 빌릴 수 있나요?",
+    "answer": "도서관",
+    "question_en": "Where can we borrow books?",
+    "answer_en": "Library"
+    },
+    {
+    "id": 86,
+    "question": "우리의 손가락은 몇 개인가요?",
+    "answer": "열 개",
+    "question_en": "How many fingers do we have?",
+    "answer_en": "Ten"
+    },
+    {
+    "id": 87,
+    "question": "코알라는 어떤 나무를 좋아하나요?",
+    "answer": "유칼립투스",
+    "question_en": "What tree do koalas like?",
+    "answer_en": "Eucalyptus"
+    },
+    {
+    "id": 88,
+    "question": "눈이 오면 밖에서 만들 수 있는 것은 무엇인가요?",
+    "answer": "눈사람",
+    "question_en": "What can we make outside when it snows?",
+    "answer_en": "A snowman"
+    },
+    {
+    "id": 89,
+    "question": "우리는 밤에 어디에서 자나요?",
+    "answer": "침대",
+    "question_en": "Where do we sleep at night?",
+    "answer_en": "In a bed"
+    },
+    {
+    "id": 90,
+    "question": "사자는 무슨 소리를 내나요?",
+    "answer": "어흥",
+    "question_en": "What sound does a lion make?",
+    "answer_en": "Roar"
+    },
+    {
+    "id": 91,
+    "question": "비행기는 어디에서 날아다니나요?",
+    "answer": "하늘",
+    "question_en": "Where do airplanes fly?",
+    "answer_en": "In the sky"
+    },
+    {
+    "id": 92,
+    "question": "우리의 눈 색깔은 모두 같나요, 다를까요?",
+    "answer": "달라요",
+    "question_en": "Are everyone's eye colors the same or different?",
+    "answer_en": "Different"
+    },
+    {
+    "id": 93,
+    "question": "생일 케이크 위에 놓는 것은 무엇인가요?",
+    "answer": "초",
+    "question_en": "What do we put on top of a birthday cake?",
+    "answer_en": "Candles"
+    },
+    {
+    "id": 94,
+    "question": "비가 오면 우리는 무엇을 사용하나요?",
+    "answer": "우산",
+    "question_en": "What do we use when it rains?",
+    "answer_en": "Umbrella"
+    },
+    {
+    "id": 95,
+    "question": "병아리는 어떻게 울까요?",
+    "answer": "삐약삐약",
+    "question_en": "What sound does a chick make?",
+    "answer_en": "Chirp chirp"
+    },
+    {
+    "id": 96,
+    "question": "우리는 몇 개의 발을 가지고 있나요?",
+    "answer": "두 개",
+    "question_en": "How many feet do we have?",
+    "answer_en": "Two"
+    },
+    {
+    "id": 97,
+    "question": "우리는 언제 점심을 먹나요?",
+    "answer": "낮",
+    "question_en": "When do we eat lunch?",
+    "answer_en": "At noon"
+    },
+    {
+    "id": 98,
+    "question": "사람들이 길을 건널 때 사용하는 것은 무엇인가요?",
+    "answer": "횡단보도",
+    "question_en": "What do people use to cross the street?",
+    "answer_en": "Crosswalk"
+    },
+    {
+    "id": 99,
+    "question": "우리는 어떤 운동을 할 때 물에서 헤엄치나요?",
+    "answer": "수영",
+    "question_en": "What sport do we do in the water?",
+    "answer_en": "Swimming"
+    },
+    {
+    "id": 100,
+    "question": "우리는 무엇을 타고 높은 곳에서 미끄러질 수 있나요?",
+    "answer": "미끄럼틀",
+    "question_en": "What can we slide down from a high place?",
+    "answer_en": "Slide"
+    }
+]
