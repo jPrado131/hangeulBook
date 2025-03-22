@@ -201,7 +201,7 @@ export default function Home() {
               </select>
               <a className="text-white bg-transparent border p-2 rounded-md block ml-1" onClick={() => setIsModalOpenHangul(true)}>Hangul</a>
             </div>
-            <div className="flex flex-row gap-4 items-center w-full justify-center">
+            <div className="flex flex-row gap-4 items-center max-md:w-full justify-center">
               <span className="flex text-white self-start">
                 { category === "question-answer" ? "Question & Answer" : category === "image_identification" ? "Identify The Photo" : "Translate The Word" }
               </span>
