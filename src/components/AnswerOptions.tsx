@@ -3,7 +3,7 @@ import React from 'react';
 interface AnswerOptionsProps {
   randomNumbers: number[];
   currentQuestion: number;
-  data: { id: number; kword: string; kreading: string; eword: string }[];
+  data: { id: number; kword: string; kreading: string; eword: string,question: string, answer: string, question_en: string, answer_en: string }[];
   selectedAnswer: number | null;
   isCorrect: boolean | null;
   isReverse: boolean | null;
@@ -27,11 +27,15 @@ const AnswerOptions: React.FC<AnswerOptionsProps> = ({ randomNumbers, currentQue
                     ? randomNumber === currentQuestion
                       ? " border-green-500 text-green-500"
                       : " border-red-500 text-red-500" 
-                    : " border-gray-300 text-yellow-200"
+                    : " border-gray-300 text-yellow-200 hover:border-gray-200 hover:text-yellow-100"
                 } max-md:w-[80vw]`}
               onClick={() => checkAnswer(randomNumber, currentQuestion)}
             >
-              <span className="text-vw-16 capitalize">{isQuestionAnswer ? data[randomNumber].eword : isReverse || isImageIdentification ? data[randomNumber].kword : data[randomNumber].eword}</span>
+              <span className="text-vw-16 capitalize">
+                {isQuestionAnswer ? data[randomNumber].answer : isReverse || isImageIdentification ? data[randomNumber].kword : data[randomNumber].eword} 
+                {isCorrect && isQuestionAnswer && ( ` (${data[randomNumber].answer_en})`)}
+                {isCorrect && (isReverse || isImageIdentification) && ( ` - ${data[randomNumber].kreading} (${data[randomNumber].eword})` )}
+                </span>
             </div>
           )
         ))}

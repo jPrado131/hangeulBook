@@ -29,45 +29,64 @@ import dataSimpleQuestions from "../data/simple-questions.json";
 import Modal from "../components/Modal"; // Import the Modal component
 import Hangul from "./hangul"; // Import the Hangul component
 import AnswerOptions from "../components/AnswerOptions"; // Import the AnswerOptions component
+import { ArrowRightCircle } from "@deemlol/next-icons";
 
-const categories: Record<string, { id: number; kword: string; kreading: string; eword: string; image: string | "" }[]> = {
-  "fruits-vegitables": dataFruitsAndVegitables.map(item => ({ ...item, image: "" })),
-  "animals": dataAnimals.map(item => ({ ...item, image: "" })),
-  "foods": dataFoods.map(item => ({ ...item, image: "" })),
-  "numbers": dataNumbers.map(item => ({ ...item, image: "" })),
-  "sino_numbers": dataSinoNumbers.map(item => ({ ...item, image: "" })),
-  "time": dataTime.map(item => ({ ...item, image: "" })),
-  "weather-seasons": dataWeather.map(item => ({ ...item, image: "" })),
-  "tools": dataTools.map(item => ({ ...item, image: "" })),
-  "occupations": dataOccupations.map(item => ({ ...item, image: "" })),
-  "family": dataFamily.map(item => ({ ...item, image: "" })),
-  "verbs": dataVerbs.map(item => ({ ...item, image: "" })),
-  "adjectives": dataAdjectives.map(item => ({ ...item, image: "" })),
-  "things": dataThings.map(item => ({ ...item, image: "" })),
-  "places": dataPlaces.map(item => ({ ...item, image: "" })),
-  "colors": dataColors.map(item => ({ ...item, image: "" })),
-  "shapes": dataShapes.map(item => ({ ...item, image: "" })),
-  "body-parts": dataBodyParts.map(item => ({ ...item, image: "" })),
-  "clothes": dataClothes.map(item => ({ ...item, image: "" })),
-  "transport": dataTransport.map(item => ({ ...item, image: "" })),
-  "directions": dataDirections,
-  "sports": dataSports,
-  "taste": dataTaste,
-  "feelings": dataFeelings,
-  "random": [...dataFruitsAndVegitables, ...dataAnimals, ...dataFoods].map(item => ({ ...item, image: "" })),
+
+const fixJsonProperty = (json: any) => { 
+  return json.map((item: any) => {
+    return {
+      ...item,
+      image: item.image || "",
+      question: item.question || "",
+      answer: item.answer || "",
+      question_en: item.question_en || "",
+      answer_en: item.answer_en || "" 
+    }
+  });
+}
+
+const categories: Record<string, { 
+  id: number; kword: string; kreading: string; eword: string; image: string | "";
+  question: string; answer: string; question_en: string; answer_en: string;
+ }[]> = {
+  "fruits-and-vegitables": fixJsonProperty(dataFruitsAndVegitables),
+  "animals": fixJsonProperty(dataAnimals),
+  "foods": fixJsonProperty(dataFoods),
+  "numbers": fixJsonProperty(dataNumbers),
+  "sino_numbers": fixJsonProperty(dataSinoNumbers),
+  "time": fixJsonProperty(dataTime),
+  "weather-seasons": fixJsonProperty(dataWeather),
+  "tools": fixJsonProperty(dataTools),
+  "occupations": fixJsonProperty(dataOccupations),
+  "family": fixJsonProperty(dataFamily),
+  "verbs": fixJsonProperty(dataVerbs),
+  "adjectives": fixJsonProperty(dataAdjectives),
+  "things": fixJsonProperty(dataThings),
+  "places": fixJsonProperty(dataPlaces),
+  "colors": fixJsonProperty(dataColors),
+  "shapes": fixJsonProperty(dataShapes), 
+  "body-parts": fixJsonProperty(dataBodyParts),
+  "clothes": fixJsonProperty(dataClothes),
+  "transport": fixJsonProperty(dataTransport),
+  "directions": fixJsonProperty(dataDirections),
+  "sports": fixJsonProperty(dataSports),
+  "taste": fixJsonProperty(dataTaste),
+  "feelings": fixJsonProperty(dataFeelings),
+  "random": fixJsonProperty([...dataFruitsAndVegitables, ...dataAnimals, ...dataFoods]),
   "question-answer" : dataSimpleQuestions.map(item => ({
-    id: item.id,
-    kword: item.question,
-    kreading: item.question_en, // Add appropriate value if available
-    eword: item.answer,
+    ...item,
+    kword: "",
+    kreading: "",
+    eword:"",
     image: ""
   })),
-  "image_identification" : dataSports
+  "image_identification" : fixJsonProperty(dataSports)
 };
+
 
 export default function Home() {
   const [category, setCategory] = useState<string>("fruits-and-vegitables");
-  const [data, setData] = useState<{ id: number; kword: string; kreading: string; eword: string; image: string | ""}[]>(categories[category]);
+  const [data, setData] = useState<{ id: number; kword: string; kreading: string; eword: string; image: string | "", question: string, answer: string, question_en: string, answer_en: string}[]>(categories[category] || []);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [randomNumbers, setRandomNumbers] = useState<number[][]>([]);
@@ -83,6 +102,7 @@ export default function Home() {
   const [isImageIdentification, setIsImageIdentification] = useState<boolean>(false);
   const NumberOfChoices = 4;
   const EnableReverse = true;
+  const EnableNextBtn = false;
 
   useEffect(() => {
     setCorrectSound(new Audio("/sounds/correct.mp3"));
@@ -137,16 +157,19 @@ export default function Home() {
         origin: { y: 0.6 },
       });
 
-      setTimeout(() => {
-        setTransition(true);
+      if(!EnableNextBtn){
         setTimeout(() => {
-          setCurrentQuestion((prev) => (prev + 1) % data.length);
-          setSelectedAnswer(null);
-          setIsCorrect(null);
-          setViewKreading(false)  
-          setTransition(false);
-        }, 500);
-      }, 2000);
+          setTransition(true);
+          setTimeout(() => {
+            setCurrentQuestion((prev) => (prev + 1) % data.length);
+            setSelectedAnswer(null);
+            setIsCorrect(null);
+            setViewKreading(false)  
+            setTransition(false);
+          }, 500);
+        }, 2000);
+      }
+
     } else {
       setIsCorrect(false);
       setCountWrongAnswers((prev) => prev + 1);
@@ -161,16 +184,22 @@ export default function Home() {
   const handleCategoryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const newCategory = event.target.value;
     setCategory(newCategory);
-    setData(shuffleArray(categories[newCategory]));
+    setData(shuffleArray(categories[newCategory] || []));
     setCurrentQuestion(0);
     setCountWrongAnswers(0);
     setViewKreading(false);  
     setIsQuestionAnswer(false);
     setIsImageIdentification(false);
+    
+    if(EnableNextBtn){
+      setSelectedAnswer(null);
+      setIsCorrect(null);
+      setTransition(false);
+    }  
 
     if(newCategory === "question-answer") {
       setIsQuestionAnswer(true);
-      setIsReverse(false); 
+      setIsReverse(false);
     }else if(newCategory === "image_identification") {
       setIsImageIdentification(true);
     }
@@ -180,6 +209,17 @@ export default function Home() {
   const handleReverseChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setIsReverse(event.target.checked);
   };
+
+  const handleNextQuestion = () => {
+    setTransition(true);
+    setTimeout(() => {
+      setCurrentQuestion((prev) => (prev + 1) % data.length);
+      setSelectedAnswer(null);
+      setIsCorrect(null);
+      setViewKreading(false)  
+      setTransition(false);
+    }, 500);
+  }
 
   return (
     <div className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-black`}>
@@ -196,11 +236,11 @@ export default function Home() {
               >
                 {Object.keys(categories).map((cat) => (
                   <option key={cat} value={cat}>
-                    {cat.replace("-", " & ").replace("_", " ")} ({categories[cat].length})
+                    {cat.replace("-", " & ").replace("_", " ")} ({categories[cat]?.length || 0})
                   </option>
                 ))}
               </select>
-              <a className="text-white bg-transparent border p-2 rounded-md block ml-1" onClick={() => setIsModalOpenHangul(true)}>Hangul</a>
+              <a className="text-gray-300 bg-transparent border p-2 rounded-md block ml-1 hover:text-white" onClick={() => setIsModalOpenHangul(true)}>Hangul</a>
             </div>
             <div className="flex flex-row gap-4 items-center max-md:w-full justify-center">
               <span className="flex text-white self-start">
@@ -217,7 +257,7 @@ export default function Home() {
               
               {isQuestionAnswer ? (
                 <div className={`text-[6vw] lg:text-[42px] max-sm:text-[7vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-normal mt-[4vw]`}
-                > {data[currentQuestion].kword}</div>
+                > {data[currentQuestion]?.question}</div>
               ) : isImageIdentification ?  (
                 <div className={`flex flex-col items-center border-transparent overflow-hidden max-w-[350px] ${isCorrect === true ? ' border-green-500' : ""}`}>
                   <Image className="w-full max-h-[350px]" src={data[currentQuestion]?.image} alt={data[currentQuestion].eword} width={350} height={350} placeholder="blur" blurDataURL="/images/placeholder.png" />
@@ -230,7 +270,7 @@ export default function Home() {
 
               {viewKreading && !isReverse && !isImageIdentification &&(
                 <a className={`text-[4vw] lg:text-[28px] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-yellow-500'}`} 
-                >{data[currentQuestion].kreading}</a>
+                >{isQuestionAnswer ? data[currentQuestion].question_en : data[currentQuestion].kreading}</a>
               )}
 
               <AnswerOptions
@@ -269,6 +309,20 @@ export default function Home() {
           <span className="text-white">Wrong Answers: {countWrongAnswers}</span>
         </div>
 
+        {/* 
+        QUIZ FINISHED MESSAGE
+        {EnableNextBtn && currentQuestion === data.length && (
+          <div className="flex flex-row gap-4 items-center">
+            <span className="text-white">You have completed the quiz!</span>
+            <a onClick={() => setCurrentQuestion(0)} className="text-white bg-transparent border p-2 rounded-md block">Restart</a>
+          </div>
+        )}  */}
+        
+        {EnableNextBtn && isCorrect &&(
+          <div className="flex flex-row gap-4 items-center">
+            <a onClick={() => handleNextQuestion()} className="flex flex-row justify-center items-center text-green-500 hover:text-green-400  text-vw-26 bg-transparent border px-4 py-2 rounded-md cursor-pointer"><span className="mr-2">Next</span> <ArrowRightCircle  size={32} /></a>
+          </div>
+        )}
         <Modal isOpen={isModalOpenHangul} onClose={() => setIsModalOpenHangul(false)}>
           <Hangul />
         </Modal>
