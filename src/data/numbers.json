@@ -4,89 +4,104 @@
     "eword": "one",
     "kword": "하나",
     "kreading": "hana"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "two",
     "kword": "둘",
     "kreading": "dul"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "three",
     "kword": "셋",
     "kreading": "set"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "four",
     "kword": "넷",
     "kreading": "net"
-  },
+  ,"image": "" 
+},
   {
     "id": 5,
     "eword": "five",
     "kword": "다섯",
     "kreading": "daseot"
-  },
+  ,"image": "" 
+},
   {
     "id": 6,
     "eword": "six",
     "kword": "여섯",
     "kreading": "yeoseot"
-  },
+  ,"image": "" 
+},
   {
     "id": 7,
     "eword": "seven",
     "kword": "일곱",
     "kreading": "ilgop"
-  },
+  ,"image": "" 
+},
   {
     "id": 8,
     "eword": "eight",
     "kword": "여덟",
     "kreading": "yeodeol"
-  },
+  ,"image": "" 
+},
   {
     "id": 9,
     "eword": "nine",
     "kword": "아홉",
     "kreading": "ahop"
-  },
+  ,"image": "" 
+},
   {
     "id": 10,
     "eword": "ten",
     "kword": "열",
     "kreading": "yeol"
-  },
+  ,"image": "" 
+},
   {
     "id": 11,
     "eword": "hundred",
     "kword": "백",
     "kreading": "baek"
-  },
+  ,"image": "" 
+},
   {
     "id": 12,
     "eword": "thousand",
     "kword": "천",
     "kreading": "cheon"
-  },
+  ,"image": "" 
+},
   {
     "id": 13,
     "eword": "million",
     "kword": "백만",
     "kreading": "baekman"
-  },
+  ,"image": "" 
+},
   {
     "id": 14,
     "eword": "billion",
     "kword": "십억",
     "kreading": "sibeok"
-  },
+  ,"image": "" 
+},
   {
     "id": 15,
     "eword": "trillion",
     "kword": "조",
     "kreading": "jo"
-  }
+  ,"image": "" 
+}
 ]

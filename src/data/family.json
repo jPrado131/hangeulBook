@@ -4,149 +4,174 @@
     "eword": "father",
     "kword": "아버지",
     "kreading": "abeoji"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "mother",
     "kword": "어머니",
     "kreading": "eomeoni"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "brother",
     "kword": "형제",
     "kreading": "hyeongje"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "sister",
     "kword": "자매",
     "kreading": "jamae"
-  },
+  ,"image": "" 
+},
   {
     "id": 5,
     "eword": "son",
     "kword": "아들",
     "kreading": "adeul"
-  },
+  ,"image": "" 
+},
   {
     "id": 6,
     "eword": "daughter",
     "kword": "딸",
     "kreading": "ttal"
-  },
+  ,"image": "" 
+},
   {
     "id": 7,
     "eword": "grandfather",
     "kword": "할아버지",
     "kreading": "harabeoji"
-  },
+  ,"image": "" 
+},
   {
     "id": 8,
     "eword": "grandmother",
     "kword": "할머니",
     "kreading": "halmeoni"
-  },
+  ,"image": "" 
+},
   {
     "id": 9,
     "eword": "uncle",
     "kword": "삼촌",
     "kreading": "samchon"
-  },
+  ,"image": "" 
+},
   {
     "id": 10,
     "eword": "aunt",
     "kword": "이모",
     "kreading": "imo"
-  },
+  ,"image": "" 
+},
   {
     "id": 11,
     "eword": "cousin",
     "kword": "사촌",
     "kreading": "sachon"
-  },
+  ,"image": "" 
+},
   {
     "id": 12,
     "eword": "nephew",
     "kword": "조카",
     "kreading": "joka"
-  },
+  ,"image": "" 
+},
   {
     "id": 13,
     "eword": "niece",
     "kword": "조카딸",
     "kreading": "jokattal"
-  },
+  ,"image": "" 
+},
   {
     "id": 14,
     "eword": "husband",
     "kword": "남편",
     "kreading": "nampyeon"
-  },
+  ,"image": "" 
+},
   {
     "id": 15,
     "eword": "wife",
     "kword": "아내",
     "kreading": "anae"
-  },
+  ,"image": "" 
+},
   {
     "id": 16,
     "eword": "father-in-law",
     "kword": "시아버지",
     "kreading": "siabeoji"
-  },
+  ,"image": "" 
+},
   {
     "id": 17,
     "eword": "mother-in-law",
     "kword": "시어머니",
     "kreading": "sieomeoni"
-  },
+  ,"image": "" 
+},
   {
     "id": 18,
     "eword": "brother-in-law",
     "kword": "형부",
     "kreading": "hyeongbu"
-  },
+  ,"image": "" 
+},
   {
     "id": 19,
     "eword": "sister-in-law",
     "kword": "형수",
     "kreading": "hyeongsu"
-  },
+  ,"image": "" 
+},
   {
     "id": 20,
     "eword": "stepfather",
     "kword": "계부",
     "kreading": "gyebu"
-  },
+  ,"image": "" 
+},
   {
     "id": 21,
     "eword": "stepmother",
     "kword": "계모",
     "kreading": "gyemo"
-  },
+  ,"image": "" 
+},
   {
     "id": 22,
     "eword": "stepson",
     "kword": "의붓아들",
     "kreading": "uibutadeul"
-  },
+  ,"image": "" 
+},
   {
     "id": 23,
     "eword": "stepdaughter",
     "kword": "의붓딸",
     "kreading": "uibuttal"
-  },
+  ,"image": "" 
+},
   {
     "id": 24,
     "eword": "godfather",
     "kword": "대부",
     "kreading": "daebu"
-  },
+  ,"image": "" 
+},
   {
     "id": 25,
     "eword": "godmother",
     "kword": "대모",
     "kreading": "daemo"
-  }
+  ,"image": "" 
+}
 ]

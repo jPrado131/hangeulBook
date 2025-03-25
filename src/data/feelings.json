@@ -5,68 +5,78 @@
     "kword": "행복한",
     "kreading": "haengbokhan",
     "image": "/images/feelings/happy.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "sad",
     "kword": "슬픈",
     "kreading": "seulpeun",
     "image": "/images/feelings/sad.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "angry",
     "kword": "화난",
     "kreading": "hwanan",
     "image": "/images/feelings/angry.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "scared",
     "kword": "무서운",
     "kreading": "museoun",
     "image": "/images/feelings/scared.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 5,
     "eword": "surprised",
     "kword": "놀란",
     "kreading": "nollan",
     "image": "/images/feelings/surprised.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 6,
     "eword": "tired",
     "kword": "피곤한",
     "kreading": "pigonhan",
     "image": "/images/feelings/tired.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 7,
     "eword": "excited",
     "kword": "신난",
     "kreading": "sinnan",
     "image": "/images/feelings/excited.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 8,
     "eword": "bored",
     "kword": "지루한",
     "kreading": "jiruhan",
     "image": "/images/feelings/bored.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 9,
     "eword": "confused",
     "kword": "혼란스러운",
     "kreading": "hollanseureoun",
     "image": "/images/feelings/confused.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 10,
     "eword": "calm",
     "kword": "차분한",
     "kreading": "chabunhan",
     "image": "/images/feelings/calm.png"
-  }
+  ,"image": "" 
+}
 ]

@@ -4,899 +4,1049 @@
     "eword": "book",
     "kword": "책",
     "kreading": "chaek"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "pen",
     "kword": "펜",
     "kreading": "pen"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "pencil",
     "kword": "연필",
     "kreading": "yeonpil"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "notebook",
     "kword": "노트",
     "kreading": "noteu"
-  },
+  ,"image": "" 
+},
   {
     "id": 5,
     "eword": "bag",
     "kword": "가방",
     "kreading": "gabang"
-  },
+  ,"image": "" 
+},
   {
     "id": 6,
     "eword": "phone",
     "kword": "전화기",
     "kreading": "jeonhwagi"
-  },
+  ,"image": "" 
+},
   {
     "id": 7,
     "eword": "computer",
     "kword": "컴퓨터",
     "kreading": "keompyuteo"
-  },
+  ,"image": "" 
+},
   {
     "id": 8,
     "eword": "table",
     "kword": "테이블",
     "kreading": "teibeul"
-  },
+  ,"image": "" 
+},
   {
     "id": 9,
     "eword": "chair",
     "kword": "의자",
     "kreading": "uija"
-  },
+  ,"image": "" 
+},
   {
     "id": 10,
     "eword": "bed",
     "kword": "침대",
     "kreading": "chimdae"
-  },
+  ,"image": "" 
+},
   {
     "id": 11,
     "eword": "lamp",
     "kword": "램프",
     "kreading": "raempeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 12,
     "eword": "clock",
     "kword": "시계",
     "kreading": "sigye"
-  },
+  ,"image": "" 
+},
   {
     "id": 13,
     "eword": "watch",
     "kword": "손목시계",
     "kreading": "sonmoksigye"
-  },
+  ,"image": "" 
+},
   {
     "id": 14,
     "eword": "television",
     "kword": "텔레비전",
     "kreading": "tellebijeon"
-  },
+  ,"image": "" 
+},
   {
     "id": 15,
     "eword": "radio",
     "kword": "라디오",
     "kreading": "radio"
-  },
+  ,"image": "" 
+},
   {
     "id": 16,
     "eword": "camera",
     "kword": "카메라",
     "kreading": "kamera"
-  },
+  ,"image": "" 
+},
   {
     "id": 17,
     "eword": "mirror",
     "kword": "거울",
     "kreading": "geoul"
-  },
+  ,"image": "" 
+},
   {
     "id": 18,
     "eword": "window",
     "kword": "창문",
     "kreading": "changmun"
-  },
+  ,"image": "" 
+},
   {
     "id": 19,
     "eword": "door",
     "kword": "문",
     "kreading": "mun"
-  },
+  ,"image": "" 
+},
   {
     "id": 20,
     "eword": "key",
     "kword": "열쇠",
     "kreading": "yeolsoe"
-  },
+  ,"image": "" 
+},
   {
     "id": 21,
     "eword": "wallet",
     "kword": "지갑",
     "kreading": "jigap"
-  },
+  ,"image": "" 
+},
   {
     "id": 22,
     "eword": "umbrella",
     "kword": "우산",
     "kreading": "usan"
-  },
+  ,"image": "" 
+},
   {
     "id": 23,
     "eword": "hat",
     "kword": "모자",
     "kreading": "moja"
-  },
+  ,"image": "" 
+},
   {
     "id": 24,
     "eword": "shoes",
     "kword": "신발",
     "kreading": "sinbal"
-  },
+  ,"image": "" 
+},
   {
     "id": 25,
     "eword": "socks",
     "kword": "양말",
     "kreading": "yangmal"
-  },
+  ,"image": "" 
+},
   {
     "id": 26,
     "eword": "shirt",
     "kword": "셔츠",
     "kreading": "syeocheu"
-  },
+  ,"image": "" 
+},
   {
     "id": 27,
     "eword": "pants",
     "kword": "바지",
     "kreading": "baji"
-  },
+  ,"image": "" 
+},
   {
     "id": 28,
     "eword": "jacket",
     "kword": "재킷",
     "kreading": "jaekit"
-  },
+  ,"image": "" 
+},
   {
     "id": 29,
     "eword": "coat",
     "kword": "코트",
     "kreading": "koteu"
-  },
+  ,"image": "" 
+},
   {
     "id": 30,
     "eword": "dress",
     "kword": "드레스",
     "kreading": "deureseu"
-  },
+  ,"image": "" 
+},
   {
     "id": 31,
     "eword": "skirt",
     "kword": "치마",
     "kreading": "chima"
-  },
+  ,"image": "" 
+},
   {
     "id": 32,
     "eword": "glasses",
     "kword": "안경",
     "kreading": "angyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 33,
     "eword": "sunglasses",
     "kword": "선글라스",
     "kreading": "seongeullaseu"
-  },
+  ,"image": "" 
+},
   {
     "id": 34,
     "eword": "ring",
     "kword": "반지",
     "kreading": "banji"
-  },
+  ,"image": "" 
+},
   {
     "id": 35,
     "eword": "necklace",
     "kword": "목걸이",
     "kreading": "mokgeori"
-  },
+  ,"image": "" 
+},
   {
     "id": 36,
     "eword": "bracelet",
     "kword": "팔찌",
     "kreading": "paljji"
-  },
+  ,"image": "" 
+},
   {
     "id": 37,
     "eword": "earrings",
     "kword": "귀걸이",
     "kreading": "gwigeori"
-  },
+  ,"image": "" 
+},
   {
     "id": 38,
     "eword": "toothbrush",
     "kword": "칫솔",
     "kreading": "chitsol"
-  },
+  ,"image": "" 
+},
   {
     "id": 39,
     "eword": "toothpaste",
     "kword": "치약",
     "kreading": "chiyak"
-  },
+  ,"image": "" 
+},
   {
     "id": 40,
     "eword": "soap",
     "kword": "비누",
     "kreading": "binu"
-  },
+  ,"image": "" 
+},
   {
     "id": 41,
     "eword": "shampoo",
     "kword": "샴푸",
     "kreading": "syampu"
-  },
+  ,"image": "" 
+},
   {
     "id": 42,
     "eword": "towel",
     "kword": "수건",
     "kreading": "sugeon"
-  },
+  ,"image": "" 
+},
   {
     "id": 43,
     "eword": "comb",
     "kword": "빗",
     "kreading": "bit"
-  },
+  ,"image": "" 
+},
   {
     "id": 44,
     "eword": "brush",
     "kword": "브러시",
     "kreading": "beureosi"
-  },
+  ,"image": "" 
+},
   {
     "id": 45,
     "eword": "scissors",
     "kword": "가위",
     "kreading": "gawi"
-  },
+  ,"image": "" 
+},
   {
     "id": 46,
     "eword": "knife",
     "kword": "칼",
     "kreading": "kal"
-  },
+  ,"image": "" 
+},
   {
     "id": 47,
     "eword": "fork",
     "kword": "포크",
     "kreading": "pokeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 48,
     "eword": "spoon",
     "kword": "숟가락",
     "kreading": "sutgarak"
-  },
+  ,"image": "" 
+},
   {
     "id": 49,
     "eword": "plate",
     "kword": "접시",
     "kreading": "jeopsi"
-  },
+  ,"image": "" 
+},
   {
     "id": 50,
     "eword": "cup",
     "kword": "컵",
     "kreading": "keop"
-  },
+  ,"image": "" 
+},
   {
     "id": 51,
     "eword": "bottle",
     "kword": "병",
     "kreading": "byeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 52,
     "eword": "bowl",
     "kword": "그릇",
     "kreading": "geureut"
-  },
+  ,"image": "" 
+},
   {
     "id": 53,
     "eword": "pan",
     "kword": "팬",
     "kreading": "paen"
-  },
+  ,"image": "" 
+},
   {
     "id": 54,
     "eword": "pot",
     "kword": "냄비",
     "kreading": "naembi"
-  },
+  ,"image": "" 
+},
   {
     "id": 55,
     "eword": "oven",
     "kword": "오븐",
     "kreading": "obeun"
-  },
+  ,"image": "" 
+},
   {
     "id": 56,
     "eword": "microwave",
     "kword": "전자레인지",
     "kreading": "jeonjareinji"
-  },
+  ,"image": "" 
+},
   {
     "id": 57,
     "eword": "refrigerator",
     "kword": "냉장고",
     "kreading": "naengjanggo"
-  },
+  ,"image": "" 
+},
   {
     "id": 58,
     "eword": "freezer",
     "kword": "냉동고",
     "kreading": "naengdonggo"
-  },
+  ,"image": "" 
+},
   {
     "id": 59,
     "eword": "blender",
     "kword": "믹서기",
     "kreading": "mikseogi"
-  },
+  ,"image": "" 
+},
   {
     "id": 60,
     "eword": "toaster",
     "kword": "토스터",
     "kreading": "toseuteo"
-  },
+  ,"image": "" 
+},
   {
     "id": 61,
     "eword": "kettle",
     "kword": "주전자",
     "kreading": "jujeonja"
-  },
+  ,"image": "" 
+},
   {
     "id": 62,
     "eword": "vacuum cleaner",
     "kword": "청소기",
     "kreading": "cheongsogi"
-  },
+  ,"image": "" 
+},
   {
     "id": 63,
     "eword": "washing machine",
     "kword": "세탁기",
     "kreading": "setakgi"
-  },
+  ,"image": "" 
+},
   {
     "id": 64,
     "eword": "dryer",
     "kword": "건조기",
     "kreading": "geonjogi"
-  },
+  ,"image": "" 
+},
   {
     "id": 65,
     "eword": "iron",
     "kword": "다리미",
     "kreading": "darimi"
-  },
+  ,"image": "" 
+},
   {
     "id": 66,
     "eword": "fan",
     "kword": "선풍기",
     "kreading": "seonpunggi"
-  },
+  ,"image": "" 
+},
   {
     "id": 67,
     "eword": "heater",
     "kword": "히터",
     "kreading": "hiteo"
-  },
+  ,"image": "" 
+},
   {
     "id": 68,
     "eword": "air conditioner",
     "kword": "에어컨",
     "kreading": "eeokeon"
-  },
+  ,"image": "" 
+},
   {
     "id": 69,
     "eword": "humidifier",
     "kword": "가습기",
     "kreading": "gaseupgi"
-  },
+  ,"image": "" 
+},
   {
     "id": 70,
     "eword": "dehumidifier",
     "kword": "제습기",
     "kreading": "jeseupgi"
-  },
+  ,"image": "" 
+},
   {
     "id": 71,
     "eword": "light bulb",
     "kword": "전구",
     "kreading": "jeongu"
-  },
+  ,"image": "" 
+},
   {
     "id": 72,
     "eword": "flashlight",
     "kword": "손전등",
     "kreading": "sonjeondeung"
-  },
+  ,"image": "" 
+},
   {
     "id": 73,
     "eword": "battery",
     "kword": "배터리",
     "kreading": "baeteori"
-  },
+  ,"image": "" 
+},
   {
     "id": 74,
     "eword": "charger",
     "kword": "충전기",
     "kreading": "chungjeongi"
-  },
+  ,"image": "" 
+},
   {
     "id": 75,
     "eword": "remote control",
     "kword": "리모컨",
     "kreading": "rimokeon"
-  },
+  ,"image": "" 
+},
   {
     "id": 76,
     "eword": "speaker",
     "kword": "스피커",
     "kreading": "seupikeo"
-  },
+  ,"image": "" 
+},
   {
     "id": 77,
     "eword": "headphones",
     "kword": "헤드폰",
     "kreading": "hedeupon"
-  },
+  ,"image": "" 
+},
   {
     "id": 78,
     "eword": "microphone",
     "kword": "마이크",
     "kreading": "maikeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 79,
     "eword": "printer",
     "kword": "프린터",
     "kreading": "peurinteo"
-  },
+  ,"image": "" 
+},
   {
     "id": 80,
     "eword": "scanner",
     "kword": "스캐너",
     "kreading": "seukaeneo"
-  },
+  ,"image": "" 
+},
   {
     "id": 81,
     "eword": "keyboard",
     "kword": "키보드",
     "kreading": "kibodeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 82,
     "eword": "mouse",
     "kword": "마우스",
     "kreading": "mauseu"
-  },
+  ,"image": "" 
+},
   {
     "id": 83,
     "eword": "monitor",
     "kword": "모니터",
     "kreading": "moniteo"
-  },
+  ,"image": "" 
+},
   {
     "id": 84,
     "eword": "laptop",
     "kword": "노트북",
     "kreading": "noteubuk"
-  },
+  ,"image": "" 
+},
   {
     "id": 85,
     "eword": "tablet",
     "kword": "태블릿",
     "kreading": "taebeullit"
-  },
+  ,"image": "" 
+},
   {
     "id": 86,
     "eword": "smartphone",
     "kword": "스마트폰",
     "kreading": "seumateupon"
-  },
+  ,"image": "" 
+},
   {
     "id": 87,
     "eword": "camera",
     "kword": "카메라",
     "kreading": "kamera"
-  },
+  ,"image": "" 
+},
   {
     "id": 88,
     "eword": "tripod",
     "kword": "삼각대",
     "kreading": "samgakdae"
-  },
+  ,"image": "" 
+},
   {
     "id": 89,
     "eword": "lens",
     "kword": "렌즈",
     "kreading": "renjeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 90,
     "eword": "memory card",
     "kword": "메모리 카드",
     "kreading": "memori kadeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 91,
     "eword": "hard drive",
     "kword": "하드 드라이브",
     "kreading": "hadeu deuraibeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 92,
     "eword": "usb drive",
     "kword": "USB 드라이브",
     "kreading": "USB deuraibeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 93,
     "eword": "router",
     "kword": "라우터",
     "kreading": "rauteo"
-  },
+  ,"image": "" 
+},
   {
     "id": 94,
     "eword": "modem",
     "kword": "모뎀",
     "kreading": "modem"
-  },
+  ,"image": "" 
+},
   {
     "id": 95,
     "eword": "cable",
     "kword": "케이블",
     "kreading": "keibeul"
-  },
+  ,"image": "" 
+},
   {
     "id": 96,
     "eword": "plug",
     "kword": "플러그",
     "kreading": "peulleogeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 97,
     "eword": "socket",
     "kword": "소켓",
     "kreading": "soket"
-  },
+  ,"image": "" 
+},
   {
     "id": 98,
     "eword": "switch",
     "kword": "스위치",
     "kreading": "seuwichi"
-  },
+  ,"image": "" 
+},
   {
     "id": 99,
     "eword": "extension cord",
     "kword": "연장 코드",
     "kreading": "yeonjang kodeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 100,
     "eword": "power strip",
     "kword": "멀티탭",
     "kreading": "meoltitaep"
-  },
+  ,"image": "" 
+},
   {
     "id": 101,
     "eword": "glue",
     "kword": "풀",
     "kreading": "pul"
-  },
+  ,"image": "" 
+},
   {
     "id": 102,
     "eword": "tape",
     "kword": "테이프",
     "kreading": "teipeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 103,
     "eword": "stapler",
     "kword": "스테이플러",
     "kreading": "seuteipeulleo"
-  },
+  ,"image": "" 
+},
   {
     "id": 104,
     "eword": "paper",
     "kword": "종이",
     "kreading": "jongi"
-  },
+  ,"image": "" 
+},
   {
     "id": 105,
     "eword": "envelope",
     "kword": "봉투",
     "kreading": "bongtu"
-  },
+  ,"image": "" 
+},
   {
     "id": 106,
     "eword": "stamp",
     "kword": "우표",
     "kreading": "upyo"
-  },
+  ,"image": "" 
+},
   {
     "id": 107,
     "eword": "ruler",
     "kword": "자",
     "kreading": "ja"
-  },
+  ,"image": "" 
+},
   {
     "id": 108,
     "eword": "calculator",
     "kword": "계산기",
     "kreading": "gyesangi"
-  },
+  ,"image": "" 
+},
   {
     "id": 109,
     "eword": "calendar",
     "kword": "달력",
     "kreading": "dallyeok"
-  },
+  ,"image": "" 
+},
   {
     "id": 110,
     "eword": "map",
     "kword": "지도",
     "kreading": "jido"
-  },
+  ,"image": "" 
+},
   {
     "id": 111,
     "eword": "globe",
     "kword": "지구본",
     "kreading": "jigubon"
-  },
+  ,"image": "" 
+},
   {
     "id": 112,
     "eword": "binoculars",
     "kword": "쌍안경",
     "kreading": "ssangan-gyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 113,
     "eword": "magnifying glass",
     "kword": "돋보기",
     "kreading": "dotbogi"
-  },
+  ,"image": "" 
+},
   {
     "id": 114,
     "eword": "telescope",
     "kword": "망원경",
     "kreading": "mangwon-gyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 115,
     "eword": "microscope",
     "kword": "현미경",
     "kreading": "hyeonmigyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 116,
     "eword": "thermometer",
     "kword": "온도계",
     "kreading": "ondogye"
-  },
+  ,"image": "" 
+},
   {
     "id": 117,
     "eword": "barometer",
     "kword": "기압계",
     "kreading": "giapgye"
-  },
+  ,"image": "" 
+},
   {
     "id": 118,
     "eword": "compass",
     "kword": "나침반",
     "kreading": "nachimban"
-  },
+  ,"image": "" 
+},
   {
     "id": 119,
     "eword": "protractor",
     "kword": "각도기",
     "kreading": "gakdogi"
-  },
+  ,"image": "" 
+},
   {
     "id": 120,
     "eword": "scale",
     "kword": "저울",
     "kreading": "jeoul"
-  },
+  ,"image": "" 
+},
   {
     "id": 121,
     "eword": "measuring tape",
     "kword": "줄자",
     "kreading": "julja"
-  },
+  ,"image": "" 
+},
   {
     "id": 122,
     "eword": "level",
     "kword": "수평기",
     "kreading": "supyeonggi"
-  },
+  ,"image": "" 
+},
   {
     "id": 123,
     "eword": "thermostat",
     "kword": "온도 조절기",
     "kreading": "ondo jojeolgi"
-  },
+  ,"image": "" 
+},
   {
     "id": 124,
     "eword": "timer",
     "kword": "타이머",
     "kreading": "taimeo"
-  },
+  ,"image": "" 
+},
   {
     "id": 125,
     "eword": "alarm clock",
     "kword": "알람 시계",
     "kreading": "allam sigye"
-  },
+  ,"image": "" 
+},
   {
     "id": 126,
     "eword": "stopwatch",
     "kword": "스톱워치",
     "kreading": "seutopwochi"
-  },
+  ,"image": "" 
+},
   {
     "id": 127,
     "eword": "calendar",
     "kword": "달력",
     "kreading": "dallyeok"
-  },
+  ,"image": "" 
+},
   {
     "id": 128,
     "eword": "diary",
     "kword": "일기",
     "kreading": "ilgi"
-  },
+  ,"image": "" 
+},
   {
     "id": 129,
     "eword": "journal",
     "kword": "저널",
     "kreading": "jeoneol"
-  },
+  ,"image": "" 
+},
   {
     "id": 130,
     "eword": "notebook",
     "kword": "노트",
     "kreading": "noteu"
-  },
+  ,"image": "" 
+},
   {
     "id": 131,
     "eword": "sketchbook",
     "kword": "스케치북",
     "kreading": "seukechibuk"
-  },
+  ,"image": "" 
+},
   {
     "id": 132,
     "eword": "clipboard",
     "kword": "클립보드",
     "kreading": "keullipbodeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 133,
     "eword": "file folder",
     "kword": "파일 폴더",
     "kreading": "pail poldeo"
-  },
+  ,"image": "" 
+},
   {
     "id": 134,
     "eword": "binder",
     "kword": "바인더",
     "kreading": "baindeo"
-  },
+  ,"image": "" 
+},
   {
     "id": 135,
     "eword": "envelope",
     "kword": "봉투",
     "kreading": "bongtu"
-  },
+  ,"image": "" 
+},
   {
     "id": 136,
     "eword": "stapler",
     "kword": "스테이플러",
     "kreading": "seuteipeulleo"
-  },
+  ,"image": "" 
+},
   {
     "id": 137,
     "eword": "paper clip",
     "kword": "종이 클립",
     "kreading": "jongi keullip"
-  },
+  ,"image": "" 
+},
   {
     "id": 138,
     "eword": "rubber band",
     "kword": "고무 밴드",
     "kreading": "gomu baendeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 139,
     "eword": "thumbtack",
     "kword": "압정",
     "kreading": "apjeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 140,
     "eword": "push pin",
     "kword": "푸시 핀",
     "kreading": "pusi pin"
-  },
+  ,"image": "" 
+},
   {
     "id": 141,
     "eword": "tape dispenser",
     "kword": "테이프 디스펜서",
     "kreading": "teipeu diseupenseo"
-  },
+  ,"image": "" 
+},
   {
     "id": 142,
     "eword": "glue stick",
     "kword": "풀 스틱",
     "kreading": "pul seutik"
-  },
+  ,"image": "" 
+},
   {
     "id": 143,
     "eword": "highlighter",
     "kword": "형광펜",
     "kreading": "hyeonggwangpen"
-  },
+  ,"image": "" 
+},
   {
     "id": 144,
     "eword": "marker",
     "kword": "마커",
     "kreading": "makeo"
-  },
+  ,"image": "" 
+},
   {
     "id": 145,
     "eword": "whiteboard",
     "kword": "화이트보드",
     "kreading": "hwaiteubodeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 146,
     "eword": "chalkboard",
     "kword": "칠판",
     "kreading": "chilpan"
-  },
+  ,"image": "" 
+},
   {
     "id": 147,
     "eword": "eraser",
     "kword": "지우개",
     "kreading": "jiugae"
-  },
+  ,"image": "" 
+},
   {
     "id": 148,
     "eword": "pencil sharpener",
     "kword": "연필깎이",
     "kreading": "yeonpilkkakki"
-  },
+  ,"image": "" 
+},
   {
     "id": 149,
     "eword": "staple remover",
     "kword": "스테이플 제거기",
     "kreading": "seuteipeul jegeogi"
-  },
+  ,"image": "" 
+},
   {
     "id": 150,
     "eword": "paper cutter",
     "kword": "종이 절단기",
     "kreading": "jongi jeoldangi"
-  }
+  ,"image": "" 
+}
 ]

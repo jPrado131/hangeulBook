@@ -4,239 +4,279 @@
     "eword": "second",
     "kword": "초",
     "kreading": "cho"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "minute",
     "kword": "분",
     "kreading": "bun"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "hour",
     "kword": "시간",
     "kreading": "sigan"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "day",
     "kword": "일",
     "kreading": "il"
-  },
+  ,"image": "" 
+},
   {
     "id": 5,
     "eword": "week",
     "kword": "주",
     "kreading": "ju"
-  },
+  ,"image": "" 
+},
   {
     "id": 6,
     "eword": "month",
     "kword": "월",
     "kreading": "wol"
-  },
+  ,"image": "" 
+},
   {
     "id": 7,
     "eword": "year",
     "kword": "년",
     "kreading": "nyeon"
-  },
+  ,"image": "" 
+},
   {
     "id": 8,
     "eword": "morning",
     "kword": "아침",
     "kreading": "achim"
-  },
+  ,"image": "" 
+},
   {
     "id": 9,
     "eword": "afternoon",
     "kword": "오후",
     "kreading": "ohu"
-  },
+  ,"image": "" 
+},
   {
     "id": 10,
     "eword": "evening",
     "kword": "저녁",
     "kreading": "jeonyeok"
-  },
+  ,"image": "" 
+},
   {
     "id": 11,
     "eword": "night",
     "kword": "밤",
     "kreading": "bam"
-  },
+  ,"image": "" 
+},
   {
     "id": 12,
     "eword": "midnight",
     "kword": "자정",
     "kreading": "jajeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 13,
     "eword": "sunrise",
     "kword": "일출",
     "kreading": "ilchul"
-  },
+  ,"image": "" 
+},
   {
     "id": 14,
     "eword": "sunset",
     "kword": "일몰",
     "kreading": "ilmol"
-  },
+  ,"image": "" 
+},
   {
     "id": 15,
     "eword": "today",
     "kword": "오늘",
     "kreading": "oneul"
-  },
+  ,"image": "" 
+},
   {
     "id": 16,
     "eword": "tomorrow",
     "kword": "내일",
     "kreading": "naeil"
-  },
+  ,"image": "" 
+},
   {
     "id": 17,
     "eword": "yesterday",
     "kword": "어제",
     "kreading": "eoje"
-  },
+  ,"image": "" 
+},
   {
     "id": 18,
     "eword": "day before yesterday",
     "kword": "그저께",
     "kreading": "geujeokke"
-  },
+  ,"image": "" 
+},
   {
     "id": 19,
     "eword": "day after tomorrow",
     "kword": "모레",
     "kreading": "more"
-  },
+  ,"image": "" 
+},
   {
     "id": 20,
     "eword": "weekend",
     "kword": "주말",
     "kreading": "jumal"
-  },
+  ,"image": "" 
+},
   {
     "id": 21,
     "eword": "weekday",
     "kword": "평일",
     "kreading": "pyeongil"
-  },
+  ,"image": "" 
+},
   {
     "id": 22,
     "eword": "Monday",
     "kword": "월요일",
     "kreading": "woryoil"
-  },
+  ,"image": "" 
+},
   {
     "id": 23,
     "eword": "Tuesday",
     "kword": "화요일",
     "kreading": "hwayoil"
-  },
+  ,"image": "" 
+},
   {
     "id": 24,
     "eword": "Wednesday",
     "kword": "수요일",
     "kreading": "suyoil"
-  },
+  ,"image": "" 
+},
   {
     "id": 25,
     "eword": "Thursday",
     "kword": "목요일",
     "kreading": "mogyoil"
-  },
+  ,"image": "" 
+},
   {
     "id": 26,
     "eword": "Friday",
     "kword": "금요일",
     "kreading": "geumyoil"
-  },
+  ,"image": "" 
+},
   {
     "id": 27,
     "eword": "Saturday",
     "kword": "토요일",
     "kreading": "toyoil"
-  },
+  ,"image": "" 
+},
   {
     "id": 28,
     "eword": "Sunday",
     "kword": "일요일",
     "kreading": "iryoil"
-  },
+  ,"image": "" 
+},
   {
     "id": 29,
     "eword": "January",
     "kword": "1월",
     "kreading": "irwol"
-  },
+  ,"image": "" 
+},
   {
     "id": 30,
     "eword": "February",
     "kword": "2월",
     "kreading": "iwol"
-  },
+  ,"image": "" 
+},
   {
     "id": 31,
     "eword": "March",
     "kword": "3월",
     "kreading": "samwol"
-  },
+  ,"image": "" 
+},
   {
     "id": 32,
     "eword": "April",
     "kword": "4월",
     "kreading": "sawol"
-  },
+  ,"image": "" 
+},
   {
     "id": 33,
     "eword": "May",
     "kword": "5월",
     "kreading": "owol"
-  },
+  ,"image": "" 
+},
   {
     "id": 34,
     "eword": "June",
     "kword": "6월",
     "kreading": "yuwol"
-  },
+  ,"image": "" 
+},
   {
     "id": 35,
     "eword": "July",
     "kword": "7월",
     "kreading": "chirwol"
-  },
+  ,"image": "" 
+},
   {
     "id": 36,
     "eword": "August",
     "kword": "8월",
     "kreading": "parwol"
-  },
+  ,"image": "" 
+},
   {
     "id": 37,
     "eword": "September",
     "kword": "9월",
     "kreading": "guwol"
-  },
+  ,"image": "" 
+},
   {
     "id": 38,
     "eword": "October",
     "kword": "10월",
     "kreading": "siwol"
-  },
+  ,"image": "" 
+},
   {
     "id": 39,
     "eword": "November",
     "kword": "11월",
     "kreading": "sibirwol"
-  },
+  ,"image": "" 
+},
   {
     "id": 40,
     "eword": "December",
     "kword": "12월",
     "kreading": "sibiwol"
-  }
+  ,"image": "" 
+}
 ]

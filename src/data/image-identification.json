@@ -5,145 +5,166 @@
         "kword": "축구",
         "kreading": "chukgu",
         "image": "/images/sports/soccer.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 2,
         "eword": "basketball",
         "kword": "농구",
         "kreading": "nonggu",
         "image": "/images/sports/basketball.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 3,
         "eword": "baseball",
         "kword": "야구",
         "kreading": "yagu",
         "image": "/images/sports/baseball.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 4,
         "eword": "tennis",
         "kword": "테니스",
         "kreading": "teniseu",
         "image": "/images/sports/tennis.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 5,
         "eword": "swimming",
         "kword": "수영",
         "kreading": "suyeong",
         "image": "/images/sports/swimming.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 6,
         "eword": "running",
         "kword": "달리기",
         "kreading": "dalligi",
         "image": "/images/sports/running.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 7,
         "eword": "cycling",
         "kword": "자전거 타기",
         "kreading": "jajeongeo tagi",
         "image": "/images/sports/cycling.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 8,
         "eword": "golf",
         "kword": "골프",
         "kreading": "golpeu",
         "image": "/images/sports/golf.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 9,
         "eword": "volleyball",
         "kword": "배구",
         "kreading": "baegu",
         "image": "/images/sports/volleyball.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 10,
         "eword": "skiing",
         "kword": "스키",
         "kreading": "seuki",
         "image": "/images/sports/skiing.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 11,
         "eword": "boxing",
         "kword": "복싱",
         "kreading": "boksing",
         "image": "/images/sports/boxing.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 12,
         "eword": "badminton",
         "kword": "배드민턴",
         "kreading": "baedeuminteon",
         "image": "/images/sports/badminton.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 13,
         "eword": "table tennis",
         "kword": "탁구",
         "kreading": "takgu",
         "image": "/images/sports/table_tennis.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 14,
         "eword": "hockey",
         "kword": "하키",
         "kreading": "haki",
         "image": "/images/sports/hockey.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 15,
         "eword": "rugby",
         "kword": "럭비",
         "kreading": "reokbi",
         "image": "/images/sports/rugby.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 16,
         "eword": "cricket",
         "kword": "크리켓",
         "kreading": "keuriket",
         "image": "/images/sports/cricket.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 17,
         "eword": "archery",
         "kword": "양궁",
         "kreading": "yanggung",
         "image": "/images/sports/archery.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 18,
         "eword": "fencing",
         "kword": "펜싱",
         "kreading": "penshing",
         "image": "/images/sports/fencing.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 19,
         "eword": "gymnastics",
         "kword": "체조",
         "kreading": "chejo",
         "image": "/images/sports/gymnastics.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 20,
         "eword": "karate",
         "kword": "가라테",
         "kreading": "garate",
         "image": "/images/sports/karate.jpg"
-      },
+      ,"image": "" 
+},
       {
         "id": 21,
         "eword": "taekwondo",
         "kword": "태권도",
         "kreading": "taegwondo",
         "image": "/images/sports/taekwondo.jpg"
-      }
+      ,"image": "" 
+}
 ]

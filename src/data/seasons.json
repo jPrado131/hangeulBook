@@ -4,23 +4,27 @@
     "eword": "spring",
     "kword": "봄",
     "kreading": "bom"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "summer",
     "kword": "여름",
     "kreading": "yeoreum"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "autumn",
     "kword": "가을",
     "kreading": "gaeul"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "winter",
     "kword": "겨울",
     "kreading": "gyeoul"
-  }
+  ,"image": "" 
+}
 ]

@@ -4,599 +4,699 @@
     "eword": "run",
     "kword": "달리다",
     "kreading": "dallida"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "walk",
     "kword": "걷다",
     "kreading": "geotda"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "eat",
     "kword": "먹다",
     "kreading": "meokda"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "drink",
     "kword": "마시다",
     "kreading": "masida"
-  },
+  ,"image": "" 
+},
   {
     "id": 5,
     "eword": "sleep",
     "kword": "자다",
     "kreading": "jada"
-  },
+  ,"image": "" 
+},
   {
     "id": 6,
     "eword": "read",
     "kword": "읽다",
     "kreading": "ilgda"
-  },
+  ,"image": "" 
+},
   {
     "id": 7,
     "eword": "write",
     "kword": "쓰다",
     "kreading": "sseuda"
-  },
+  ,"image": "" 
+},
   {
     "id": 8,
     "eword": "speak",
     "kword": "말하다",
     "kreading": "malhada"
-  },
+  ,"image": "" 
+},
   {
     "id": 9,
     "eword": "listen",
     "kword": "듣다",
     "kreading": "deutda"
-  },
+  ,"image": "" 
+},
   {
     "id": 10,
     "eword": "see",
     "kword": "보다",
     "kreading": "boda"
-  },
+  ,"image": "" 
+},
   {
     "id": 11,
     "eword": "hear",
     "kword": "듣다",
     "kreading": "deutda"
-  },
+  ,"image": "" 
+},
   {
     "id": 12,
     "eword": "touch",
     "kword": "만지다",
     "kreading": "manjida"
-  },
+  ,"image": "" 
+},
   {
     "id": 13,
     "eword": "smell",
     "kword": "냄새 맡다",
     "kreading": "naemsae matda"
-  },
+  ,"image": "" 
+},
   {
     "id": 14,
     "eword": "taste",
     "kword": "맛보다",
     "kreading": "matboda"
-  },
+  ,"image": "" 
+},
   {
     "id": 15,
     "eword": "think",
     "kword": "생각하다",
     "kreading": "saenggakhada"
-  },
+  ,"image": "" 
+},
   {
     "id": 16,
     "eword": "know",
     "kword": "알다",
     "kreading": "alda"
-  },
+  ,"image": "" 
+},
   {
     "id": 17,
     "eword": "understand",
     "kword": "이해하다",
     "kreading": "ihaehada"
-  },
+  ,"image": "" 
+},
   {
     "id": 18,
     "eword": "learn",
     "kword": "배우다",
     "kreading": "baeuda"
-  },
+  ,"image": "" 
+},
   {
     "id": 19,
     "eword": "teach",
     "kword": "가르치다",
     "kreading": "gareuchida"
-  },
+  ,"image": "" 
+},
   {
     "id": 20,
     "eword": "work",
     "kword": "일하다",
     "kreading": "ilhada"
-  },
+  ,"image": "" 
+},
   {
     "id": 21,
     "eword": "play",
     "kword": "놀다",
     "kreading": "nolda"
-  },
+  ,"image": "" 
+},
   {
     "id": 22,
     "eword": "sing",
     "kword": "노래하다",
     "kreading": "noraehada"
-  },
+  ,"image": "" 
+},
   {
     "id": 23,
     "eword": "dance",
     "kword": "춤추다",
     "kreading": "chumchuda"
-  },
+  ,"image": "" 
+},
   {
     "id": 24,
     "eword": "draw",
     "kword": "그리다",
     "kreading": "geurida"
-  },
+  ,"image": "" 
+},
   {
     "id": 25,
     "eword": "paint",
     "kword": "그리다",
     "kreading": "geurida"
-  },
+  ,"image": "" 
+},
   {
     "id": 26,
     "eword": "build",
     "kword": "짓다",
     "kreading": "jitda"
-  },
+  ,"image": "" 
+},
   {
     "id": 27,
     "eword": "make",
     "kword": "만들다",
     "kreading": "mandeulda"
-  },
+  ,"image": "" 
+},
   {
     "id": 28,
     "eword": "cook",
     "kword": "요리하다",
     "kreading": "yorihada"
-  },
+  ,"image": "" 
+},
   {
     "id": 29,
     "eword": "clean",
     "kword": "청소하다",
     "kreading": "cheongsohada"
-  },
+  ,"image": "" 
+},
   {
     "id": 30,
     "eword": "wash",
     "kword": "씻다",
     "kreading": "ssitda"
-  },
+  ,"image": "" 
+},
   {
     "id": 31,
     "eword": "drive",
     "kword": "운전하다",
     "kreading": "unjeonhada"
-  },
+  ,"image": "" 
+},
   {
     "id": 32,
     "eword": "ride",
     "kword": "타다",
     "kreading": "tada"
-  },
+  ,"image": "" 
+},
   {
     "id": 33,
     "eword": "fly",
     "kword": "날다",
     "kreading": "nalda"
-  },
+  ,"image": "" 
+},
   {
     "id": 34,
     "eword": "swim",
     "kword": "수영하다",
     "kreading": "suyeonghada"
-  },
+  ,"image": "" 
+},
   {
     "id": 35,
     "eword": "jump",
     "kword": "뛰다",
     "kreading": "ttwida"
-  },
+  ,"image": "" 
+},
   {
     "id": 36,
     "eword": "climb",
     "kword": "오르다",
     "kreading": "oreuda"
-  },
+  ,"image": "" 
+},
   {
     "id": 37,
     "eword": "fall",
     "kword": "떨어지다",
     "kreading": "tteoreojida"
-  },
+  ,"image": "" 
+},
   {
     "id": 38,
     "eword": "catch",
     "kword": "잡다",
     "kreading": "japda"
-  },
+  ,"image": "" 
+},
   {
     "id": 39,
     "eword": "throw",
     "kword": "던지다",
     "kreading": "deonjida"
-  },
+  ,"image": "" 
+},
   {
     "id": 40,
     "eword": "kick",
     "kword": "차다",
     "kreading": "chada"
-  },
+  ,"image": "" 
+},
   {
     "id": 41,
     "eword": "hit",
     "kword": "치다",
     "kreading": "chida"
-  },
+  ,"image": "" 
+},
   {
     "id": 42,
     "eword": "push",
     "kword": "밀다",
     "kreading": "milda"
-  },
+  ,"image": "" 
+},
   {
     "id": 43,
     "eword": "pull",
     "kword": "당기다",
     "kreading": "dangida"
-  },
+  ,"image": "" 
+},
   {
     "id": 44,
     "eword": "open",
     "kword": "열다",
     "kreading": "yeolda"
-  },
+  ,"image": "" 
+},
   {
     "id": 45,
     "eword": "close",
     "kword": "닫다",
     "kreading": "datda"
-  },
+  ,"image": "" 
+},
   {
     "id": 46,
     "eword": "turn on",
     "kword": "켜다",
     "kreading": "kyeoda"
-  },
+  ,"image": "" 
+},
   {
     "id": 47,
     "eword": "turn off",
     "kword": "끄다",
     "kreading": "kkeuda"
-  },
+  ,"image": "" 
+},
   {
     "id": 48,
     "eword": "sit",
     "kword": "앉다",
     "kreading": "anda"
-  },
+  ,"image": "" 
+},
   {
     "id": 49,
     "eword": "stand",
     "kword": "서다",
     "kreading": "seoda"
-  },
+  ,"image": "" 
+},
   {
     "id": 50,
     "eword": "lie down",
     "kword": "눕다",
     "kreading": "nupda"
-  },
+  ,"image": "" 
+},
   {
     "id": 51,
     "eword": "wake up",
     "kword": "일어나다",
     "kreading": "ireonada"
-  },
+  ,"image": "" 
+},
   {
     "id": 52,
     "eword": "smile",
     "kword": "웃다",
     "kreading": "utda"
-  },
+  ,"image": "" 
+},
   {
     "id": 53,
     "eword": "cry",
     "kword": "울다",
     "kreading": "ulda"
-  },
+  ,"image": "" 
+},
   {
     "id": 54,
     "eword": "laugh",
     "kword": "웃다",
     "kreading": "utda"
-  },
+  ,"image": "" 
+},
   {
     "id": 55,
     "eword": "shout",
     "kword": "소리치다",
     "kreading": "sorichida"
-  },
+  ,"image": "" 
+},
   {
     "id": 56,
     "eword": "whisper",
     "kword": "속삭이다",
     "kreading": "soksagida"
-  },
+  ,"image": "" 
+},
   {
     "id": 57,
     "eword": "breathe",
     "kword": "숨쉬다",
     "kreading": "sumswida"
-  },
+  ,"image": "" 
+},
   {
     "id": 58,
     "eword": "sneeze",
     "kword": "재채기하다",
     "kreading": "jaechaegihada"
-  },
+  ,"image": "" 
+},
   {
     "id": 59,
     "eword": "cough",
     "kword": "기침하다",
     "kreading": "gichimhada"
-  },
+  ,"image": "" 
+},
   {
     "id": 60,
     "eword": "yawn",
     "kword": "하품하다",
     "kreading": "hapumhada"
-  },
+  ,"image": "" 
+},
   {
     "id": 61,
     "eword": "hug",
     "kword": "포옹하다",
     "kreading": "poonghada"
-  },
+  ,"image": "" 
+},
   {
     "id": 62,
     "eword": "kiss",
     "kword": "키스하다",
     "kreading": "kiseuhada"
-  },
+  ,"image": "" 
+},
   {
     "id": 63,
     "eword": "clap",
     "kword": "박수치다",
     "kreading": "baksuchida"
-  },
+  ,"image": "" 
+},
   {
     "id": 64,
     "eword": "wave",
     "kword": "손을 흔들다",
     "kreading": "soneul heundeulda"
-  },
+  ,"image": "" 
+},
   {
     "id": 65,
     "eword": "nod",
     "kword": "끄덕이다",
     "kreading": "kkeudeogida"
-  },
+  ,"image": "" 
+},
   {
     "id": 66,
     "eword": "shake",
     "kword": "흔들다",
     "kreading": "heundeulda"
-  },
+  ,"image": "" 
+},
   {
     "id": 67,
     "eword": "point",
     "kword": "가리키다",
     "kreading": "garikida"
-  },
+  ,"image": "" 
+},
   {
     "id": 68,
     "eword": "scratch",
     "kword": "긁다",
     "kreading": "geukda"
-  },
+  ,"image": "" 
+},
   {
     "id": 69,
     "eword": "bite",
     "kword": "물다",
     "kreading": "mulda"
-  },
+  ,"image": "" 
+},
   {
     "id": 70,
     "eword": "chew",
     "kword": "씹다",
     "kreading": "ssipda"
-  },
+  ,"image": "" 
+},
   {
     "id": 71,
     "eword": "lick",
     "kword": "핥다",
     "kreading": "haltda"
-  },
+  ,"image": "" 
+},
   {
     "id": 72,
     "eword": "spit",
     "kword": "침을 뱉다",
     "kreading": "chimeul baetda"
-  },
+  ,"image": "" 
+},
   {
     "id": 73,
     "eword": "swallow",
     "kword": "삼키다",
     "kreading": "samkida"
-  },
+  ,"image": "" 
+},
   {
     "id": 74,
     "eword": "blow",
     "kword": "불다",
     "kreading": "bulda"
-  },
+  ,"image": "" 
+},
   {
     "id": 75,
     "eword": "whistle",
     "kword": "휘파람을 불다",
     "kreading": "hwiparameul bulda"
-  },
+  ,"image": "" 
+},
   {
     "id": 76,
     "eword": "suck",
     "kword": "빨다",
     "kreading": "ppalda"
-  },
+  ,"image": "" 
+},
   {
     "id": 77,
     "eword": "sniff",
     "kword": "킁킁거리다",
     "kreading": "keungkeunggeorida"
-  },
+  ,"image": "" 
+},
   {
     "id": 78,
     "eword": "pat",
     "kword": "토닥이다",
     "kreading": "todagida"
-  },
+  ,"image": "" 
+},
   {
     "id": 79,
     "eword": "tap",
     "kword": "톡톡 두드리다",
     "kreading": "toktok dudeurida"
-  },
+  ,"image": "" 
+},
   {
     "id": 80,
     "eword": "knock",
     "kword": "노크하다",
     "kreading": "nokeuhada"
-  },
+  ,"image": "" 
+},
   {
     "id": 81,
     "eword": "kick",
     "kword": "차다",
     "kreading": "chada"
-  },
+  ,"image": "" 
+},
   {
     "id": 82,
     "eword": "punch",
     "kword": "주먹질하다",
     "kreading": "jumeokjilhada"
-  },
+  ,"image": "" 
+},
   {
     "id": 83,
     "eword": "slap",
     "kword": "때리다",
     "kreading": "ttaerida"
-  },
+  ,"image": "" 
+},
   {
     "id": 84,
     "eword": "pinch",
     "kword": "꼬집다",
     "kreading": "kkojipda"
-  },
+  ,"image": "" 
+},
   {
     "id": 85,
     "eword": "tickle",
     "kword": "간지럽히다",
     "kreading": "ganjireophida"
-  },
+  ,"image": "" 
+},
   {
     "id": 86,
     "eword": "hug",
     "kword": "포옹하다",
     "kreading": "poonghada"
-  },
+  ,"image": "" 
+},
   {
     "id": 87,
     "eword": "kiss",
     "kword": "키스하다",
     "kreading": "kiseuhada"
-  },
+  ,"image": "" 
+},
   {
     "id": 88,
     "eword": "clap",
     "kword": "박수치다",
     "kreading": "baksuchida"
-  },
+  ,"image": "" 
+},
   {
     "id": 89,
     "eword": "wave",
     "kword": "손을 흔들다",
     "kreading": "soneul heundeulda"
-  },
+  ,"image": "" 
+},
   {
     "id": 90,
     "eword": "nod",
     "kword": "끄덕이다",
     "kreading": "kkeudeogida"
-  },
+  ,"image": "" 
+},
   {
     "id": 91,
     "eword": "shake",
     "kword": "흔들다",
     "kreading": "heundeulda"
-  },
+  ,"image": "" 
+},
   {
     "id": 92,
     "eword": "point",
     "kword": "가리키다",
     "kreading": "garikida"
-  },
+  ,"image": "" 
+},
   {
     "id": 93,
     "eword": "scratch",
     "kword": "긁다",
     "kreading": "geukda"
-  },
+  ,"image": "" 
+},
   {
     "id": 94,
     "eword": "bite",
     "kword": "물다",
     "kreading": "mulda"
-  },
+  ,"image": "" 
+},
   {
     "id": 95,
     "eword": "chew",
     "kword": "씹다",
     "kreading": "ssipda"
-  },
+  ,"image": "" 
+},
   {
     "id": 96,
     "eword": "lick",
     "kword": "핥다",
     "kreading": "haltda"
-  },
+  ,"image": "" 
+},
   {
     "id": 97,
     "eword": "spit",
     "kword": "침을 뱉다",
     "kreading": "chimeul baetda"
-  },
+  ,"image": "" 
+},
   {
     "id": 98,
     "eword": "swallow",
     "kword": "삼키다",
     "kreading": "samkida"
-  },
+  ,"image": "" 
+},
   {
     "id": 99,
     "eword": "blow",
     "kword": "불다",
     "kreading": "bulda"
-  },
+  ,"image": "" 
+},
   {
     "id": 100,
     "eword": "whistle",
     "kword": "휘파람을 불다",
     "kreading": "hwiparameul bulda"
-  }
+  ,"image": "" 
+}
 ]

@@ -3,300 +3,350 @@
     "id": 1,
     "eword": "big",
     "kword": "큰",
-    "kreading": "keun"
+    "kreading": "keun",
+    "image": ""
   },
   {
     "id": 2,
     "eword": "small",
     "kword": "작은",
-    "kreading": "jageun"
+    "kreading": "jageun",
+    "image": ""
   },
   {
     "id": 3,
     "eword": "long",
     "kword": "긴",
-    "kreading": "gin"
+    "kreading": "gin",
+    "image": ""
   },
   {
     "id": 4,
     "eword": "short",
     "kword": "짧은",
-    "kreading": "jjalbeun"
+    "kreading": "jjalbeun",
+    "image": ""
   },
   {
     "id": 5,
     "eword": "tall",
     "kword": "키 큰",
-    "kreading": "ki keun"
+    "kreading": "ki keun",
+    "image": ""
   },
   {
     "id": 6,
     "eword": "short (height)",
     "kword": "키 작은",
-    "kreading": "ki jageun"
+    "kreading": "ki jageun",
+    "image": ""
   },
   {
     "id": 7,
     "eword": "fast",
     "kword": "빠른",
-    "kreading": "ppareun"
+    "kreading": "ppareun",
+    "image": ""
   },
   {
     "id": 8,
     "eword": "slow",
     "kword": "느린",
-    "kreading": "neurin"
+    "kreading": "neurin",
+    "image": ""
   },
   {
     "id": 9,
     "eword": "hot",
     "kword": "뜨거운",
-    "kreading": "tteugeoun"
+    "kreading": "tteugeoun",
+    "image": ""
   },
   {
     "id": 10,
     "eword": "cold",
     "kword": "차가운",
-    "kreading": "chagaun"
+    "kreading": "chagaun",
+    "image": ""
   },
   {
     "id": 11,
     "eword": "warm",
     "kword": "따뜻한",
-    "kreading": "ttatteuthan"
+    "kreading": "ttatteuthan",
+    "image": ""
   },
   {
     "id": 12,
     "eword": "cool",
     "kword": "시원한",
-    "kreading": "siwonhan"
+    "kreading": "siwonhan",
+    "image": ""
   },
   {
     "id": 13,
     "eword": "new",
     "kword": "새로운",
-    "kreading": "saeroun"
+    "kreading": "saeroun",
+    "image": ""
   },
   {
     "id": 14,
     "eword": "old",
     "kword": "오래된",
-    "kreading": "oraedoen"
+    "kreading": "oraedoen",
+    "image": ""
   },
   {
     "id": 15,
     "eword": "young",
     "kword": "젊은",
-    "kreading": "jeolmeun"
+    "kreading": "jeolmeun",
+    "image": ""
   },
   {
     "id": 16,
     "eword": "old (age)",
     "kword": "늙은",
-    "kreading": "neulgeun"
+    "kreading": "neulgeun",
+    "image": ""
   },
   {
     "id": 17,
     "eword": "good",
     "kword": "좋은",
-    "kreading": "joeun"
+    "kreading": "joeun",
+    "image": ""
   },
   {
     "id": 18,
     "eword": "bad",
     "kword": "나쁜",
-    "kreading": "nappeun"
+    "kreading": "nappeun",
+    "image": ""
   },
   {
     "id": 19,
     "eword": "happy",
     "kword": "행복한",
-    "kreading": "haengbokhan"
+    "kreading": "haengbokhan",
+    "image": ""
   },
   {
     "id": 20,
     "eword": "sad",
     "kword": "슬픈",
-    "kreading": "seulpeun"
+    "kreading": "seulpeun",
+    "image": ""
   },
   {
     "id": 21,
     "eword": "beautiful",
     "kword": "아름다운",
-    "kreading": "areumdaun"
+    "kreading": "areumdaun",
+    "image": ""
   },
   {
     "id": 22,
     "eword": "ugly",
     "kword": "못생긴",
-    "kreading": "motsaenggin"
+    "kreading": "motsaenggin",
+    "image": ""
   },
   {
     "id": 23,
     "eword": "strong",
     "kword": "강한",
-    "kreading": "ganghan"
+    "kreading": "ganghan",
+    "image": ""
   },
   {
     "id": 24,
     "eword": "weak",
     "kword": "약한",
-    "kreading": "yakhan"
+    "kreading": "yakhan",
+    "image": ""
   },
   {
     "id": 25,
     "eword": "rich",
     "kword": "부유한",
-    "kreading": "buyuhan"
+    "kreading": "buyuhan",
+    "image": ""
   },
   {
     "id": 26,
     "eword": "poor",
     "kword": "가난한",
-    "kreading": "gananhan"
+    "kreading": "gananhan",
+    "image": ""
   },
   {
     "id": 27,
     "eword": "clean",
     "kword": "깨끗한",
-    "kreading": "kkaekkeuthan"
+    "kreading": "kkaekkeuthan",
+    "image": ""
   },
   {
     "id": 28,
     "eword": "dirty",
     "kword": "더러운",
-    "kreading": "deoreoun"
+    "kreading": "deoreoun",
+    "image": ""
   },
   {
     "id": 29,
     "eword": "full",
     "kword": "가득한",
-    "kreading": "gadeukhan"
+    "kreading": "gadeukhan",
+    "image": ""
   },
   {
     "id": 30,
     "eword": "empty",
     "kword": "빈",
-    "kreading": "bin"
+    "kreading": "bin",
+    "image": ""
   },
   {
     "id": 31,
     "eword": "heavy",
     "kword": "무거운",
-    "kreading": "mugeoun"
+    "kreading": "mugeoun",
+    "image": ""
   },
   {
     "id": 32,
     "eword": "light",
     "kword": "가벼운",
-    "kreading": "gabyeoun"
+    "kreading": "gabyeoun",
+    "image": ""
   },
   {
     "id": 33,
     "eword": "hard",
     "kword": "딱딱한",
-    "kreading": "ttakttakhan"
+    "kreading": "ttakttakhan",
+    "image": ""
   },
   {
     "id": 34,
     "eword": "soft",
     "kword": "부드러운",
-    "kreading": "budeureoun"
+    "kreading": "budeureoun",
+    "image": ""
   },
   {
     "id": 35,
     "eword": "thick",
     "kword": "두꺼운",
-    "kreading": "dukkeoun"
+    "kreading": "dukkeoun",
+    "image": ""
   },
   {
     "id": 36,
     "eword": "thin",
     "kword": "얇은",
-    "kreading": "yalbeun"
+    "kreading": "yalbeun",
+    "image": ""
   },
   {
     "id": 37,
     "eword": "wide",
     "kword": "넓은",
-    "kreading": "neolbeun"
+    "kreading": "neolbeun",
+    "image": ""
   },
   {
     "id": 38,
     "eword": "narrow",
     "kword": "좁은",
-    "kreading": "jobeun"
+    "kreading": "jobeun",
+    "image": ""
   },
   {
     "id": 39,
     "eword": "deep",
     "kword": "깊은",
-    "kreading": "gipeun"
+    "kreading": "gipeun",
+    "image": ""
   },
   {
     "id": 40,
     "eword": "shallow",
     "kword": "얕은",
-    "kreading": "yateun"
+    "kreading": "yateun",
+    "image": ""
   },
   {
     "id": 41,
     "eword": "bright",
     "kword": "밝은",
-    "kreading": "balgeun"
+    "kreading": "balgeun",
+    "image": ""
   },
   {
     "id": 42,
     "eword": "dark",
     "kword": "어두운",
-    "kreading": "eoduun"
+    "kreading": "eoduun",
+    "image": ""
   },
   {
     "id": 43,
     "eword": "loud",
     "kword": "시끄러운",
-    "kreading": "sikkeureoun"
+    "kreading": "sikkeureoun",
+    "image": ""
   },
   {
     "id": 44,
     "eword": "quiet",
     "kword": "조용한",
-    "kreading": "joyonghan"
+    "kreading": "joyonghan",
+    "image": ""
   },
   {
     "id": 45,
     "eword": "early",
     "kword": "이른",
-    "kreading": "ireun"
+    "kreading": "ireun",
+    "image": ""
   },
   {
     "id": 46,
     "eword": "late",
     "kword": "늦은",
-    "kreading": "neujeun"
+    "kreading": "neujeun",
+    "image": ""
   },
   {
     "id": 47,
     "eword": "easy",
     "kword": "쉬운",
-    "kreading": "swiun"
+    "kreading": "swiun",
+    "image": ""
   },
   {
     "id": 48,
     "eword": "difficult",
     "kword": "어려운",
-    "kreading": "eoryeoun"
+    "kreading": "eoryeoun",
+    "image": ""
   },
   {
     "id": 49,
     "eword": "expensive",
     "kword": "비싼",
-    "kreading": "bissan"
+    "kreading": "bissan",
+    "image": ""
   },
   {
     "id": 50,
     "eword": "cheap",
     "kword": "싼",
-    "kreading": "ssan"
+    "kreading": "ssan",
+    "image": ""
   }
 ]

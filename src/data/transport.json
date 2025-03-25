@@ -4,179 +4,209 @@
     "eword": "car",
     "kword": "자동차",
     "kreading": "jadongcha"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "bus",
     "kword": "버스",
     "kreading": "beoseu"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "train",
     "kword": "기차",
     "kreading": "gicha"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "subway",
     "kword": "지하철",
     "kreading": "jihacheol"
-  },
+  ,"image": "" 
+},
   {
     "id": 5,
     "eword": "bicycle",
     "kword": "자전거",
     "kreading": "jajeongeo"
-  },
+  ,"image": "" 
+},
   {
     "id": 6,
     "eword": "motorcycle",
     "kword": "오토바이",
     "kreading": "otobai"
-  },
+  ,"image": "" 
+},
   {
     "id": 7,
     "eword": "airplane",
     "kword": "비행기",
     "kreading": "bihaenggi"
-  },
+  ,"image": "" 
+},
   {
     "id": 8,
     "eword": "helicopter",
     "kword": "헬리콥터",
     "kreading": "hellikopteo"
-  },
+  ,"image": "" 
+},
   {
     "id": 9,
     "eword": "boat",
     "kword": "배",
     "kreading": "bae"
-  },
+  ,"image": "" 
+},
   {
     "id": 10,
     "eword": "ship",
     "kword": "선박",
     "kreading": "seonbak"
-  },
+  ,"image": "" 
+},
   {
     "id": 11,
     "eword": "ferry",
     "kword": "페리",
     "kreading": "peri"
-  },
+  ,"image": "" 
+},
   {
     "id": 12,
     "eword": "taxi",
     "kword": "택시",
     "kreading": "taeksi"
-  },
+  ,"image": "" 
+},
   {
     "id": 13,
     "eword": "truck",
     "kword": "트럭",
     "kreading": "teureok"
-  },
+  ,"image": "" 
+},
   {
     "id": 14,
     "eword": "van",
     "kword": "밴",
     "kreading": "baen"
-  },
+  ,"image": "" 
+},
   {
     "id": 15,
     "eword": "scooter",
     "kword": "스쿠터",
     "kreading": "seukuteo"
-  },
+  ,"image": "" 
+},
   {
     "id": 16,
     "eword": "tram",
     "kword": "트램",
     "kreading": "teuraem"
-  },
+  ,"image": "" 
+},
   {
     "id": 17,
     "eword": "subway",
     "kword": "지하철",
     "kreading": "jihacheol"
-  },
+  ,"image": "" 
+},
   {
     "id": 18,
     "eword": "monorail",
     "kword": "모노레일",
     "kreading": "monoreil"
-  },
+  ,"image": "" 
+},
   {
     "id": 19,
     "eword": "cable car",
     "kword": "케이블카",
     "kreading": "keibeulka"
-  },
+  ,"image": "" 
+},
   {
     "id": 20,
     "eword": "gondola",
     "kword": "곤돌라",
     "kreading": "gondolla"
-  },
+  ,"image": "" 
+},
   {
     "id": 21,
     "eword": "hovercraft",
     "kword": "호버크래프트",
     "kreading": "hobeokeuraepeuteu"
-  },
+  ,"image": "" 
+},
   {
     "id": 22,
     "eword": "jet ski",
     "kword": "제트스키",
     "kreading": "jetseuski"
-  },
+  ,"image": "" 
+},
   {
     "id": 23,
     "eword": "yacht",
     "kword": "요트",
     "kreading": "yoteu"
-  },
+  ,"image": "" 
+},
   {
     "id": 24,
     "eword": "sailboat",
     "kword": "돛단배",
     "kreading": "dottanbae"
-  },
+  ,"image": "" 
+},
   {
     "id": 25,
     "eword": "canoe",
     "kword": "카누",
     "kreading": "kanu"
-  },
+  ,"image": "" 
+},
   {
     "id": 26,
     "eword": "kayak",
     "kword": "카약",
     "kreading": "kayak"
-  },
+  ,"image": "" 
+},
   {
     "id": 27,
     "eword": "rowboat",
     "kword": "노젓는 배",
     "kreading": "nojeonneun bae"
-  },
+  ,"image": "" 
+},
   {
     "id": 28,
     "eword": "cruise ship",
     "kword": "크루즈선",
     "kreading": "keurujeuseon"
-  },
+  ,"image": "" 
+},
   {
     "id": 29,
     "eword": "fishing boat",
     "kword": "낚싯배",
     "kreading": "naksitbae"
-  },
+  ,"image": "" 
+},
   {
     "id": 30,
     "eword": "submarine",
     "kword": "잠수함",
     "kreading": "jamsuham"
-  }
+  ,"image": "" 
+}
 ]

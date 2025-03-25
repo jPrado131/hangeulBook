@@ -4,83 +4,97 @@
     "eword": "sunny",
     "kword": "맑음",
     "kreading": "malgeum"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "cloudy",
     "kword": "흐림",
     "kreading": "heurim"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "rainy",
     "kword": "비",
     "kreading": "bi"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "snowy",
     "kword": "눈",
     "kreading": "nun"
-  },
+  ,"image": "" 
+},
   {
     "id": 5,
     "eword": "windy",
     "kword": "바람",
     "kreading": "baram"
-  },
+  ,"image": "" 
+},
   {
     "id": 6,
     "eword": "stormy",
     "kword": "폭풍",
     "kreading": "pokpung"
-  },
+  ,"image": "" 
+},
   {
     "id": 7,
     "eword": "foggy",
     "kword": "안개",
     "kreading": "angae"
-  },
+  ,"image": "" 
+},
   {
     "id": 8,
     "eword": "hot",
     "kword": "더운",
     "kreading": "deoun"
-  },
+  ,"image": "" 
+},
   {
     "id": 9,
     "eword": "cold",
     "kword": "추운",
     "kreading": "chuun"
-  },
+  ,"image": "" 
+},
   {
     "id": 10,
     "eword": "humid",
     "kword": "습한",
     "kreading": "seupan"
-  },  {
+  ,"image": "" 
+},  {
     "id": 11,
     "eword": "spring",
     "kword": "봄",
     "kreading": "bom"
-  },
+  ,"image": "" 
+},
   {
     "id": 12,
     "eword": "summer",
     "kword": "여름",
     "kreading": "yeoreum"
-  },
+  ,"image": "" 
+},
   {
     "id": 13,
     "eword": "autumn",
     "kword": "가을",
     "kreading": "gaeul"
-  },
+  ,"image": "" 
+},
   {
     "id": 14,
     "eword": "winter",
     "kword": "겨울",
     "kreading": "gyeoul"
-  }
+  ,"image": "" 
+}
 
 ]

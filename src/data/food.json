@@ -4,599 +4,699 @@
     "eword": "bread",
     "kword": "빵",
     "kreading": "ppang"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "rice",
     "kword": "밥",
     "kreading": "bap"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "noodles",
     "kword": "국수",
     "kreading": "guksu"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "soup",
     "kword": "수프",
     "kreading": "supeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 5,
     "eword": "salad",
     "kword": "샐러드",
     "kreading": "saelleodeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 6,
     "eword": "chicken",
     "kword": "치킨",
     "kreading": "chikin"
-  },
+  ,"image": "" 
+},
   {
     "id": 7,
     "eword": "beef",
     "kword": "소고기",
     "kreading": "sogogi"
-  },
+  ,"image": "" 
+},
   {
     "id": 8,
     "eword": "pork",
     "kword": "돼지고기",
     "kreading": "dwaejigogi"
-  },
+  ,"image": "" 
+},
   {
     "id": 9,
     "eword": "fish",
     "kword": "생선",
     "kreading": "saengseon"
-  },
+  ,"image": "" 
+},
   {
     "id": 10,
     "eword": "shrimp",
     "kword": "새우",
     "kreading": "saeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 11,
     "eword": "crab",
     "kword": "게",
     "kreading": "gae"
-  },
+  ,"image": "" 
+},
   {
     "id": 12,
     "eword": "lobster",
     "kword": "바닷가재",
     "kreading": "badatgajae"
-  },
+  ,"image": "" 
+},
   {
     "id": 13,
     "eword": "egg",
     "kword": "계란",
     "kreading": "gyeran"
-  },
+  ,"image": "" 
+},
   {
     "id": 14,
     "eword": "cheese",
     "kword": "치즈",
     "kreading": "chijeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 15,
     "eword": "butter",
     "kword": "버터",
     "kreading": "beoteo"
-  },
+  ,"image": "" 
+},
   {
     "id": 16,
     "eword": "milk",
     "kword": "우유",
     "kreading": "uyu"
-  },
+  ,"image": "" 
+},
   {
     "id": 17,
     "eword": "yogurt",
     "kword": "요거트",
     "kreading": "yogeoteu"
-  },
+  ,"image": "" 
+},
   {
     "id": 18,
     "eword": "ice cream",
     "kword": "아이스크림",
     "kreading": "aiseukeulim"
-  },
+  ,"image": "" 
+},
   {
     "id": 19,
     "eword": "cake",
     "kword": "케이크",
     "kreading": "keikeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 20,
     "eword": "cookie",
     "kword": "쿠키",
     "kreading": "kuki"
-  },
+  ,"image": "" 
+},
   {
     "id": 21,
     "eword": "chocolate",
     "kword": "초콜릿",
     "kreading": "chokollit"
-  },
+  ,"image": "" 
+},
   {
     "id": 22,
     "eword": "candy",
     "kword": "사탕",
     "kreading": "satang"
-  },
+  ,"image": "" 
+},
   {
     "id": 23,
     "eword": "honey",
     "kword": "꿀",
     "kreading": "kkul"
-  },
+  ,"image": "" 
+},
   {
     "id": 24,
     "eword": "jam",
     "kword": "잼",
     "kreading": "jaem"
-  },
+  ,"image": "" 
+},
   {
     "id": 25,
     "eword": "peanut butter",
     "kword": "땅콩버터",
     "kreading": "ttangkongbeoteo"
-  },
+  ,"image": "" 
+},
   {
     "id": 26,
     "eword": "pizza",
     "kword": "피자",
     "kreading": "pija"
-  },
+  ,"image": "" 
+},
   {
     "id": 27,
     "eword": "hamburger",
     "kword": "햄버거",
     "kreading": "haembeogeo"
-  },
+  ,"image": "" 
+},
   {
     "id": 28,
     "eword": "sandwich",
     "kword": "샌드위치",
     "kreading": "saendeuwichi"
-  },
+  ,"image": "" 
+},
   {
     "id": 29,
     "eword": "pasta",
     "kword": "파스타",
     "kreading": "paseuta"
-  },
+  ,"image": "" 
+},
   {
     "id": 30,
     "eword": "spaghetti",
     "kword": "스파게티",
     "kreading": "seupageti"
-  },
+  ,"image": "" 
+},
   {
     "id": 31,
     "eword": "sushi",
     "kword": "스시",
     "kreading": "seusi"
-  },
+  ,"image": "" 
+},
   {
     "id": 32,
     "eword": "taco",
     "kword": "타코",
     "kreading": "tako"
-  },
+  ,"image": "" 
+},
   {
     "id": 33,
     "eword": "burrito",
     "kword": "부리또",
     "kreading": "buritto"
-  },
+  ,"image": "" 
+},
   {
     "id": 34,
     "eword": "steak",
     "kword": "스테이크",
     "kreading": "seuteikeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 35,
     "eword": "sausage",
     "kword": "소시지",
     "kreading": "sosiji"
-  },
+  ,"image": "" 
+},
   {
     "id": 36,
     "eword": "bacon",
     "kword": "베이컨",
     "kreading": "beikeon"
-  },
+  ,"image": "" 
+},
   {
     "id": 37,
     "eword": "hot dog",
     "kword": "핫도그",
     "kreading": "hatdogeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 38,
     "eword": "french fries",
     "kword": "감자튀김",
     "kreading": "gamjatwigim"
-  },
+  ,"image": "" 
+},
   {
     "id": 39,
     "eword": "potato chips",
     "kword": "감자칩",
     "kreading": "gamjachip"
-  },
+  ,"image": "" 
+},
   {
     "id": 40,
     "eword": "popcorn",
     "kword": "팝콘",
     "kreading": "papkon"
-  },
+  ,"image": "" 
+},
   {
     "id": 41,
     "eword": "pancake",
     "kword": "팬케이크",
     "kreading": "paenkeikeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 42,
     "eword": "waffle",
     "kword": "와플",
     "kreading": "wapeul"
-  },
+  ,"image": "" 
+},
   {
     "id": 43,
     "eword": "omelette",
     "kword": "오믈렛",
     "kreading": "omeullet"
-  },
+  ,"image": "" 
+},
   {
     "id": 44,
     "eword": "cereal",
     "kword": "시리얼",
     "kreading": "siriel"
-  },
+  ,"image": "" 
+},
   {
     "id": 45,
     "eword": "oatmeal",
     "kword": "오트밀",
     "kreading": "oteumil"
-  },
+  ,"image": "" 
+},
   {
     "id": 46,
     "eword": "pudding",
     "kword": "푸딩",
     "kreading": "puding"
-  },
+  ,"image": "" 
+},
   {
     "id": 47,
     "eword": "jelly",
     "kword": "젤리",
     "kreading": "jelli"
-  },
+  ,"image": "" 
+},
   {
     "id": 48,
     "eword": "pie",
     "kword": "파이",
     "kreading": "pai"
-  },
+  ,"image": "" 
+},
   {
     "id": 49,
     "eword": "donut",
     "kword": "도넛",
     "kreading": "doneot"
-  },
+  ,"image": "" 
+},
   {
     "id": 50,
     "eword": "muffin",
     "kword": "머핀",
     "kreading": "meopin"
-  },
+  ,"image": "" 
+},
   {
     "id": 51,
     "eword": "croissant",
     "kword": "크루아상",
     "kreading": "keuruasang"
-  },
+  ,"image": "" 
+},
   {
     "id": 52,
     "eword": "bagel",
     "kword": "베이글",
     "kreading": "beigeul"
-  },
+  ,"image": "" 
+},
   {
     "id": 53,
     "eword": "toast",
     "kword": "토스트",
     "kreading": "toseuteu"
-  },
+  ,"image": "" 
+},
   {
     "id": 54,
     "eword": "scone",
     "kword": "스콘",
     "kreading": "seukon"
-  },
+  ,"image": "" 
+},
   {
     "id": 55,
     "eword": "biscuit",
     "kword": "비스킷",
     "kreading": "biseukit"
-  },
+  ,"image": "" 
+},
   {
     "id": 56,
     "eword": "dumpling",
     "kword": "만두",
     "kreading": "mandu"
-  },
+  ,"image": "" 
+},
   {
     "id": 57,
     "eword": "spring roll",
     "kword": "춘권",
     "kreading": "chungwon"
-  },
+  ,"image": "" 
+},
   {
     "id": 58,
     "eword": "samosa",
     "kword": "사모사",
     "kreading": "samosa"
-  },
+  ,"image": "" 
+},
   {
     "id": 59,
     "eword": "falafel",
     "kword": "팔라펠",
     "kreading": "pallapel"
-  },
+  ,"image": "" 
+},
   {
     "id": 60,
     "eword": "hummus",
     "kword": "후무스",
     "kreading": "humuseu"
-  },
+  ,"image": "" 
+},
   {
     "id": 61,
     "eword": "guacamole",
     "kword": "과카몰리",
     "kreading": "gwakamolli"
-  },
+  ,"image": "" 
+},
   {
     "id": 62,
     "eword": "salsa",
     "kword": "살사",
     "kreading": "salsa"
-  },
+  ,"image": "" 
+},
   {
     "id": 63,
     "eword": "ketchup",
     "kword": "케첩",
     "kreading": "kecheop"
-  },
+  ,"image": "" 
+},
   {
     "id": 64,
     "eword": "mustard",
     "kword": "머스타드",
     "kreading": "meoseutadeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 65,
     "eword": "mayonnaise",
     "kword": "마요네즈",
     "kreading": "mayonejeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 66,
     "eword": "soy sauce",
     "kword": "간장",
     "kreading": "ganjang"
-  },
+  ,"image": "" 
+},
   {
     "id": 67,
     "eword": "vinegar",
     "kword": "식초",
     "kreading": "sikcho"
-  },
+  ,"image": "" 
+},
   {
     "id": 68,
     "eword": "olive oil",
     "kword": "올리브유",
     "kreading": "ollibeuyu"
-  },
+  ,"image": "" 
+},
   {
     "id": 69,
     "eword": "sesame oil",
     "kword": "참기름",
     "kreading": "chamgireum"
-  },
+  ,"image": "" 
+},
   {
     "id": 70,
     "eword": "salt",
     "kword": "소금",
     "kreading": "sogeum"
-  },
+  ,"image": "" 
+},
   {
     "id": 71,
     "eword": "pepper",
     "kword": "후추",
     "kreading": "huchu"
-  },
+  ,"image": "" 
+},
   {
     "id": 72,
     "eword": "sugar",
     "kword": "설탕",
     "kreading": "seoltang"
-  },
+  ,"image": "" 
+},
   {
     "id": 73,
     "eword": "flour",
     "kword": "밀가루",
     "kreading": "milgaru"
-  },
+  ,"image": "" 
+},
   {
     "id": 74,
     "eword": "corn",
     "kword": "옥수수",
     "kreading": "oksusu"
-  },
+  ,"image": "" 
+},
   {
     "id": 75,
     "eword": "beans",
     "kword": "콩",
     "kreading": "kong"
-  },
+  ,"image": "" 
+},
   {
     "id": 76,
     "eword": "peas",
     "kword": "완두콩",
     "kreading": "wandukong"
-  },
+  ,"image": "" 
+},
   {
     "id": 77,
     "eword": "lentils",
     "kword": "렌틸콩",
     "kreading": "rentilkong"
-  },
+  ,"image": "" 
+},
   {
     "id": 78,
     "eword": "chickpeas",
     "kword": "병아리콩",
     "kreading": "byeongarikong"
-  },
+  ,"image": "" 
+},
   {
     "id": 79,
     "eword": "tofu",
     "kword": "두부",
     "kreading": "dubu"
-  },
+  ,"image": "" 
+},
   {
     "id": 80,
     "eword": "tempeh",
     "kword": "템페",
     "kreading": "tempe"
-  },
+  ,"image": "" 
+},
   {
     "id": 81,
     "eword": "miso",
     "kword": "미소",
     "kreading": "miso"
-  },
+  ,"image": "" 
+},
   {
     "id": 82,
     "eword": "kimchi",
     "kword": "김치",
     "kreading": "kimchi"
-  },
+  ,"image": "" 
+},
   {
     "id": 83,
     "eword": "sauerkraut",
     "kword": "사우어크라우트",
     "kreading": "saueokeurauteu"
-  },
+  ,"image": "" 
+},
   {
     "id": 84,
     "eword": "pickles",
     "kword": "피클",
     "kreading": "pikeul"
-  },
+  ,"image": "" 
+},
   {
     "id": 85,
     "eword": "olives",
     "kword": "올리브",
     "kreading": "ollibeu"
-  },
+  ,"image": "" 
+},
   {
     "id": 86,
     "eword": "mushroom",
     "kword": "버섯",
     "kreading": "beoseot"
-  },
+  ,"image": "" 
+},
   {
     "id": 87,
     "eword": "spinach",
     "kword": "시금치",
     "kreading": "sigeumchi"
-  },
+  ,"image": "" 
+},
   {
     "id": 88,
     "eword": "lettuce",
     "kword": "상추",
     "kreading": "sangchu"
-  },
+  ,"image": "" 
+},
   {
     "id": 89,
     "eword": "cabbage",
     "kword": "양배추",
     "kreading": "yangbaechu"
-  },
+  ,"image": "" 
+},
   {
     "id": 90,
     "eword": "kale",
     "kword": "케일",
     "kreading": "keil"
-  },
+  ,"image": "" 
+},
   {
     "id": 91,
     "eword": "broccoli",
     "kword": "브로콜리",
     "kreading": "beurokolli"
-  },
+  ,"image": "" 
+},
   {
     "id": 92,
     "eword": "cauliflower",
     "kword": "콜리플라워",
     "kreading": "kollipeullawo"
-  },
+  ,"image": "" 
+},
   {
     "id": 93,
     "eword": "carrot",
     "kword": "당근",
     "kreading": "danggeun"
-  },
+  ,"image": "" 
+},
   {
     "id": 94,
     "eword": "potato",
     "kword": "감자",
     "kreading": "gamja"
-  },
+  ,"image": "" 
+},
   {
     "id": 95,
     "eword": "sweet potato",
     "kword": "고구마",
     "kreading": "goguma"
-  },
+  ,"image": "" 
+},
   {
     "id": 96,
     "eword": "onion",
     "kword": "양파",
     "kreading": "yangpa"
-  },
+  ,"image": "" 
+},
   {
     "id": 97,
     "eword": "garlic",
     "kword": "마늘",
     "kreading": "maneul"
-  },
+  ,"image": "" 
+},
   {
     "id": 98,
     "eword": "ginger",
     "kword": "생강",
     "kreading": "saenggang"
-  },
+  ,"image": "" 
+},
   {
     "id": 99,
     "eword": "pepper",
     "kword": "고추",
     "kreading": "gochu"
-  },
+  ,"image": "" 
+},
   {
     "id": 100,
     "eword": "tomato",
     "kword": "토마토",
     "kreading": "tomato"
-  }
+  ,"image": "" 
+}
 ]

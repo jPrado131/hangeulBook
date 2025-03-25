@@ -4,89 +4,104 @@
     "eword": "circle",
     "kword": "원",
     "kreading": "won"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "square",
     "kword": "정사각형",
     "kreading": "jeongsagak-hyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "triangle",
     "kword": "삼각형",
     "kreading": "samgak-hyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "rectangle",
     "kword": "직사각형",
     "kreading": "jiksagak-hyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 5,
     "eword": "oval",
     "kword": "타원형",
     "kreading": "tawon-hyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 6,
     "eword": "diamond",
     "kword": "다이아몬드형",
     "kreading": "daiamondeu-hyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 7,
     "eword": "star",
     "kword": "별",
     "kreading": "byeol"
-  },
+  ,"image": "" 
+},
   {
     "id": 8,
     "eword": "heart",
     "kword": "하트",
     "kreading": "hateu"
-  },
+  ,"image": "" 
+},
   {
     "id": 9,
     "eword": "pentagon",
     "kword": "오각형",
     "kreading": "ogak-hyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 10,
     "eword": "hexagon",
     "kword": "육각형",
     "kreading": "yukgak-hyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 11,
     "eword": "heptagon",
     "kword": "칠각형",
     "kreading": "chilgak-hyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 12,
     "eword": "octagon",
     "kword": "팔각형",
     "kreading": "palgak-hyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 13,
     "eword": "nonagon",
     "kword": "구각형",
     "kreading": "gugak-hyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 14,
     "eword": "decagon",
     "kword": "십각형",
     "kreading": "sipgak-hyeong"
-  },
+  ,"image": "" 
+},
   {
     "id": 15,
     "eword": "crescent",
     "kword": "초승달",
     "kreading": "choseungdal"
-  }
+  ,"image": "" 
+}
 ]

@@ -5,68 +5,78 @@
     "kword": "달콤한",
     "kreading": "dalkomhan",
     "image": "/images/taste/sweet.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 2,
     "eword": "sour",
     "kword": "신",
     "kreading": "sin",
     "image": "/images/taste/sour.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 3,
     "eword": "bitter",
     "kword": "쓴",
     "kreading": "sseun",
     "image": "/images/taste/bitter.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 4,
     "eword": "salty",
     "kword": "짠",
     "kreading": "jjan",
     "image": "/images/taste/salty.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 5,
     "eword": "spicy",
     "kword": "매운",
     "kreading": "maeun",
     "image": "/images/taste/spicy.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 6,
     "eword": "savory",
     "kword": "감칠맛 나는",
     "kreading": "gamchilmat naneun",
     "image": "/images/taste/savory.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 7,
     "eword": "umami",
     "kword": "우마미",
     "kreading": "umami",
     "image": "/images/taste/umami.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 8,
     "eword": "bland",
     "kword": "싱거운",
     "kreading": "singgeoun",
     "image": "/images/taste/bland.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 9,
     "eword": "tangy",
     "kword": "톡 쏘는",
     "kreading": "tok ssoneun",
     "image": "/images/taste/tangy.png"
-  },
+  ,"image": "" 
+},
   {
     "id": 10,
     "eword": "rich",
     "kword": "풍부한",
     "kreading": "pungbuhan",
     "image": "/images/taste/rich.png"
-  }
+  ,"image": "" 
+}
 ]

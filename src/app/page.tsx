@@ -31,62 +31,53 @@ import Hangul from "./hangul"; // Import the Hangul component
 import AnswerOptions from "../components/AnswerOptions"; // Import the AnswerOptions component
 import { ArrowRightCircle } from "@deemlol/next-icons";
 
-
-const fixJsonProperty = (json: any) => { 
-  return json.map((item: any) => {
-    return {
-      ...item,
-      image: item.image || "",
-      question: item.question || "",
-      answer: item.answer || "",
-      question_en: item.question_en || "",
-      answer_en: item.answer_en || "" 
-    }
-  });
+interface CategoryItem {
+  id: number;
+  kword: string;
+  kreading: string;
+  eword: string;
+  image: string;
+  question: string;
+  question_en: string;
+  answer: string;
+  answer_en: string;
 }
 
-const categories: Record<string, { 
-  id: number; kword: string; kreading: string; eword: string; image: string | "";
-  question: string; answer: string; question_en: string; answer_en: string;
- }[]> = {
-  "fruits-and-vegitables": fixJsonProperty(dataFruitsAndVegitables),
-  "animals": fixJsonProperty(dataAnimals),
-  "foods": fixJsonProperty(dataFoods),
-  "numbers": fixJsonProperty(dataNumbers),
-  "sino_numbers": fixJsonProperty(dataSinoNumbers),
-  "time": fixJsonProperty(dataTime),
-  "weather-seasons": fixJsonProperty(dataWeather),
-  "tools": fixJsonProperty(dataTools),
-  "occupations": fixJsonProperty(dataOccupations),
-  "family": fixJsonProperty(dataFamily),
-  "verbs": fixJsonProperty(dataVerbs),
-  "adjectives": fixJsonProperty(dataAdjectives),
-  "things": fixJsonProperty(dataThings),
-  "places": fixJsonProperty(dataPlaces),
-  "colors": fixJsonProperty(dataColors),
-  "shapes": fixJsonProperty(dataShapes), 
-  "body-parts": fixJsonProperty(dataBodyParts),
-  "clothes": fixJsonProperty(dataClothes),
-  "transport": fixJsonProperty(dataTransport),
-  "directions": fixJsonProperty(dataDirections),
-  "sports": fixJsonProperty(dataSports),
-  "taste": fixJsonProperty(dataTaste),
-  "feelings": fixJsonProperty(dataFeelings),
-  "random": fixJsonProperty([...dataFruitsAndVegitables, ...dataAnimals, ...dataFoods]),
-  "question-answer" : dataSimpleQuestions.map(item => ({
-    ...item,
-    kword: "",
-    kreading: "",
-    eword:"",
-    image: ""
-  })),
-  "image_identification" : fixJsonProperty(dataSports)
+
+
+const categories: Record<string, CategoryItem[]> = {
+  "fruits-and-vegitables": dataFruitsAndVegitables.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "animals": dataAnimals.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "foods": dataFoods.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "numbers": dataNumbers.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "sino_numbers": dataSinoNumbers.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "time": dataTime.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "weather-seasons": dataWeather.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "tools": dataTools.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "occupations": dataOccupations.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "family": dataFamily.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "verbs": dataVerbs.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "adjectives": dataAdjectives.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "things": dataThings.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "places": dataPlaces.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "colors": dataColors.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "shapes": dataShapes.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })), 
+  "body-parts": dataBodyParts.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "clothes": dataClothes.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "transport": dataTransport.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "directions": dataDirections.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "sports": dataSports.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "taste": dataTaste.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "feelings": dataFeelings.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "random": [...dataFruitsAndVegitables, ...dataAnimals, ...dataFoods].map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "question-answer" : dataSimpleQuestions.map((item) => ({ ...item, image: "", kword: "", eword : "", kreading: "" })),
+  "image_identification" : dataSports.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" }))
 };
 
 
 export default function Home() {
   const [category, setCategory] = useState<string>("fruits-and-vegitables");
-  const [data, setData] = useState<{ id: number; kword: string; kreading: string; eword: string; image: string | "", question: string, answer: string, question_en: string, answer_en: string}[]>(categories[category] || []);
+  const [data, setData] = useState<CategoryItem[]>(categories[category] || []);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [randomNumbers, setRandomNumbers] = useState<number[][]>([]);
@@ -102,7 +93,7 @@ export default function Home() {
   const [isImageIdentification, setIsImageIdentification] = useState<boolean>(false);
   const NumberOfChoices = 4;
   const EnableReverse = true;
-  const EnableNextBtn = false;
+  const EnableNextBtn = true;
 
   useEffect(() => {
     setCorrectSound(new Audio("/sounds/correct.mp3"));
