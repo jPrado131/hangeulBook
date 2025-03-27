@@ -34,7 +34,7 @@ const AnswerOptions: React.FC<AnswerOptionsProps> = ({ randomNumbers, currentQue
               <span className="text-vw-16 capitalize">
                 {isQuestionAnswer ? data[randomNumber].answer : isReverse || isImageIdentification ? data[randomNumber].kword : data[randomNumber].eword} 
                 {isCorrect && isQuestionAnswer && ( ` (${data[randomNumber].answer_en})`)}
-                {isCorrect && (isReverse || isImageIdentification) && ( ` - ${data[randomNumber].kreading} (${data[randomNumber].eword})` )}
+                {isCorrect && !isQuestionAnswer && (isReverse || isImageIdentification) && ( ` - ${data[randomNumber].kreading} (${data[randomNumber].eword})` )}
                 </span>
             </div>
           )

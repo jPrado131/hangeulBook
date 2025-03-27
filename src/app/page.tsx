@@ -101,7 +101,7 @@ export default function Home() {
 
   const NumberOfChoices = 4;
   const EnableReverse = true;
-  const EnableNextBtn = false;
+  const EnableNextBtn = true;
   const CookiesExpiration = 7;
   const [progress, setProgress] = useState(0);
   const [loadingDuration, setLoadingDuration] = useState(3000);
@@ -278,8 +278,7 @@ export default function Home() {
   };
 
   const handleNextQuestion = () => {
-    setLoadingDuration(3000); // Reset loading duration for the next question
-    setProgress(0); // Reset progress
+    setLoadingDuration(500); // Reset loading duration for the next question
     setLoading(true); // Start the loader
     setTimeout(() => {
       setCurrentQuestion((prev) => {
@@ -293,6 +292,7 @@ export default function Home() {
       setIsCorrect(null);
       setViewKreading(false);
       setLoading(false); // Stop the loader
+      setProgress(0);
     }, 500);
   }
 
@@ -430,7 +430,7 @@ export default function Home() {
                 > {data[currentQuestion]?.question}</div>
               ) : isImageIdentification ?  (
                 <div className={`flex flex-col items-center border-transparent overflow-hidden max-w-[350px] ${isCorrect === true ? ' border-green-500' : ""}`}>
-                  <Image className="w-full max-h-[350px]" src={data[currentQuestion]?.image} alt={data[currentQuestion].eword} width={350} height={350} placeholder="blur" blurDataURL="/images/placeholder.png" />
+                  <Image className="w-full max-h-[250px]" src={data[currentQuestion]?.image} alt={data[currentQuestion].eword} width={350} height={350} placeholder="blur" blurDataURL="/images/placeholder.png" />
                 </div>
               )
               : ( 
@@ -482,8 +482,8 @@ export default function Home() {
         )}  */}
         
         {EnableNextBtn && isCorrect &&(
-          <div className="flex flex-row gap-4 items-center">
-            <a onClick={() => handleNextQuestion()} className="flex flex-row justify-center items-center text-green-500 hover:text-green-400  text-vw-26 bg-transparent border px-4 py-2 rounded-md cursor-pointer"><span className="mr-2">Next</span> <ArrowRightCircle  size={32} /></a>
+          <div className="fixed bottom-0 left-0 right-0 flex flex-row gap-4 items-center justify-between w-full shadow-md bg-black border-t text-green-500">
+            <a onClick={() => handleNextQuestion()} className="flex flex-row justify-center items-center text-green-500 hover:text-green-400 animate-pulse text-vw-26 bg-transparent p-4 cursor-pointer w-full"><span className="mr-2">Next</span> <ArrowRightCircle  size={32} className="justify-self-end" /></a>
           </div>
         )}
         <Modal isOpen={isModalOpenHangul} onClose={() => setIsModalOpenHangul(false)}>
