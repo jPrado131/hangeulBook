@@ -31,6 +31,7 @@ import Hangul from "./hangul"; // Import the Hangul component
 import AnswerOptions from "../components/AnswerOptions"; // Import the AnswerOptions component
 import { ArrowRightCircle, Eye, EyeOff } from "@deemlol/next-icons";
 import Cookies from "js-cookie"; // Import js-cookie for cookie handling
+import { useRouter } from "next/navigation"; // Import Next.js router
 
 interface CategoryItem {
   id: number;
@@ -77,6 +78,7 @@ const categories: Record<string, CategoryItem[]> = {
 
 
 export default function Home() {
+  const router = useRouter(); // Initialize router
   const [category, setCategory] = useState<string>("image_identification");
   const [data, setData] = useState<CategoryItem[]>(categories[category] || []);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
@@ -130,25 +132,11 @@ export default function Home() {
     const isStarted = Cookies.get("isStarted") === "true";
     setIsLoggedIn(loggedIn);
     setStarted(isStarted);
-  }, []);
 
-    const currentDate = new Date();
-    const month = String(currentDate.getMonth() + 1).padStart(2, "0"); // Ensure two-digit month
-    const yearLastTwoDigits = currentDate.getFullYear() % 100;
-    const expectedPassword = `pass${month}${yearLastTwoDigits}`;
-
-    console.log("Expected password:", expectedPassword);
-
-  const handleLogin = () => {
-
-
-    if (username === "user" && password === expectedPassword) {
-      setIsLoggedIn(true);
-      Cookies.set("isLoggedIn", "true", { expires: CookiesExpiration });
-    } else {
-      alert("Invalid credentials. Please try again.");
+    if (!loggedIn) {
+      router.push("/login"); // Redirect to login page if not logged in
     }
-  };
+  }, [router]);
 
   const handleStart = () => {
     setStarted(true);
@@ -283,12 +271,6 @@ export default function Home() {
     }, 500);
   }
 
-  const handleKeyPress = (event: React.KeyboardEvent<HTMLDivElement>) => {
-    if (event.key === "Enter") {
-      handleLogin();
-    }
-  };
-
   if (isLoggedIn === null) {
     // Show a loading state while cookies are being checked
     return (
@@ -298,75 +280,17 @@ export default function Home() {
     );
   }
 
-  if (!isLoggedIn) {
-    return (
-      <div
-        className="flex items-center justify-center min-h-screen bg-black text-white p-8"
-        onKeyPress={handleKeyPress} // Add keypress listener
-      >
-        <div className="w-full max-w-md  bg-transparent rounded-lg shadow-lg p-6">
-          <div className="flex flex-col items-center mb-6">
-            <Image
-              src="/logo-white.png" // Replace with your logo path
-              alt="Hangeul Book Logo"
-              width={150}
-              height={150}
-              className="mb-4"
-            />
-            <h1 className="text-3xl font-bold text-center">Welcome to Hangeul Book</h1>
-            <p className="text-gray-400 text-center mt-2">
-              Please log in to continue your learning journey.
-            </p>
-          </div>
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            className="mb-4 px-4 py-2 rounded-md text-white w-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
-          />
-          <div className="relative w-full">
-            <input
-              type={showPassword ? "text" : "password"}
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="mb-4 px-4 py-2 rounded-md text-white w-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <button
-              type="button"
-              onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-3 top-[10px] text-sm text-gray-500 hover:text-gray-700"
-            >
-              {showPassword ? <EyeOff size={24}  /> : <Eye size={24} />}
-            </button>
-          </div>
-          <button
-            onClick={handleLogin}
-            className="w-full bg-green-600 text-white px-4 py-2 rounded-md font-bold hover:bg-green-500 transition"
-          >
-            Login
-          </button>
-        </div>
-      </div>
-    );
-  }
-
   if (!started) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white p-8">
         <h1 className="text-4xl font-bold mb-4 text-center">Welcome to Hangeul Book</h1>
         <h2 className="text-2xl mb-6 text-center">Practice Hangeul Anytime, Anywhere!</h2>
-        <p className="text-lg mb-4 text-center">
-          Master Hangeul effortlessly with our intuitive learning tool. Whether you&apos;re on the go or sitting down to study, Hangeul Book helps you review and reinforce your Korean language skills anytime, anywhere.
-        </p>
-        <h3 className="text-xl font-semibold mb-2 text-center">What is Hangeul?</h3>
         <p className="text-lg mb-6 text-center">
-          Hangeul (한글) is the Korean writing system, created in the 15th century by King Sejong the Great. It is known for its scientific design and simplicity, making it one of the easiest scripts to learn. With just 24 basic letters, you can start reading and writing Korean quickly!
+        Learn Hangeul easily with Hangeul Book. Whether you're at home, commuting, or taking a break, our app helps you practice and review your Korean language skills anytime, anywhere. Stay consistent and improve effortlessly with our simple and effective learning tools!
         </p>
         <button
           onClick={handleStart}
-          className="bg-green-700 text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-green-500 hover:animate-none animate-pulse"
+          className="bg-green-700 text-gray-200 px-6 py-3 rounded-md text-lg font-bold hover:bg-green-500 hover:animate-none animate-pulse"
         >
           Get Started 🚀
         </button>
@@ -377,7 +301,7 @@ export default function Home() {
   return (
     <div className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-black`}>
       
-      <div className="fixed w-full top-0 left-0 z-50 h-[10px] bg-black">      
+      <div className="fixed w-full top-0 left-0 z-50 h-[3px] bg-black">      
        {loading && (
           <div
           style={{
