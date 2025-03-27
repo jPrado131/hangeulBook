@@ -48,7 +48,7 @@ const QuestionAndAnswer: React.FC<QuestionAndAnswerProps> = ({
 
         {viewKreading && (
           <a
-            className={`text-[4vw] lg:text-[28px] text-center sm:text-left ${
+            className={`text-[4vw] lg:text-[28px] text-center max-sm:text-[18px] capitalize sm:text-left ${
               isCorrect === true ? 'text-green-500' : 'text-yellow-500'
             }`}
           >

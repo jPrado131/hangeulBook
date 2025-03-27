@@ -18,7 +18,7 @@ const hangulLetters = [
 export default function Hangul() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-8 text-white">
-      <h1 className="text-vw-36 font-bold mb-4 max-md:text-vw-17">Hangul Letters</h1>
+      <h1 className="text-vw-36 font-bold mb-4 max-md:text-vw-17">Hangeul Letters</h1>
       <table className="text-vw-20 table-auto border-collapse border border-gray-400 w-full max-md:text-vw-12">
         <thead>
           <tr>

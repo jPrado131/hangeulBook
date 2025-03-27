@@ -31,7 +31,7 @@ const AnswerOptions: React.FC<AnswerOptionsProps> = ({ randomNumbers, currentQue
                 } max-md:w-[80vw]`}
               onClick={() => checkAnswer(randomNumber, currentQuestion)}
             >
-              <span className="text-vw-16 capitalize">
+              <span className="text-vw-16 max-sm:text-[20px] capitalize">
                 {isQuestionAnswer ? data[randomNumber].answer : isReverse || isImageIdentification ? data[randomNumber].kword : data[randomNumber].eword} 
                 {isCorrect && isQuestionAnswer && ( ` (${data[randomNumber].answer_en})`)}
                 {isCorrect && !isQuestionAnswer && (isReverse || isImageIdentification) && ( ` - ${data[randomNumber].kreading} (${data[randomNumber].eword})` )}

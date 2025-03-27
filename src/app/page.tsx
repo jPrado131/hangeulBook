@@ -26,8 +26,8 @@ import dataTaste from "../data/taste.json";
 import dataFeelings from "../data/feelings.json";
 import dataSimpleQuestions from "../data/simple-questions.json";
 import Modal from "../components/Modal"; // Import the Modal component
-import Hangul from "./hangul"; // Import the Hangul component
-import { ArrowRightCircle, Menu, XCircle } from "@deemlol/next-icons";
+import Hangeul from "./hangeul"; // Import the Hangul component
+import { ArrowRightCircle, Menu } from "@deemlol/next-icons";
 import Cookies from "js-cookie"; // Import js-cookie for cookie handling
 import { useRouter } from "next/navigation"; // Import Next.js router
 import Welcome from "./welcome";
@@ -35,6 +35,7 @@ import QuestionImageIdentification from "../components/QuestionImageIdentificati
 import QuestionWordIdentification from "@/components/QuestionWordIdentification";
 import QuestionAndAnswer from "@/components/QuestionAndAnswer";
 import { shuffleArray, getRandomNumber } from "@/utils/helpers"; // Import reusable functions
+import SideMenu from "../components/SideMenu"; // Import the SideMenu component
 
 interface CategoryItem {
   id: number;
@@ -102,6 +103,10 @@ export default function Home() {
   const [isNextButtonEnabled, setIsNextButtonEnabled] = useState(() => {
     const savedState = Cookies.get("isNextButtonEnabled");
     return savedState === "true"; // Retrieve initial state from cookie
+  });
+  const [isSoundEnabled, setIsSoundEnabled] = useState(() => {
+    const savedState = Cookies.get("isSoundEnabled");
+    return savedState !== undefined ? savedState === "true" : true; // Default to true if no cookie is found
   });
 
   const NumberOfChoices = 4;
@@ -183,6 +188,13 @@ export default function Home() {
     setRandomNumbers(numbers);
   }, [currentQuestion, data]);
 
+  const playSound = (sound: HTMLAudioElement | null) => {
+    if (isSoundEnabled && sound) {
+      sound.currentTime = 0;
+      sound.play();
+    }
+  };
+
   const checkAnswer = (selected: number, correct: number) => {
     setSelectedAnswer(selected);
     if (selected === correct) {
@@ -190,10 +202,7 @@ export default function Home() {
       setLoading(true);
       setLoadingDuration(2000);
       setProgress(0);
-      if (correctSound) {
-        correctSound.currentTime = 0;
-      }
-      correctSound?.play();
+      playSound(correctSound);
       setViewKreading(true);
       confetti({
         particleCount: 100,
@@ -222,10 +231,7 @@ export default function Home() {
     } else {
       setIsCorrect(false);
       setCountWrongAnswers((prev) => prev + 1);
-      if (wrongSound) {
-        wrongSound.currentTime = 0;
-      }
-      wrongSound?.play();
+      playSound(wrongSound);
     }
   };
 
@@ -286,10 +292,23 @@ export default function Home() {
     Cookies.set("isNextButtonEnabled", isEnabled.toString(), { expires: CookiesExpiration }); // Save state to cookie
   };
 
+  const toggleSound = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const isEnabled = event.target.checked;
+    setIsSoundEnabled(isEnabled);
+    Cookies.set("isSoundEnabled", isEnabled.toString(), { expires: CookiesExpiration }); // Save state to cookie
+  };
+
   useEffect(() => {
     const savedState = Cookies.get("isNextButtonEnabled");
     if (savedState !== undefined) {
       setIsNextButtonEnabled(savedState === "true");
+    }
+  }, []);
+
+  useEffect(() => {
+    const savedState = Cookies.get("isSoundEnabled");
+    if (savedState !== undefined) {
+      setIsSoundEnabled(savedState === "true");
     }
   }, []);
 
@@ -328,72 +347,24 @@ export default function Home() {
         />)}
       </div>
       
-      {/* Overlay */}
-      {isSlideMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black opacity-50 z-[9998]"
-          onClick={closeSlideMenu} // Close menu when overlay is clicked
-        ></div>
-      )}
-
-      {/* Slide Menu */}
-      <div
-        className={`fixed top-0 left-0 h-full w-64 bg-gray-800 text-white shadow-lg transform ${
-          isSlideMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 z-[9999]`}
-      >
-        <button
-          onClick={closeSlideMenu}
-          className="absolute top-0 right-0 text-white p-4 rounded-md"
-        >
-          <XCircle size={24} />
-        </button>
-        <div className="p-4 py-[40px]">
-          <ul className="space-y-2">
-
-            <li className="px-2 py-3">
-              <a onClick={() => setIsModalOpenHangul(true)} className="hover:underline cursor-pointer">
-                Hangul
-              </a>
-            </li>
-            <li className="px-2 py-3">
-            <div className="flex flex-col gap-4 items-center">
-              <strong className="text-left block w-full">Category: </strong>
-              <select
-                className="text-black capitalize px-4 py-2 rounded-md border border-gray-300 bg-white w-full"
-                value={category}
-                onChange={handleCategoryChange}
-              >
-                {Object.keys(categories).map((cat) => (
-                  <option key={cat} value={cat}>
-                    {cat.replace("-", " & ").replace("_", " ")} ({categories[cat]?.length || 0})
-                  </option>
-                ))}
-              </select>
-            </div>
-            </li>
-            <li className="px-2 py-3">
-              <div className="flex flex-row gap-2 items-center">
-                <input
-                  type="checkbox"
-                  id="toggleNextButton"
-                  checked={isNextButtonEnabled}
-                  onChange={toggleNextButton}
-                  className="w-4 h-4"
-                />
-                <label htmlFor="toggleNextButton" className="text-white">
-                  Enable Next Button
-                </label>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      {/* Side Menu */}
+      <SideMenu
+        isOpen={isSlideMenuOpen}
+        onClose={closeSlideMenu}
+        category={category}
+        categories={categories}
+        onCategoryChange={handleCategoryChange}
+        isNextButtonEnabled={isNextButtonEnabled}
+        toggleNextButton={toggleNextButton}
+        isSoundEnabled={isSoundEnabled}
+        toggleSound={toggleSound}
+        onOpenHangulModal={() => setIsModalOpenHangul(true)}
+      />
 
       {/* Slide Menu Toggle Button */}
       <button
         onClick={toggleSlideMenu}
-        className="fixed top-4 left-4 bg-gray-700 text-white px-4 py-2 rounded-md z-50"
+        className="fixed top-4 left-4 bg-gray-700 text-white px-4 py-2 rounded-md z-50 cursor-pointer"
       >
         <Menu size={24} />
       </button>
@@ -419,7 +390,6 @@ export default function Home() {
         </div>
       
         {currentQuestion < data.length && (
-
           category === "image_identification" ? 
             <QuestionImageIdentification
               randomNumbers={randomNumbers[currentQuestion]}
@@ -459,7 +429,7 @@ export default function Home() {
           </div>
         )}
         <Modal isOpen={isModalOpenHangul} onClose={() => setIsModalOpenHangul(false)}>
-          <Hangul />
+          <Hangeul />
         </Modal>
       </main>
     </div>

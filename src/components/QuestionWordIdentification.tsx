@@ -53,7 +53,7 @@ const QuestionWordIdentification: React.FC<QuestionWordIdentificationProps> = ({
 
         {viewKreading && !isReverse && (
           <a
-            className={`text-[4vw] lg:text-[28px] text-center sm:text-left ${
+            className={`text-[4vw] lg:text-[28px] max-sm:text-[18px] capitalize text-center sm:text-left ${
               isCorrect === true ? 'text-green-500' : 'text-yellow-500'
             }`}
           >
