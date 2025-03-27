@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react"; // Removed unused useEffect
 import Image from "next/image";
 import { Eye, EyeOff } from "@deemlol/next-icons";
 import Cookies from "js-cookie";

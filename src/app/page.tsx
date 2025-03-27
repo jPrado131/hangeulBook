@@ -29,7 +29,7 @@ import dataSimpleQuestions from "../data/simple-questions.json";
 import Modal from "../components/Modal"; // Import the Modal component
 import Hangul from "./hangul"; // Import the Hangul component
 import AnswerOptions from "../components/AnswerOptions"; // Import the AnswerOptions component
-import { ArrowRightCircle, Eye, EyeOff } from "@deemlol/next-icons";
+import { ArrowRightCircle, Menu, XCircle } from "@deemlol/next-icons";
 import Cookies from "js-cookie"; // Import js-cookie for cookie handling
 import { useRouter } from "next/navigation"; // Import Next.js router
 
@@ -79,6 +79,7 @@ const categories: Record<string, CategoryItem[]> = {
 
 export default function Home() {
   const router = useRouter(); // Initialize router
+  const [isSlideMenuOpen, setIsSlideMenuOpen] = useState(false); // State for slide menu
   const [category, setCategory] = useState<string>("image_identification");
   const [data, setData] = useState<CategoryItem[]>(categories[category] || []);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
@@ -96,9 +97,6 @@ export default function Home() {
   const [isImageIdentification, setIsImageIdentification] = useState<boolean>(true);
   const [started, setStarted] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState<boolean | null>(null); // Use `null` to indicate loading state
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
   const [loading, setLoading] = useState(false); // State for the line loader
 
   const NumberOfChoices = 4;
@@ -137,6 +135,24 @@ export default function Home() {
       router.push("/login"); // Redirect to login page if not logged in
     }
   }, [router]);
+
+  useEffect(() => {
+    const savedCategory = Cookies.get("currentCategory");
+    if (savedCategory && categories[savedCategory]) {
+      setCategory(savedCategory);
+      setData(shuffleArray(categories[savedCategory]));
+
+      if(savedCategory === "question-answer") {
+        setIsQuestionAnswer(true);
+        setIsReverse(false);
+      }else if(savedCategory === "image_identification") {
+        setIsImageIdentification(true);
+      }else {
+        setIsQuestionAnswer(false);
+        setIsImageIdentification(false);
+      }
+    }
+  }, []);
 
   const handleStart = () => {
     setStarted(true);
@@ -183,41 +199,43 @@ export default function Home() {
   }, [currentQuestion, data, getRandomNumber]);
 
   const checkAnswer = (selected: number, correct: number) => {
-    
     setSelectedAnswer(selected);
     if (selected === correct) {
       setIsCorrect(true);
       setLoading(true);
-     
-      setLoadingDuration(2000)
+      setLoadingDuration(2000);
       setProgress(0);
       if (correctSound) {
         correctSound.currentTime = 0;
       }
       correctSound?.play();
-      setViewKreading(true); 
+      setViewKreading(true);
       confetti({
         particleCount: 100,
         spread: 70,
         origin: { y: 0.6 },
       });
 
-      if(!EnableNextBtn){
+      if (!EnableNextBtn) {
         setTimeout(() => {
           setTransition(true);
           setTimeout(() => {
-            setCurrentQuestion((prev) => (prev + 1) % data.length);
+            setCurrentQuestion((prev) => {
+              const nextQuestion = (prev + 1) % data.length;
+              if (nextQuestion === 0) {
+                setCountWrongAnswers(0); // Reset wrong answers when restarting
+              }
+              return nextQuestion;
+            });
             setSelectedAnswer(null);
             setIsCorrect(null);
-            setViewKreading(false)  
+            setViewKreading(false);
             setTransition(false);
             setLoading(false);
-
             setProgress(0);
           }, 500);
         }, 2000);
       }
-
     } else {
       setIsCorrect(false);
       setCountWrongAnswers((prev) => prev + 1);
@@ -225,7 +243,6 @@ export default function Home() {
         wrongSound.currentTime = 0;
       }
       wrongSound?.play();
-      console.log("wrong");
     }
   };
 
@@ -239,6 +256,8 @@ export default function Home() {
     setIsQuestionAnswer(false);
     setIsImageIdentification(false);
     
+    Cookies.set("currentCategory", newCategory, { expires: CookiesExpiration }); // Save category to cookie
+
     if(EnableNextBtn){
       setSelectedAnswer(null);
       setIsCorrect(null);
@@ -263,13 +282,27 @@ export default function Home() {
     setProgress(0); // Reset progress
     setLoading(true); // Start the loader
     setTimeout(() => {
-      setCurrentQuestion((prev) => (prev + 1) % data.length);
+      setCurrentQuestion((prev) => {
+        const nextQuestion = (prev + 1) % data.length;
+        if (nextQuestion === 0) {
+          setCountWrongAnswers(0); // Reset wrong answers when restarting
+        }
+        return nextQuestion;
+      });
       setSelectedAnswer(null);
       setIsCorrect(null);
       setViewKreading(false);
       setLoading(false); // Stop the loader
     }, 500);
   }
+
+  const toggleSlideMenu = () => {
+    setIsSlideMenuOpen((prev) => !prev);
+  };
+
+  const closeSlideMenu = () => {
+    setIsSlideMenuOpen(false);
+  };
 
   if (isLoggedIn === null) {
     // Show a loading state while cookies are being checked
@@ -286,7 +319,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold mb-4 text-center">Welcome to Hangeul Book</h1>
         <h2 className="text-2xl mb-6 text-center">Practice Hangeul Anytime, Anywhere!</h2>
         <p className="text-lg mb-6 text-center">
-        Learn Hangeul easily with Hangeul Book. Whether you're at home, commuting, or taking a break, our app helps you practice and review your Korean language skills anytime, anywhere. Stay consistent and improve effortlessly with our simple and effective learning tools!
+        Learn Hangeul easily with Hangeul Book. Whether you&apos;re at home, commuting, or taking a break, our app helps you practice and review your Korean language skills anytime, anywhere. Stay consistent and improve effortlessly with our simple and effective learning tools!
         </p>
         <button
           onClick={handleStart}
@@ -299,9 +332,9 @@ export default function Home() {
   }
 
   return (
-    <div className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-black`}>
+    <div className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 max-md:gap-4 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-black`}>
       
-      <div className="fixed w-full top-0 left-0 z-50 h-[3px] bg-black">      
+      <div className="fixed w-full top-0 left-0 z-50 h-[5px] bg-black">      
        {loading && (
           <div
           style={{
@@ -312,15 +345,40 @@ export default function Home() {
           className="bg-green-500"
         />)}
       </div>
+      
+      {/* Overlay */}
+      {isSlideMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black opacity-50 z-[9998]"
+          onClick={closeSlideMenu} // Close menu when overlay is clicked
+        ></div>
+      )}
 
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      {/* Slide Menu */}
+      <div
+        className={`fixed top-0 left-0 h-full w-64 bg-gray-800 text-white shadow-lg transform ${
+          isSlideMenuOpen ? "translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300 z-[9999]`}
+      >
+        <button
+          onClick={closeSlideMenu}
+          className="absolute top-0 right-0 text-white p-4 rounded-md"
+        >
+          <XCircle size={24} />
+        </button>
+        <div className="p-4 py-[40px]">
+          <ul className="space-y-2">
 
-        <div className="fixed top-0 left-0 right-0 z-10 p-4 shadow-md items-center justify-center bg-black">
-          <div className="flex flex-row gap-4 items-center justify-center max-md:flex-col max-md:gap-2">
-            <div className="flex flex-row gap-4 items-center">
-              <strong className="max-md:hidden">Category: </strong>
+            <li className="px-2 py-3">
+              <a onClick={() => setIsModalOpenHangul(true)} className="hover:underline cursor-pointer">
+                Hangul
+              </a>
+            </li>
+            <li className="px-2 py-3">
+            <div className="flex flex-col gap-4 items-center">
+              <strong className="text-left block w-full">Category: </strong>
               <select
-                className="text-black capitalize px-4 py-2 rounded-md border border-gray-300 bg-white"
+                className="text-black capitalize px-4 py-2 rounded-md border border-gray-300 bg-white w-full"
                 value={category}
                 onChange={handleCategoryChange}
               >
@@ -330,14 +388,36 @@ export default function Home() {
                   </option>
                 ))}
               </select>
-              <a className="text-gray-300 bg-transparent border p-2 rounded-md block ml-1 hover:text-white" onClick={() => setIsModalOpenHangul(true)}>Hangul</a>
             </div>
-            <div className="flex flex-row gap-4 items-center max-md:w-full justify-center">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Slide Menu Toggle Button */}
+      <button
+        onClick={toggleSlideMenu}
+        className="fixed top-4 left-4 bg-gray-700 text-white px-4 py-2 rounded-md z-50"
+      >
+        <Menu size={24} />
+      </button>
+
+      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+
+        <div className="fixed top-0 left-0 right-0 z-10 p-4 shadow-md items-center justify-center bg-black">
+          <div className="flex flex-row gap-4 items-center justify-end">
+            <div className="flex flex-row gap-4 items-center justify-center">
               <span className="flex text-white self-start">
                 { category === "question-answer" ? "Question & Answer" : category === "image_identification" ? "Identify The Photo" : "Translate The Word" }
               </span>
               <span className="flex text-white self-end">{currentQuestion+1} / {data.length}</span>
             </div>
+          </div>
+          <div className="flex flex-row justify-end items-center">
+            {!viewKreading && !isReverse && !isImageIdentification && (
+              <a onClick={()=> setViewKreading(true)} className="text-yellow-100 text-vw-12 border rounded-md p-2 self-start animate-pulse mr-2 capitalize font-bold">hint</a>
+            )}
+            <span className="text-white py-2">Wrong Answers: {countWrongAnswers}</span>
           </div>
         </div>
       
@@ -391,13 +471,6 @@ export default function Home() {
             <label htmlFor="reverse" className="text-white">Reverse Questions and Answers</label>
           </div>
         )}
-
-        <div className="flex flex-row justify-center items-center">
-          {!viewKreading && !isReverse && !isImageIdentification && (
-            <a onClick={()=> setViewKreading(true)} className="text-yellow-100 text-vw-12 border rounded-md p-2 self-start animate-pulse mr-2 capitalize font-bold">hint</a>
-          )}
-          <span className="text-white">Wrong Answers: {countWrongAnswers}</span>
-        </div>
 
         {/* 
         QUIZ FINISHED MESSAGE
