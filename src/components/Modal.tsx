@@ -14,7 +14,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
       <div className="fixed inset-0 bg-black opacity-50" onClick={onClose}></div>
       <div className="bg-black p-1 rounded-md shadow-lg z-10 overflow-auto w-full">
         {children}
-        <button onClick={onClose} className=" text-white rounded-md absolute top-0 right-0 text-vw-36 cursor-pointer bg-black px-8 py-2">x</button>
+        <button onClick={onClose} className=" text-white rounded-md absolute top-0 right-0 text-vw-36 max-sm:text-[30px] cursor-pointer bg-black px-8 py-2 max-sm:px-4">x</button>
       </div>
     </div>
   );

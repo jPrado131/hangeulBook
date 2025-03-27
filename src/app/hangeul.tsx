@@ -53,9 +53,9 @@ export default function Hangul() {
       : hangulDoubleConsonants;
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-8 text-white">
+    <div className="min-h-screen flex flex-col items-center justify-center md:p-8 max-sm:px-4 max-sm:pt-8 text-white">
       <h1 className="text-vw-36 font-bold mb-4 max-md:text-vw-17">Hangeul Letters</h1>
-      <div className="flex gap-4 mb-4">
+      <div className="flex gap-2 mb-4">
         <button
           onClick={() => setActiveTab("consonants")}
           className={`px-4 py-2 rounded-md ${
