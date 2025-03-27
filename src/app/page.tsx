@@ -319,7 +319,7 @@ export default function Home() {
   
   {/* Page Display Main */}
   return (
-    <div className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 max-md:gap-4 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-black`}>
+    <div className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen px-4 font-[family-name:var(--font-geist-sans)] bg-black`}>
       
       {/* Page Loader */}
       <div className="fixed w-full top-0 left-0 z-50 h-[5px] bg-black">      
