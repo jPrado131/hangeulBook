@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Hangeul Book",
-  description: "Review Hangeul Everywhere",
+  description: "Practice Hangeul Anytime, Anywhere!",
 };
 
 export default function RootLayout({
