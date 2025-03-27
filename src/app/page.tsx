@@ -355,7 +355,7 @@ export default function Home() {
   if (!started) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white p-8">
-        <h1 className="text-4xl font-bold mb-4 text-">Welcome to Hangeul Book</h1>
+        <h1 className="text-4xl font-bold mb-4 text-center">Welcome to Hangeul Book</h1>
         <h2 className="text-2xl mb-6 text-center">Practice Hangeul Anytime, Anywhere!</h2>
         <p className="text-lg mb-4 text-center">
           Master Hangeul effortlessly with our intuitive learning tool. Whether you&apos;re on the go or sitting down to study, Hangeul Book helps you review and reinforce your Korean language skills anytime, anywhere.
@@ -366,7 +366,7 @@ export default function Home() {
         </p>
         <button
           onClick={handleStart}
-          className="bg-green-500 text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-green-400"
+          className="bg-green-700 text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-green-500 hover:animate-none animate-pulse"
         >
           Get Started 🚀
         </button>
