@@ -29,7 +29,6 @@ import Modal from "../components/Modal"; // Import the Modal component
 import Hangeul from "./hangeul"; // Import the Hangul component
 import { ArrowRightCircle, Menu } from "@deemlol/next-icons";
 import Cookies from "js-cookie"; // Import js-cookie for cookie handling
-import { useRouter } from "next/navigation"; // Import Next.js router
 import Welcome from "./welcome";
 import QuestionImageIdentification from "../components/QuestionImageIdentification";
 import QuestionWordIdentification from "@/components/QuestionWordIdentification";
@@ -37,6 +36,7 @@ import QuestionAndAnswer from "@/components/QuestionAndAnswer";
 import { shuffleArray, getRandomNumber } from "@/utils/helpers"; // Import reusable functions
 import SideMenu from "../components/SideMenu"; // Import the SideMenu component
 import { CategoryItem } from "@/interfaces/CategoryItem";
+import Login from "../components/Login"; // Import the Login component
 
 const categories: Record<string, CategoryItem[]> = {
   "fruits-and-vegitables": dataFruitsAndVegitables.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
@@ -69,7 +69,6 @@ const categories: Record<string, CategoryItem[]> = {
 
 
 export default function Home() {
-  const router = useRouter(); // Initialize router
   const [isSlideMenuOpen, setIsSlideMenuOpen] = useState(false); // State for slide menu
   const [category, setCategory] = useState<string>("image_identification");
   const [data, setData] = useState<CategoryItem[]>(categories[category] || []);
@@ -127,10 +126,7 @@ export default function Home() {
     setIsLoggedIn(loggedIn);
     setStarted(isStarted);
 
-    if (!loggedIn) {
-      router.push("/login"); // Redirect to login page if not logged in
-    }
-  }, [router]);
+  }, []);
 
   useEffect(() => {
     const savedCategory = Cookies.get("currentCategory");
@@ -308,6 +304,11 @@ export default function Home() {
         <p>Loading...</p>
       </div>
     );
+  }
+
+  {/* Page Display Login */}
+  if (isLoggedIn === null || !isLoggedIn) {
+    return <Login onLoginSuccess={() => setIsLoggedIn(true)} />;
   }
 
   {/* Page Display Welcome */}
