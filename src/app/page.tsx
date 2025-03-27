@@ -1,7 +1,6 @@
 "use client"
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import confetti from "canvas-confetti";
-import Image from "next/image";
 import dataAnimals from "../data/animals.json";
 import dataFoods from "../data/food.json";
 import dataFruitsAndVegitables from "../data/fruits-and-vegitables.json";
@@ -28,10 +27,14 @@ import dataFeelings from "../data/feelings.json";
 import dataSimpleQuestions from "../data/simple-questions.json";
 import Modal from "../components/Modal"; // Import the Modal component
 import Hangul from "./hangul"; // Import the Hangul component
-import AnswerOptions from "../components/AnswerOptions"; // Import the AnswerOptions component
 import { ArrowRightCircle, Menu, XCircle } from "@deemlol/next-icons";
 import Cookies from "js-cookie"; // Import js-cookie for cookie handling
 import { useRouter } from "next/navigation"; // Import Next.js router
+import Welcome from "./welcome";
+import QuestionImageIdentification from "../components/QuestionImageIdentification";
+import QuestionWordIdentification from "@/components/QuestionWordIdentification";
+import QuestionAndAnswer from "@/components/QuestionAndAnswer";
+import { shuffleArray, getRandomNumber } from "@/utils/helpers"; // Import reusable functions
 
 interface CategoryItem {
   id: number;
@@ -88,20 +91,21 @@ export default function Home() {
   const [correctSound, setCorrectSound] = useState<HTMLAudioElement | null>(null);
   const [wrongSound, setWrongSound] = useState<HTMLAudioElement | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
-  const [transition, setTransition] = useState<boolean>(false);
   const [isModalOpenHangul, setIsModalOpenHangul] = useState<boolean>(false);
   const [countWrongAnswers, setCountWrongAnswers] = useState<number>(0);
   const [viewKreading, setViewKreading] = useState<boolean>(false);
   const [isReverse, setIsReverse] = useState<boolean>(false);
-  const [isQuestionAnswer, setIsQuestionAnswer] = useState<boolean>(false);
   const [isImageIdentification, setIsImageIdentification] = useState<boolean>(true);
   const [started, setStarted] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState<boolean | null>(null); // Use `null` to indicate loading state
   const [loading, setLoading] = useState(false); // State for the line loader
+  const [isNextButtonEnabled, setIsNextButtonEnabled] = useState(() => {
+    const savedState = Cookies.get("isNextButtonEnabled");
+    return savedState === "true"; // Retrieve initial state from cookie
+  });
 
   const NumberOfChoices = 4;
   const EnableReverse = true;
-  const EnableNextBtn = true;
   const CookiesExpiration = 7;
   const [progress, setProgress] = useState(0);
   const [loadingDuration, setLoadingDuration] = useState(3000);
@@ -143,12 +147,10 @@ export default function Home() {
       setData(shuffleArray(categories[savedCategory]));
 
       if(savedCategory === "question-answer") {
-        setIsQuestionAnswer(true);
         setIsReverse(false);
       }else if(savedCategory === "image_identification") {
         setIsImageIdentification(true);
       }else {
-        setIsQuestionAnswer(false);
         setIsImageIdentification(false);
       }
     }
@@ -174,29 +176,12 @@ export default function Home() {
     }
   }, [isModalOpenHangul]);
 
-  const shuffleArray = <T,>(array: T[]): T[] => {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
-    };
-
-  const getRandomNumber = useCallback((exclude: number, max: number): number[] => {
-    const randomNumbers = [exclude];
-    while (randomNumbers.length < max + 1) {
-      const randomNumber = Math.floor(Math.random() * data.length);
-      if (!randomNumbers.includes(randomNumber) && randomNumber !== exclude) {
-        randomNumbers.push(randomNumber);
-      }
-    }
-    return shuffleArray(randomNumbers);
-  }, [data]);
-
   useEffect(() => {
-    const numbers = data.map((_, index) => getRandomNumber(index, NumberOfChoices-1));
+    const numbers = data.map((_, index) =>
+      getRandomNumber(index, NumberOfChoices - 1, data.length)
+    );
     setRandomNumbers(numbers);
-  }, [currentQuestion, data, getRandomNumber]);
+  }, [currentQuestion, data]);
 
   const checkAnswer = (selected: number, correct: number) => {
     setSelectedAnswer(selected);
@@ -216,9 +201,8 @@ export default function Home() {
         origin: { y: 0.6 },
       });
 
-      if (!EnableNextBtn) {
+      if (!isNextButtonEnabled) {
         setTimeout(() => {
-          setTransition(true);
           setTimeout(() => {
             setCurrentQuestion((prev) => {
               const nextQuestion = (prev + 1) % data.length;
@@ -230,7 +214,6 @@ export default function Home() {
             setSelectedAnswer(null);
             setIsCorrect(null);
             setViewKreading(false);
-            setTransition(false);
             setLoading(false);
             setProgress(0);
           }, 500);
@@ -253,28 +236,21 @@ export default function Home() {
     setCurrentQuestion(0);
     setCountWrongAnswers(0);
     setViewKreading(false);  
-    setIsQuestionAnswer(false);
     setIsImageIdentification(false);
     
     Cookies.set("currentCategory", newCategory, { expires: CookiesExpiration }); // Save category to cookie
 
-    if(EnableNextBtn){
+    if(isNextButtonEnabled){
       setSelectedAnswer(null);
       setIsCorrect(null);
-      setTransition(false);
     }  
 
     if(newCategory === "question-answer") {
-      setIsQuestionAnswer(true);
       setIsReverse(false);
     }else if(newCategory === "image_identification") {
       setIsImageIdentification(true);
     }
     
-  };
-
-  const handleReverseChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setIsReverse(event.target.checked);
   };
 
   const handleNextQuestion = () => {
@@ -304,6 +280,21 @@ export default function Home() {
     setIsSlideMenuOpen(false);
   };
 
+  const toggleNextButton = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const isEnabled = event.target.checked;
+    setIsNextButtonEnabled(isEnabled);
+    Cookies.set("isNextButtonEnabled", isEnabled.toString(), { expires: CookiesExpiration }); // Save state to cookie
+  };
+
+  useEffect(() => {
+    const savedState = Cookies.get("isNextButtonEnabled");
+    if (savedState !== undefined) {
+      setIsNextButtonEnabled(savedState === "true");
+    }
+  }, []);
+
+
+  {/* Page Display Loading */}
   if (isLoggedIn === null) {
     // Show a loading state while cookies are being checked
     return (
@@ -313,27 +304,18 @@ export default function Home() {
     );
   }
 
+  {/* Page Display Welcome */}
   if (!started) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white p-8">
-        <h1 className="text-4xl font-bold mb-4 text-center">Welcome to Hangeul Book</h1>
-        <h2 className="text-2xl mb-6 text-center">Practice Hangeul Anytime, Anywhere!</h2>
-        <p className="text-lg mb-6 text-center">
-        Learn Hangeul easily with Hangeul Book. Whether you&apos;re at home, commuting, or taking a break, our app helps you practice and review your Korean language skills anytime, anywhere. Stay consistent and improve effortlessly with our simple and effective learning tools!
-        </p>
-        <button
-          onClick={handleStart}
-          className="bg-green-700 text-gray-200 px-6 py-3 rounded-md text-lg font-bold hover:bg-green-500 hover:animate-none animate-pulse"
-        >
-          Get Started 🚀
-        </button>
-      </div>
+      <Welcome onStarted={handleStart} />
     );
   }
-
+  
+  {/* Page Display Main */}
   return (
     <div className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 max-md:gap-4 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-black`}>
       
+      {/* Page Loader */}
       <div className="fixed w-full top-0 left-0 z-50 h-[5px] bg-black">      
        {loading && (
           <div
@@ -390,6 +372,20 @@ export default function Home() {
               </select>
             </div>
             </li>
+            <li className="px-2 py-3">
+              <div className="flex flex-row gap-2 items-center">
+                <input
+                  type="checkbox"
+                  id="toggleNextButton"
+                  checked={isNextButtonEnabled}
+                  onChange={toggleNextButton}
+                  className="w-4 h-4"
+                />
+                <label htmlFor="toggleNextButton" className="text-white">
+                  Enable Next Button
+                </label>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -401,7 +397,8 @@ export default function Home() {
       >
         <Menu size={24} />
       </button>
-
+        
+      {/* Main Content */}
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
 
         <div className="fixed top-0 left-0 right-0 z-10 p-4 shadow-md items-center justify-center bg-black">
@@ -422,66 +419,41 @@ export default function Home() {
         </div>
       
         {currentQuestion < data.length && (
-          <div key={data[currentQuestion].id} className={`flex flex-col gap-4 items-center transition-opacity duration-500 ${transition ? 'opacity-0' : 'opacity-100'} mt-[4vw]`}>
-            <div className="flex flex-col gap-4 items-center">
-              
-              {isQuestionAnswer ? (
-                <div className={`text-[6vw] lg:text-[42px] max-sm:text-[7vw] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-normal mt-[4vw]`}
-                > {data[currentQuestion]?.question}</div>
-              ) : isImageIdentification ?  (
-                <div className={`flex flex-col items-center border-transparent overflow-hidden max-w-[350px] ${isCorrect === true ? ' border-green-500' : ""}`}>
-                  <Image className="w-full max-h-[250px]" src={data[currentQuestion]?.image} alt={data[currentQuestion].eword} width={350} height={350} placeholder="blur" blurDataURL="/images/placeholder.png" />
-                </div>
-              )
-              : ( 
-                <a className={`text-[12vw] md:text-[60px] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-white'} leading-normal`}
-                title={data[currentQuestion].kreading}> {isReverse ? data[currentQuestion].eword : data[currentQuestion].kword}</a>      
-              )}
 
-              {viewKreading && !isReverse && !isImageIdentification &&(
-                <a className={`text-[4vw] lg:text-[28px] text-center sm:text-left ${isCorrect === true ? 'text-green-500' : 'text-yellow-500'}`} 
-                >{isQuestionAnswer ? data[currentQuestion].question_en : data[currentQuestion].kreading}</a>
-              )}
-
-              <AnswerOptions
-                randomNumbers={randomNumbers[currentQuestion]}
-                currentQuestion={currentQuestion}
-                data={data}
-                selectedAnswer={selectedAnswer}
-                isCorrect={isCorrect}
-                isReverse={isReverse}
-                isQuestionAnswer={isQuestionAnswer}
-                isImageIdentification={isImageIdentification}
-                checkAnswer={checkAnswer}
-                
-              />
-            </div>
-          </div>
-        )}
-
-        {EnableReverse && !isQuestionAnswer && !isImageIdentification &&(
-          <div className="flex flex-row gap-2 items-center">
-            <input
-              type="checkbox"
-              id="reverse"
-              checked={isReverse}
-              onChange={handleReverseChange}
-              className="w-4 h-4"
+          category === "image_identification" ? 
+            <QuestionImageIdentification
+              randomNumbers={randomNumbers[currentQuestion]}
+              currentQuestion={currentQuestion}
+              data={data}
+              selectedAnswer={selectedAnswer}
+              isCorrect={isCorrect}
+              checkAnswer={checkAnswer}
             />
-            <label htmlFor="reverse" className="text-white">Reverse Questions and Answers</label>
-          </div>
+          : category === "question-answer" ?
+            <QuestionAndAnswer
+              randomNumbers={randomNumbers[currentQuestion]}
+              currentQuestion={currentQuestion}
+              data={data}
+              selectedAnswer={selectedAnswer}
+              isCorrect={isCorrect}
+              viewKreading={viewKreading}
+              checkAnswer={checkAnswer}
+            />    
+          :<QuestionWordIdentification
+            randomNumbers={randomNumbers[currentQuestion]}
+            currentQuestion={currentQuestion}
+            data={data}
+            selectedAnswer={selectedAnswer}
+            isCorrect={isCorrect}
+            isReverse={isReverse}
+            viewKreading={viewKreading}
+            enableReverse={EnableReverse}
+            onReverseChange={setIsReverse}
+            checkAnswer={checkAnswer}
+          />
         )}
-
-        {/* 
-        QUIZ FINISHED MESSAGE
-        {EnableNextBtn && currentQuestion === data.length && (
-          <div className="flex flex-row gap-4 items-center">
-            <span className="text-white">You have completed the quiz!</span>
-            <a onClick={() => setCurrentQuestion(0)} className="text-white bg-transparent border p-2 rounded-md block">Restart</a>
-          </div>
-        )}  */}
         
-        {EnableNextBtn && isCorrect &&(
+        {isNextButtonEnabled && isCorrect &&(
           <div className="fixed bottom-0 left-0 right-0 flex flex-row gap-4 items-center justify-between w-full shadow-md bg-black border-t text-green-500">
             <a onClick={() => handleNextQuestion()} className="flex flex-row justify-center items-center text-green-500 hover:text-green-400 animate-pulse text-vw-26 bg-transparent p-4 cursor-pointer w-full"><span className="mr-2">Next</span> <ArrowRightCircle  size={32} className="justify-self-end" /></a>
           </div>
