@@ -308,7 +308,7 @@ export default function Home() {
 
   {/* Page Display Login */}
   if (isLoggedIn === null || !isLoggedIn) {
-    return <Login onLoginSuccess={() => setIsLoggedIn(true)} />;
+    return <Login />;
   }
 
   {/* Page Display Welcome */}

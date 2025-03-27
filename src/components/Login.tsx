@@ -3,11 +3,8 @@ import Cookies from "js-cookie";
 import Image from "next/image";
 import { Eye, EyeOff } from "@deemlol/next-icons";
 
-interface LoginProps {
-  onLoginSuccess: () => void;
-}
 
-const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
+const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
