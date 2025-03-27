@@ -32,9 +32,9 @@ const QuestionImageIdentification: React.FC<QuestionImageIdentificationProps> = 
   return (
     <div
       key={data[currentQuestion].id}
-      className={`flex flex-col gap-4 items-center transition-opacity duration-500`}
+      className={`flex flex-col gap-4 items-center transition-opacity duration-500 max-sm:w-full`}
     >
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-4 items-center max-sm:w-full">
 
           <div
             className={`flex flex-col items-center border-transparent overflow-hidden max-w-[350px] ${

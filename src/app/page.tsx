@@ -357,7 +357,7 @@ export default function Home() {
       </button>
         
       {/* Main Content */}
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start max-sm:w-full">
 
         <div className="fixed top-0 left-0 right-0 z-10 p-4 shadow-md items-center justify-center bg-black">
           <div className="flex flex-row gap-4 items-center justify-end">

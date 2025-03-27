@@ -39,9 +39,9 @@ const QuestionWordIdentification: React.FC<QuestionWordIdentificationProps> = ({
   return (
     <div
       key={data[currentQuestion].id}
-      className={`flex flex-col gap-4 items-center transition-opacity duration-50 mt-5`}
+      className={`flex flex-col gap-4 items-center transition-opacity duration-50 mt-5 max-sm:w-full`}
     > 
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-4 items-center max-sm:w-full">
         <a
           className={`text-[12vw] md:text-[60px] text-center sm:text-left ${
             isCorrect === true ? 'text-green-500' : 'text-white'

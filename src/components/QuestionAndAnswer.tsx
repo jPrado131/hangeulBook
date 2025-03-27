@@ -33,9 +33,9 @@ const QuestionAndAnswer: React.FC<QuestionAndAnswerProps> = ({
   return (
     <div
       key={data[currentQuestion].id}
-      className={`flex flex-col gap-4 items-center transition-opacity duration-500`}
+      className={`flex flex-col gap-4 items-center transition-opacity duration-500 max-sm:w-full`}
     >
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-4 items-center max-sm:w-full">
 
           <div
             className={`text-[6vw] lg:text-[42px] max-sm:text-[7vw] text-center sm:text-left ${

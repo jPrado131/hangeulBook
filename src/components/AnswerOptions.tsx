@@ -14,9 +14,9 @@ interface AnswerOptionsProps {
 
 const AnswerOptions: React.FC<AnswerOptionsProps> = ({ randomNumbers, currentQuestion, data, selectedAnswer, isCorrect, isReverse,isQuestionAnswer, isImageIdentification, checkAnswer }) => {
   return (
-    <div className="relative p-2">
+    <div className="relative max-sm:w-full">
       {isCorrect === true ? (<div className="bg-transparent opacity-25 absolute top-0 left-0 right-0 h-full w-full"></div>) : null}
-      <div className="flex flex-row gap-4 items-center max-md:flex-col max-md:gap-2">
+      <div className="flex flex-row gap-4 items-center max-md:flex-col max-md:gap-2 max-sm:w-full">
         {randomNumbers?.map((randomNumber: number, idx: number) => (
           randomNumber < data.length && (
             <div
@@ -28,7 +28,7 @@ const AnswerOptions: React.FC<AnswerOptionsProps> = ({ randomNumbers, currentQue
                       ? " border-green-500 text-green-500"
                       : " border-red-500 text-red-500" 
                     : " border-gray-300 text-yellow-200 hover:border-gray-200 hover:text-yellow-100"
-                } max-md:w-[80vw]`}
+                } max-md:w-[80vw] max-sm:w-full `}
               onClick={() => checkAnswer(randomNumber, currentQuestion)}
             >
               <span className="text-vw-16 max-sm:text-[20px] capitalize">
