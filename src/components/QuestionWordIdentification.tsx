@@ -39,7 +39,7 @@ const QuestionWordIdentification: React.FC<QuestionWordIdentificationProps> = ({
   return (
     <div
       key={data[currentQuestion].id}
-      className={`flex flex-col gap-4 items-center transition-opacity duration-500`}
+      className={`flex flex-col gap-4 items-center transition-opacity duration-50 mt-5`}
     > 
       <div className="flex flex-col gap-4 items-center">
         <a

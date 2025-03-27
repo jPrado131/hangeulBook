@@ -36,20 +36,7 @@ import QuestionWordIdentification from "@/components/QuestionWordIdentification"
 import QuestionAndAnswer from "@/components/QuestionAndAnswer";
 import { shuffleArray, getRandomNumber } from "@/utils/helpers"; // Import reusable functions
 import SideMenu from "../components/SideMenu"; // Import the SideMenu component
-
-interface CategoryItem {
-  id: number;
-  kword: string;
-  kreading: string;
-  eword: string;
-  image: string;
-  question: string;
-  question_en: string;
-  answer: string;
-  answer_en: string;
-}
-
-
+import { CategoryItem } from "@/interfaces/CategoryItem";
 
 const categories: Record<string, CategoryItem[]> = {
   "fruits-and-vegitables": dataFruitsAndVegitables.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),

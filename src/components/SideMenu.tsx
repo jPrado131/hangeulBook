@@ -1,30 +1,6 @@
 import React from "react";
 import { ArrowRightCircle, XCircle } from "@deemlol/next-icons";
-
-interface CategoryItem {
-  id: number;
-  kword: string;
-  kreading: string;
-  eword: string;
-  image: string;
-  question: string;
-  question_en: string;
-  answer: string;
-  answer_en: string;
-}
-
-interface SideMenuProps {
-  isOpen: boolean;
-  onClose: () => void;
-  category: string;
-  categories: Record<string, CategoryItem[]>;
-  onCategoryChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
-  isNextButtonEnabled: boolean;
-  toggleNextButton: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  isSoundEnabled: boolean;
-  toggleSound: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  onOpenHangulModal: () => void;
-}
+import { SideMenuProps } from "@/interfaces/SideMenuProps";
 
 const SideMenu: React.FC<SideMenuProps> = ({
   isOpen,

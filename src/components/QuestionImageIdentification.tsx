@@ -42,7 +42,7 @@ const QuestionImageIdentification: React.FC<QuestionImageIdentificationProps> = 
             }`}
           >
             <Image
-              className="w-full max-h-[250px]"
+              className="w-full max-sm:max-h-[250px]"
               src={data[currentQuestion]?.image}
               alt={data[currentQuestion].eword}
               width={350}
