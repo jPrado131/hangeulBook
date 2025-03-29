@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRightCircle, XCircle } from "@deemlol/next-icons";
 import { SideMenuProps } from "@/interfaces/SideMenuProps";
+import SearchableDropdown from "./SearchableDropdown"; // Import the SearchableDropdown component
 
 const SideMenu: React.FC<SideMenuProps> = ({
   isOpen,
@@ -14,6 +15,10 @@ const SideMenu: React.FC<SideMenuProps> = ({
   toggleSound,
   onOpenHangulModal,
 }) => {
+  const handleCategorySelect = (cat: string) => {
+    onCategoryChange({ target: { value: cat } } as React.ChangeEvent<HTMLSelectElement>);
+  };
+
   return (
     <>
       {/* Overlay */}
@@ -39,18 +44,13 @@ const SideMenu: React.FC<SideMenuProps> = ({
           <ul className="space-y-2">
             <li className="px-2 py-3">
               <div className="flex flex-col gap-4 items-center">
-                <strong className="text-left block w-full">Category: </strong>
-                <select
-                  className="text-black capitalize px-1 py-2 rounded-md border border-gray-300 bg-white w-full"
-                  value={category}
-                  onChange={onCategoryChange}
-                >
-                  {Object.keys(categories).map((cat) => (
-                    <option key={cat} value={cat}>
-                      {cat.replace("-", " & ").replace("_", " ")} ({categories[cat]?.length || 0})
-                    </option>
-                  ))}
-                </select>
+                <strong className="text-left block w-full">Activity: </strong>
+                <SearchableDropdown
+                  options={categories}
+                  placeholder="Search or select an activity..."
+                  onSelect={handleCategorySelect}
+                  defaultValue={category}
+                />
               </div>
             </li>
             <li className="px-2 py-3">

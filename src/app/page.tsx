@@ -39,38 +39,39 @@ import { CategoryItem } from "@/interfaces/CategoryItem";
 import Login from "../components/Login"; // Import the Login component
 
 const categories: Record<string, CategoryItem[]> = {
-  "fruits-and-vegitables": dataFruitsAndVegitables.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "animals": dataAnimals.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "foods": dataFoods.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "numbers": dataNumbers.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "sino_numbers": dataSinoNumbers.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "time": dataTime.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "weather-seasons": dataWeather.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "tools": dataTools.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "occupations": dataOccupations.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "family": dataFamily.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "verbs": dataVerbs.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "adjectives": dataAdjectives.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "things": dataThings.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "places": dataPlaces.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "colors": dataColors.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "shapes": dataShapes.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })), 
-  "body-parts": dataBodyParts.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "clothes": dataClothes.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "transport": dataTransport.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "directions": dataDirections.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "sports": dataSports.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "taste": dataTaste.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "feelings": dataFeelings.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "random": [...dataFruitsAndVegitables, ...dataAnimals, ...dataFoods].map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
-  "question-answer" : dataSimpleQuestions.map((item) => ({ ...item, image: "", kword: "", eword : "", kreading: "" })),
-  "image_identification" : dataSports.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" }))
+  "wi_fruits-vegitables": dataFruitsAndVegitables.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_animals": dataAnimals.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_foods": dataFoods.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_numbers": dataNumbers.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_sino_numbers": dataSinoNumbers.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_time": dataTime.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_weather-seasons": dataWeather.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_tools": dataTools.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_occupations": dataOccupations.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_family": dataFamily.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_verbs": dataVerbs.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_adjectives": dataAdjectives.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_things": dataThings.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_places": dataPlaces.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_colors": dataColors.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_shapes": dataShapes.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })), 
+  "wi_body-parts": dataBodyParts.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_clothes": dataClothes.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_transport": dataTransport.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_directions": dataDirections.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_sports": dataSports.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "ii_sports": dataSports.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_taste": dataTaste.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_feelings": dataFeelings.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_random": [...dataFruitsAndVegitables, ...dataAnimals, ...dataFoods].map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "qa_question-answer" : dataSimpleQuestions.map((item) => ({ ...item, image: "", kword: "", eword : "", kreading: "" })),
 };
 
 
 export default function Home() {
   const [isSlideMenuOpen, setIsSlideMenuOpen] = useState(false); // State for slide menu
   const [category, setCategory] = useState<string>("image_identification");
+  const [activityType, setActivityType] = useState<string>("");
   const [data, setData] = useState<CategoryItem[]>(categories[category] || []);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
@@ -129,14 +130,18 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const savedCategory = Cookies.get("currentCategory");
+    const savedCategory = Cookies.get("currentCategory");   
     if (savedCategory && categories[savedCategory]) {
+      const savedCategoryType = savedCategory.split('_')[0];
       setCategory(savedCategory);
+      setActivityType(savedCategoryType);
       setData(shuffleArray(categories[savedCategory]));
 
-      if(savedCategory === "question-answer") {
+      
+
+      if(savedCategoryType === "qa") {
         setIsReverse(false);
-      }else if(savedCategory === "image_identification") {
+      }else if(savedCategoryType === "ii") {
         setIsImageIdentification(true);
       }else {
         setIsImageIdentification(false);
@@ -220,7 +225,9 @@ export default function Home() {
 
   const handleCategoryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const newCategory = event.target.value;
+    const savedCategoryType = newCategory.split('_')[0];
     setCategory(newCategory);
+    setActivityType(savedCategoryType);
     setData(shuffleArray(categories[newCategory] || []));
     setCurrentQuestion(0);
     setCountWrongAnswers(0);
@@ -232,12 +239,14 @@ export default function Home() {
     if(isNextButtonEnabled){
       setSelectedAnswer(null);
       setIsCorrect(null);
-    }  
-
-    if(newCategory === "question-answer") {
+    } 
+    
+    if(savedCategoryType === "qa") {
       setIsReverse(false);
-    }else if(newCategory === "image_identification") {
+    }else if(savedCategoryType === "ii") {
       setIsImageIdentification(true);
+    }else {
+      setIsImageIdentification(false);
     }
     
   };
@@ -314,7 +323,7 @@ export default function Home() {
   {/* Page Display Welcome */}
   if (!started) {
     return (
-      <Welcome onStarted={handleStart} />
+      <Welcome onStarted={handleStart} onCategoryChange={handleCategoryChange} categories={categories} />
     );
   }
   
@@ -378,7 +387,7 @@ export default function Home() {
         </div>
       
         {currentQuestion < data.length && (
-          category === "image_identification" ? 
+          activityType === "ii" ? 
             <QuestionImageIdentification
               randomNumbers={randomNumbers[currentQuestion]}
               currentQuestion={currentQuestion}
@@ -387,7 +396,7 @@ export default function Home() {
               isCorrect={isCorrect}
               checkAnswer={checkAnswer}
             />
-          : category === "question-answer" ?
+          : activityType === "qa" ?
             <QuestionAndAnswer
               randomNumbers={randomNumbers[currentQuestion]}
               currentQuestion={currentQuestion}
