@@ -38,19 +38,34 @@ const SearchableDropdown: React.FC<SearchableDropdownProps> = ({
     onSelect(option);
   };
 
+  const clearSearch = () => {
+    setSearchTerm("");
+    setIsDropdownOpen(false);
+  };
+
   return (
     <div className="relative w-full">
-      <input
-        type="text"
-        placeholder={placeholder}
-        value={searchTerm}
-        onChange={(e) => {
-          setSearchTerm(e.target.value);
-          setIsDropdownOpen(true);
-        }}
-        onFocus={() => setIsDropdownOpen(true)}
-        className="text-black px-4 py-2 rounded-md border border-gray-300 bg-white w-full capitalize"
-      />
+      <div className="flex items-center">
+        <input
+          type="text"
+          placeholder={placeholder}
+          value={searchTerm}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+            setIsDropdownOpen(true);
+          }}
+          onFocus={() => setIsDropdownOpen(true)}
+          className="text-black px-4 py-2 rounded-md border border-gray-300 bg-white w-full capitalize"
+        />
+        {searchTerm && (
+          <button
+            onClick={clearSearch}
+            className="ml-2 text-white hover:text-gray-200"
+          >
+            ✕
+          </button>
+        )}
+      </div>
       {isDropdownOpen && (
         <ul className="absolute z-10 bg-white text-black border border-gray-300 rounded-md w-full max-h-48 overflow-y-auto mt-1">
           {filteredOptions.length > 0 ? (
