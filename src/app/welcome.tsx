@@ -19,7 +19,7 @@ export default function Welcome({ onStarted, categories, onCategoryChange }: Wel
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-black text-white p-8">
       {!started ? (
         <>
-          <h1 className="text-5xl font-extrabold mb-6 text-center text-green-500">Welcome to Hangeul Book</h1>
+          <h1 className="text-5xl font-extrabold mb-6 text-center text-green-500 max-sm:text-[36px]">Welcome to Hangeul Book</h1>
           <h2 className="text-2xl mb-6 text-center text-gray-300">Practice Hangeul Anytime, Anywhere!</h2>
           <p className="text-lg mb-8 text-center text-gray-400 leading-relaxed">
             Learn Hangeul easily with Hangeul Book. Whether you&apos;re at home, commuting, or taking a break, our app helps you practice and review your Korean language skills anytime, anywhere. Stay consistent and improve effortlessly with our simple and effective learning tools!
