@@ -34,7 +34,7 @@ export default function Welcome({ onStarted, categories, onCategoryChange }: Wel
       ) : (
         <div className="w-full max-w-2xl">
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg mb-6">
-            <h2 className="text-3xl font-bold mb-4 text-center text-green-400">Read This Carefully</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center text-green-400 max-sm:text-[24px]">Read This Carefully</h2>
             <ul className="space-y-4 text-gray-300">
               <li>
                 <span className="font-semibold text-white">Image Identification (II):</span> Identify the object in the given image and provide a brief description.
