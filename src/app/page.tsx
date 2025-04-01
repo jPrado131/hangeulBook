@@ -25,6 +25,8 @@ import dataSports from "../data/sports.json";
 import dataTaste from "../data/taste.json";
 import dataFeelings from "../data/feelings.json";
 import dataSimpleQuestions from "../data/simple-questions.json";
+import dataPeoplePronouns from "../data/people_pronouns.json"; // Import people_pronouns.json
+import dataProhibition from "../data/prohibition.json"; // Uncomment and provide the correct path if needed
 import Modal from "../components/Modal"; // Import the Modal component
 import Hangeul from "./hangeul"; // Import the Hangul component
 import { ArrowRightCircle, Menu } from "@deemlol/next-icons";
@@ -63,6 +65,9 @@ const categories: Record<string, CategoryItem[]> = {
   "ii_sports": dataSports.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
   "wi_taste": dataTaste.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
   "wi_feelings": dataFeelings.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "wi_people_pronouns": dataPeoplePronouns.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })), // Add word identification for pronouns
+  "wi_prohibition": dataProhibition.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
+  "ii_prohibition": dataProhibition.map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
   "wi_random": [...dataFruitsAndVegitables, ...dataAnimals, ...dataFoods].map((item) => ({ ...item, question: "", question_en: "", answer: "", answer_en: "" })),
   "qa_question-answer" : dataSimpleQuestions.map((item) => ({ ...item, image: "", kword: "", eword : "", kreading: "" })),
 };

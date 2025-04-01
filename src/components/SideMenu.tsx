@@ -17,6 +17,7 @@ const SideMenu: React.FC<SideMenuProps> = ({
 }) => {
   const handleCategorySelect = (cat: string) => {
     onCategoryChange({ target: { value: cat } } as React.ChangeEvent<HTMLSelectElement>);
+    onClose();
   };
 
   return (

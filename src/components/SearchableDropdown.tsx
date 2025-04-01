@@ -25,9 +25,13 @@ const SearchableDropdown: React.FC<SearchableDropdownProps> = ({
     }
   }, [defaultValue, options]);
 
-  const filteredOptions = Object.keys(options).filter((option) =>
-    option.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredOptions = Object.keys(options)
+    .filter((option) =>
+      option.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+    .sort((a, b) =>
+      a.split("_")[1].localeCompare(b.split("_")[1]) // Sort alphabetically by the second part of the key
+    );
 
   const handleSelect = (option: string) => {
     setSearchTerm(

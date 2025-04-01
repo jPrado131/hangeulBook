@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "kword": "나",
+    "kreading": "na",
+    "eword": "I (informal)",
+    "image": "/images/people_pronouns/i.png",
+    "question": "What does this pronoun mean?",
+    "question_en": "What does this pronoun mean?",
+    "answer": "나",
+    "answer_en": "I (informal)"
+  },
+  {
+    "id": 2,
+    "kword": "저",
+    "kreading": "jeo",
+    "eword": "I (formal)",
+    "image": "/images/people_pronouns/i_formal.png",
+    "question": "What does this pronoun mean?",
+    "question_en": "What does this pronoun mean?",
+    "answer": "저",
+    "answer_en": "I (formal)"
+  },
+  {
+    "id": 3,
+    "kword": "너",
+    "kreading": "neo",
+    "eword": "you (informal)",
+    "image": "/images/people_pronouns/you.png",
+    "question": "What does this pronoun mean?",
+    "question_en": "What does this pronoun mean?",
+    "answer": "너",
+    "answer_en": "you (informal)"
+  },
+  {
+    "id": 4,
+    "kword": "당신",
+    "kreading": "dangsin",
+    "eword": "you (formal)",
+    "image": "/images/people_pronouns/you_formal.png",
+    "question": "What does this pronoun mean?",
+    "question_en": "What does this pronoun mean?",
+    "answer": "당신",
+    "answer_en": "you (formal)"
+  },
+  {
+    "id": 5,
+    "kword": "우리",
+    "kreading": "uri",
+    "eword": "we",
+    "image": "/images/people_pronouns/we.png",
+    "question": "What does this pronoun mean?",
+    "question_en": "What does this pronoun mean?",
+    "answer": "우리",
+    "answer_en": "we"
+  },
+  {
+    "id": 6,
+    "kword": "그녀",
+    "kreading": "geunyeo",
+    "eword": "she",
+    "image": "/images/people_pronouns/she.png",
+    "question": "What does this pronoun mean?",
+    "question_en": "What does this pronoun mean?",
+    "answer": "그녀",
+    "answer_en": "she"
+  },
+  {
+    "id": 7,
+    "kword": "그",
+    "kreading": "geu",
+    "eword": "he",
+    "image": "/images/people_pronouns/he.png",
+    "question": "What does this pronoun mean?",
+    "question_en": "What does this pronoun mean?",
+    "answer": "그",
+    "answer_en": "he"
+  },
+  {
+    "id": 8,
+    "kword": "남자",
+    "kreading": "namja",
+    "eword": "male",
+    "image": "/images/people_pronouns/male.png",
+    "question": "What does this word mean?",
+    "question_en": "What does this word mean?",
+    "answer": "남자",
+    "answer_en": "male"
+  },
+  {
+    "id": 9,
+    "kword": "여자",
+    "kreading": "yeoja",
+    "eword": "female",
+    "image": "/images/people_pronouns/female.png",
+    "question": "What does this word mean?",
+    "question_en": "What does this word mean?",
+    "answer": "여자",
+    "answer_en": "female"
+  },
+  {
+    "id": 10,
+    "kword": "어른",
+    "kreading": "eoreun",
+    "eword": "adult",
+    "image": "/images/people_pronouns/adult.png",
+    "question": "What does this word mean?",
+    "question_en": "What does this word mean?",
+    "answer": "어른",
+    "answer_en": "adult"
+  },
+  {
+    "id": 11,
+    "kword": "아이들",
+    "kreading": "aideul",
+    "eword": "children",
+    "image": "/images/people_pronouns/children.png",
+    "question": "What does this word mean?",
+    "question_en": "What does this word mean?",
+    "answer": "아이들",
+    "answer_en": "children"
+  },
+  {
+    "id": 12,
+    "kword": "아이",
+    "kreading": "ai",
+    "eword": "child",
+    "image": "/images/people_pronouns/child.png",
+    "question": "What does this word mean?",
+    "question_en": "What does this word mean?",
+    "answer": "아이",
+    "answer_en": "child"
+  },
+  {
+    "id": 13,
+    "kword": "가족",
+    "kreading": "gajok",
+    "eword": "family",
+    "image": "/images/people_pronouns/family.png",
+    "question": "What does this word mean?",
+    "question_en": "What does this word mean?",
+    "answer": "가족",
+    "answer_en": "family"
+  },
+  {
+    "id": 14,
+    "kword": "친구",
+    "kreading": "chingu",
+    "eword": "friend",
+    "image": "/images/people_pronouns/friend.png",
+    "question": "What does this word mean?",
+    "question_en": "What does this word mean?",
+    "answer": "친구",
+    "answer_en": "friend"
+  },
+  {
+    "id": 15,
+    "kword": "친척",
+    "kreading": "chincheok",
+    "eword": "relative",
+    "image": "/images/people_pronouns/relative.png",
+    "question": "What does this word mean?",
+    "question_en": "What does this word mean?",
+    "answer": "친척",
+    "answer_en": "relative"
+  },
+  {
+    "id": 16,
+    "kword": "사람들",
+    "kreading": "saramdeul",
+    "eword": "people",
+    "image": "/images/people_pronouns/people.png",
+    "question": "What does this word mean?",
+    "question_en": "What does this word mean?",
+    "answer": "사람들",
+    "answer_en": "people"
+  }
+]
