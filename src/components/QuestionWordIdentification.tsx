@@ -41,6 +41,7 @@ const QuestionWordIdentification: React.FC<QuestionWordIdentificationProps> = ({
       key={data[currentQuestion].id}
       className={`flex flex-col gap-4 items-center transition-opacity duration-50 mt-5 max-sm:w-full`}
     > 
+      <p className=' text-white'><span className="font-semibold text-white">Instruction:</span> Translate the {isReverse ? "english": "korean"} word to {isReverse ? "korean": "english"}.</p>
       <div className="flex flex-col gap-4 items-center max-sm:w-full">
         <a
           className={`text-[12vw] md:text-[60px] text-center sm:text-left ${
